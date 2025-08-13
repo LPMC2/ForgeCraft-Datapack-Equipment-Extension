@@ -1,0 +1,2 @@
+$execute if score @s shielding_charges matches 0 run data modify storage minecraft:text $(playerid).text set value ["None!"]
+$execute as @s run function custom_items:armor/shielding/update_actionbar with storage minecraft:text $(playerid)

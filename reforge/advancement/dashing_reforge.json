@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_boots",
+      "components": {
+        "minecraft:custom_model_data": {"strings":["dashing"]}
+      }
+    },
+    "title": "Feel dashing today?",
+    "description": "Equip at least 1 armor with Dashing Reforge",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:supreme_reinforcement",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

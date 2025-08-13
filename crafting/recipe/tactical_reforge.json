@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "121",
+    "232",
+    "121"
+],
+  "key": {
+    "1": "minecraft:chiseled_deepslate"
+    ,
+    "2": "minecraft:iron_block",
+    "3": "minecraft:netherite_ingot"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Core of Tactical"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Tactical: "},{"bold":false,"color":"gray","italic":false,"text":"Uses 50% Player Attack Damage as Arrow Damage"}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 20"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {"reforgeid":61,"req_xp":20},
+      "minecraft:profile": {
+        "id": [
+          -1535789480,-812364525,-1814435020,-228872064
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZjZDlhNmJlZTgyN2ZjYmJhN2VkZjBjNTkzYWY1Mzk3ZDUxOTMwNjBkNGZkYjRlNThhOGZhNTlkZDA5ZDEzZiJ9fX0=",
+            "signature": "61"
+          }
+        ]
+      }
+    }
+  }
+}

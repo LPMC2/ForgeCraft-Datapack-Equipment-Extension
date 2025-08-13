@@ -1,0 +1,1 @@
+execute at @s[nbt={inGround:0b}] run particle dust_color_transition{from_color:[0.027,0.820,0.000],scale:1,to_color:[0.118,0.290,0.000]} ~ ~ ~ 0 0 0 1 0 normal

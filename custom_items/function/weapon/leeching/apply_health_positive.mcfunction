@@ -1,0 +1,2 @@
+$attribute @s minecraft:max_health modifier add leeched $(value) add_value
+$scoreboard players add @s heal $(value)

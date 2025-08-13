@@ -1,0 +1,1 @@
+attribute @s minecraft:armor modifier remove fortified_effect

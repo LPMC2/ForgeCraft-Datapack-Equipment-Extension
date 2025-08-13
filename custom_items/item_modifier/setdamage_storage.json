@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "minecraft:storage",
+      "storage": "minecraft:item",
+      "path": "store.damage"
+    },
+    "add": true
+  }
+]

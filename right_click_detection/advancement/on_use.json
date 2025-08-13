@@ -1,0 +1,9 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": {"right_click_detection":true}
+		}}}
+	}},
+	"rewards": { "function": "right_click_detection:on_use" }
+}

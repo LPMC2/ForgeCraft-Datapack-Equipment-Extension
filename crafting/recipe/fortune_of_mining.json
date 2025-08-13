@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "131",
+    "121"
+],
+  "key": {
+    "1": "minecraft:diamond_block"
+    ,
+    "2":  "minecraft:diamond_pickaxe"
+    ,
+    "3": "minecraft:heart_of_the_sea"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Fortune of Mining"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Fortunate: "},{"bold":false,"color":"gray","italic":false,"text":"most drop always have double drops on use"}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Tool"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 20"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {"reforgeid":36,"req_xp":20},
+      "minecraft:profile": {
+        "id": [
+          2009663337,
+          -1977332022,
+          -1886336066,
+          -2090921471
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjczNTc5NTc1Y2E4OGIzYThhZmUxZWQxODkwN2IzMTI1ZmUwOTg3YjAyYTg4ZWYwZThhMDEwODdjM2QwMjRjNCJ9fX0=",
+            "signature": "36"
+          }
+        ]
+      }
+    }
+  }
+}

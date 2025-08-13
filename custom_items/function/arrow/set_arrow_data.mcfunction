@@ -1,0 +1,13 @@
+$data modify entity @s Motion set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).Motion
+$data modify entity @s crit set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).crit
+$data modify entity @s damage set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).damage
+$data modify entity @s pickup set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).pickup
+$data modify entity @s PierceLevel set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).piercelevel
+$data modify entity @s item set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).arrow_item
+$data modify entity @s weapon set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).arrow_weapon
+$data modify entity @s Rotation set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).Rotation
+$data modify entity @s Owner set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).arrow_owner
+$data modify entity @s Pos[1] set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).pos[1]
+#$execute store result score .test_pos const run data get storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).pos[1]
+#tellraw @p {"score":{"name":".test_pos","objective":"const"}}
+$data modify entity @s Fire set from storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).fire

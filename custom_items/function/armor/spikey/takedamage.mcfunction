@@ -1,0 +1,1 @@
+$damage @s $(damage) minecraft:cactus by @p[tag=spike_owner]

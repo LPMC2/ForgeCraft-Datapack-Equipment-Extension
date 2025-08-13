@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow",
+      "components": {
+        "minecraft:custom_model_data": {"strings":["sniping"]}
+      }
+    },
+    "title": "Meet the Sniper",
+    "description": "Forge the Sniping Bow from the reforge anvil",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:superior_guardian",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

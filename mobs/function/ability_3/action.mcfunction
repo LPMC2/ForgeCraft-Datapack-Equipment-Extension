@@ -1,0 +1,1 @@
+scoreboard players set @s ability_cd3 0

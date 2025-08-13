@@ -1,0 +1,4 @@
+$execute at @s if score .magical_power const matches ..1 run summon area_effect_cloud ~ ~ ~ {Owner:[I;$(owner1),$(owner2),$(owner3),$(owner4)],ReapplicationDelay:20,Radius:2.5f,RadiusPerTick:-0.01f,RadiusOnUse:-0.2f,Duration:100,potion_contents:{potion:"$(potion)"}}
+$execute at @s if score .magical_power const matches 2 run summon area_effect_cloud ~ ~ ~ {Owner:[I;$(owner1),$(owner2),$(owner3),$(owner4)],ReapplicationDelay:15,Radius:3.0f,RadiusPerTick:-0.01f,RadiusOnUse:-0.1f,Duration:120,potion_contents:{potion:"$(potion)"}}
+execute at @s run playsound minecraft:entity.splash_potion.break master @a ~ ~ ~ 1 1 0
+execute at @s run particle item{item:"splash_potion"} ~ ~0.1 ~ 0.2 0.2 0.2 0.1 3 normal

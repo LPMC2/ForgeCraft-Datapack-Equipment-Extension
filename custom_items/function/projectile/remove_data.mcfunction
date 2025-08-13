@@ -1,0 +1,1 @@
+$data remove storage minecraft:projectile data.$(id)

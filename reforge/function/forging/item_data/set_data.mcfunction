@@ -1,0 +1,1 @@
+tag @s remove target_item_forgecraft

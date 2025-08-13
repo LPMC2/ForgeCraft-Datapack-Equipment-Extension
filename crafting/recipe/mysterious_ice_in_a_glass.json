@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "232",
+    "313",
+    "232"
+],
+  "key": {
+    "1":  "minecraft:blue_ice"
+    ,
+    "2":  "minecraft:suspicious_stew"
+    ,
+    "3":  "minecraft:tinted_glass"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Mysterious Ice in Glass"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Glass-Cannon: "},{"bold":false,"color":"gray","italic":false,"text":"For every 4 Armor Points missing,"}],
+        {"color":"gray","italic":false,"text":"gain 1 Attack Damage. Armor Points cap at 20."},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {"reforgeid":42,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          -653804286,
+          1358184689,
+          -1200231298,
+          588249858
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5ZTBhYmEzNWQ2ODUzZWU1NGM4Njc5OWY3NTRhZTE2NjlkZDM5YTBlMmYzZDY5NzMxZjMzMWFkZWRlIn19fQ==",
+            "signature": "42"
+          }
+        ]
+      }
+    }
+  }
+}

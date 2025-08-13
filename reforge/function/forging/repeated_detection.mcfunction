@@ -1,0 +1,1 @@
+$execute if data entity @s item.components.minecraft:custom_data.forge_data[{forge_id:$(forgeid)}] run scoreboard players set .is_repeated const 1

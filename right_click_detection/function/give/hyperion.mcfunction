@@ -1,0 +1,1 @@
+give @s iron_sword[custom_data={hyperion:true},custom_name='{"color":"gold","italic":false,"text":"Hyperion"}',consumable={consume_seconds:2147483647,animation:"block",sound:"entity.generic.explode",has_consume_particles:false},max_stack_size=1] 1

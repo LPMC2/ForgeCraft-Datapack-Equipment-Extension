@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category" : "misc",
+    "pattern": [
+        "###",
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:gold_block"
+        ,
+        "S":  "minecraft:netherite_scrap"
+      
+    },
+    "result": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:max_stack_size": 16,
+        "minecraft:lore": [
+          [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Gilded: "},{"bold":false,"color":"gray","italic":false,"text":"Double the stats of the item"}],
+          {"color":"gray","italic":false,"text":"Able to reforge again!"},
+          {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
+          {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+          {"text":" "},
+          [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Gold Weapon/Tool/Armor"}],
+          {"color":"green","italic":false,"text":"Xp Level Cost: 10"}
+        ],
+        "minecraft:unbreakable": {
+          "show_in_tooltip": false
+        },
+        "damage_resistant": {"types":"#minecraft:is_fire"},
+        "minecraft:rarity": "rare",
+        "minecraft:custom_data": {"reforgeid":6,"req_xp":10},
+        "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Gold Alloy"},
+        "minecraft:tool": {
+          "rules": [
+            {
+              "blocks": "minecraft:gold_block",
+              "speed": 100,
+              "correct_for_drops": true
+            }
+          ],
+          "default_mining_speed": 0,
+          "damage_per_block": 0
+        },
+        "minecraft:profile": {
+          "id": [
+            -1861701428,
+            -676901470,
+            -1524413870,
+            768881209
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhmY2EzNDVlNGZkOWM0MjJiNzNjNGMxYzUwNTZmMzc5ZGU5MjUxMGZjOTRiNGNjOTA3ZmIyMGNlNzUwZGM5MCJ9fX0=",
+              "signature": "6"
+            }
+          ]
+        }
+      }
+    }
+}

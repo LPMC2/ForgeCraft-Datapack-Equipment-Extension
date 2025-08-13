@@ -1,0 +1,1 @@
+$xp add @s -$(remove_amt) levels

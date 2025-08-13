@@ -1,0 +1,1 @@
+$data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:$(armor),operation:"add_value",id:"$(uuid_1)",slot:"head"},{type:"armor_toughness",amount:$(armor_toughness),operation:"add_value",id:"$(uuid_2)",slot:"head"}]

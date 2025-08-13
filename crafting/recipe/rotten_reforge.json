@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121",
+    "111"
+],
+  "key": {
+    "1": "minecraft:rotten_flesh",
+    "2": "minecraft:poisonous_potato"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Flesh Chunk"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Rotten: "},{"bold":false,"color":"gray","italic":false,"text":"Increase Attack Damage by 4,"}],
+        {"color":"gray","italic":false,"text":"but decrease Attack Speed by 25%."},
+        {"color":"gray","italic":false,"text":"Also apply Weakness I for 5s to target."},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 12"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "common",
+      "minecraft:custom_data": {"reforgeid":73,"req_xp":12},
+      "minecraft:profile": {
+        "id": [
+          548689313,360662868,-1841692132,12141077
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU2ODkzMzdjZDY2YWQyOWE2MzJhNGNiMDVlZWE0MmVjOGExNDA2YzJkMTAyODQ0NzlkYTA2OTZhOWIyYjlhMSJ9fX0=",
+            "signature": "73"
+          }
+        ]
+      }
+    }
+  }
+}

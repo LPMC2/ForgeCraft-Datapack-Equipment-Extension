@@ -1,0 +1,6 @@
+{
+	"criteria": { "tick": {
+		"trigger": "minecraft:tick"
+	}},
+	"rewards": { "function": "right_click_detection:hyperion/impulse_cooldown" }
+}

@@ -1,0 +1,2 @@
+execute if score .ismobmodification const matches 1.. run return run function gamerules:ismobmodification/false
+execute unless score .ismobmodification const matches 1.. run return run function gamerules:ismobmodification/true

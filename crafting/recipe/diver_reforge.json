@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121",
+    "111"
+],
+  "key": {
+    "1": "minecraft:copper_ingot"
+    ,
+    "2":  "minecraft:tinted_glass"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Diver's Helmet"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Diver: "},{"bold":false,"color":"gray","italic":false,"text":"+5 Oxygen Bonus and +0.5 Water Movement Efficiency"}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Helmet"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {"reforgeid":50,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          -48276890,-43365208,-1935328545,-1158400665
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5Y2JlOWI5NTcxZjMyZGI4YTAxZDQ2ZTg4Yzc3ZjNjYzQ2OGZmNzM5MDU4ZjIwZjcwOWQ1NjRjMGNiNzVhZCJ9fX0=",
+            "signature": "50"
+          }
+        ]
+      }
+    }
+  }
+}

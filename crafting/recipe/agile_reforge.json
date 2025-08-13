@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "111",
+    "111"
+],
+  "key": {
+    "1": "minecraft:sugar_cane"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Condensed Sugar Cane"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Agile: "},{"bold":false,"color":"gray","italic":false,"text":" "}],
+        {"color":"gray","italic":false,"text":"Melee: Increase Attack Speed by 30%"},
+        {"color":"gray","italic":false,"text":"Armor: Increase Movement Speed by 5%"},
+        {"color":"gray","italic":false,"text":"Tool: Increase Block Break Speed by 25%"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor/Melee/Tool"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "common",
+      "minecraft:custom_data": {"reforgeid":72,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          961227411,-1013104573,-2019949532,910083278
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ2Y2RkZDMzODcyNDA4NTlhMjRkMGM0MWNiMmE0ZDY3NTYyYzNjNjVhMTlmMTVjNGRmODhmNmJmYjBjYjNlMCJ9fX0=",
+            "signature": "72"
+          }
+        ]
+      }
+    }
+  }
+}

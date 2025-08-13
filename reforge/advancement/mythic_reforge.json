@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sentry_armor_trim_smithing_template"
+    },
+    "title": "Magical Trim",
+    "description": "Craft the Magic Core",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:dashing_reforge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "crafting:magic_core"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

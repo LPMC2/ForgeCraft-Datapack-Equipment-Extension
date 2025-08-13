@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 16,
+                "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Eye of the Guardian"},
+                "minecraft:lore": [
+                  [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Guardian: "},{"bold":false,"color":"gray","italic":false,"text":"Fire a laser beam of bubble instead of arrow. Damage dealt is based on a calculation (Below)."}],
+                  {"color":"gray","italic":false,"text":"While in water, deals double the damage. Doesn’t work on fireworks."},
+                  {"color":"dark_gray","italic":false,"text":"Damage calculation: (Arrow Damage + Power Enchantment Level + Player Damage) *1.5(Crit) * 2(In Water)"},
+                  {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+                  {"text":" "},
+                  [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
+                  {"color":"green","italic":false,"text":"Xp Level Cost: 30"}
+                ],
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "damage_resistant": {"types":"#minecraft:is_fire"},
+                "minecraft:rarity": "epic",
+                "minecraft:custom_data": {"reforgeid":51,"req_xp":30},
+                "minecraft:profile": {
+                  "id": [
+                    416503305,
+                    -1795142808,
+                    -1624648862,
+                    998649286
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjM3YjhhMzk4MzdiYzNkNThmMDljOGM2ZTUzOTYyZDMzZjlmYTBiNjUzOThhNzc5MzUzYWRlMWUxNDcxM2VmZiJ9fX0=",
+                      "signature": "51"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wet_sponge",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tide_armor_trim_smithing_template",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 10
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

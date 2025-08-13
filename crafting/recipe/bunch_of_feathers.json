@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "iii",
+    "iai",
+    "iii"
+],
+  "key": {
+    "i":  "minecraft:feather"
+    ,
+    "a": "minecraft:slime_ball"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Bunch of Feathers"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Light: "}],
+        {"bold":false,"color":"gray","italic":false,"text":"Armor: -30% Gravity & Fall Damage Multiplier, +5 Safe Fall Distance"},
+        {"bold":false,"color":"gray","italic":false,"text":"Ranged: Crit Arrow no longer has Gravity (Max 10s)"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor/Ranged"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {"reforgeid":49,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          -341792018,
+          207965951,
+          -1986684775,
+          -458026877
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmI3ZWFlZjMyOWRkOTM0ZTY3Y2YzZDQ4MTNjOWI4OWJmZmQ3OTRjZmE1ZWY4YjRlMTU4ZjI1YmQ1ZGQzZTM5MyJ9fX0=",
+            "signature": "49"
+          }
+        ]
+      }
+    }
+  }
+}

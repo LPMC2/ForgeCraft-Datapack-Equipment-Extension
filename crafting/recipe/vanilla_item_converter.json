@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category" : "misc",
+    "pattern": [
+        "###",
+        "#I#",
+        "###"
+    ],
+    "key": {
+        "#":  ["minecraft:cobblestone","minecraft:cobbled_deepslate","minecraft:stone","minecraft:deepslate","minecraft:blackstone"]
+        ,
+        "I":  "minecraft:crafting_table"
+        
+    },
+    "result": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:max_stack_size": 16,
+        "minecraft:custom_name": {"color":"white","italic":false,"text":"Forging Converter"},
+        "minecraft:lore": [
+          {"color":"gray","italic":false,"text":"⚒ Convert the item to be able to forge with correct Reforges."},
+          {"color":"gray","italic":false,"text":"For Modded items, it will automatically determine its type."},
+          {"color":"gray","italic":false,"text":"However, the stats will be RANDOMIZED based on the type."},
+          {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+          {"text":" "},
+          [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Base Item"}],
+          {"color":"green","italic":false,"text":"Xp Level Cost: 0"}
+        ],
+        "minecraft:unbreakable": {
+          "show_in_tooltip": false
+        },
+        "damage_resistant": {"types":"#minecraft:is_fire"},
+        "minecraft:rarity": "uncommon",
+        "minecraft:custom_data": {"reforgeid":0,"req_xp":0},
+        "minecraft:tool": {
+          "rules": [
+            {
+              "blocks": "#minecraft:dirt",
+              "speed": 0.1,
+              "correct_for_drops": true
+            }
+          ],
+          "default_mining_speed": 0,
+          "damage_per_block": 0
+        },
+        "minecraft:profile": {
+          "id": [
+            827352338,1875659149,-1127232860,1651510631
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBhNDMzNGY2YTYxZTQwYzBjNjNkZWI2NjVmYTdiNTgxZTZlYjI1OWY3YTMyMDdjZWQ3YTFmZjhiZGM4YTlmOSJ9fX0=",
+              "signature": "0"
+            }
+          ],
+          "id": [
+            632574644,1532444974,1500209265,1310597481
+          ]
+        }
+      }
+    }
+}

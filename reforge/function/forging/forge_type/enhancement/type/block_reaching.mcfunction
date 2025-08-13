@@ -1,0 +1,2 @@
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:block_interaction_range",operation:"add_value",slot:"$(slot)"}
+data modify storage minecraft:attribute new.attribute_amount set value 0.1

@@ -1,0 +1,3 @@
+execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. run execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run function reforge:forging/getvanilladata with storage minecraft:reforge uuid
+execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. run function reforge:forging/vanilla_forge_auto with storage minecraft:reforge vanilla 
+execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. run function reforge:forging/forge_item_auto

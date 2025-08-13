@@ -1,0 +1,2 @@
+$attribute @s minecraft:attack_damage modifier add inferno_boost $(digit).$(amount) add_multiplied_total
+$attribute @s minecraft:attack_speed modifier add inferno_boost $(digit).$(amount) add_multiplied_total

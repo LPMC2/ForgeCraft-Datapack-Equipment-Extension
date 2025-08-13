@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "121",
+    "2n2",
+    "121"
+],
+  "key": {
+    "1":  "minecraft:breeze_rod"
+    ,
+    "2":  "minecraft:redstone_block"
+    ,
+    "n":  "minecraft:grindstone"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Modified Mini-Grindstone"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Rapid: "},{"bold":false,"color":"gray","italic":false,"text":"Fire an arrow will also fire 4 additional arrows! 1 arrow per 0.15s. Doesn’t support Fireworks."}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 15"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {"reforgeid":17,"req_xp":15},
+      "minecraft:profile": {
+        "id": [
+          829741451,
+          939412858,
+          -1128475019,
+          316898531
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5OWJmYTYxZmU1NTJmMWU2NjM2YjAzZmJlNDBmNGU0NzBjM2IzY2IxNGY3MGU5MDEyODEzNzkwZWFkNTY4ZiJ9fX0=",
+            "signature": "17"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:block_break_speed",operation:"add_multiplied_total",slot:"$(slot)"}
+data modify storage minecraft:attribute new.attribute_amount set value 0.1

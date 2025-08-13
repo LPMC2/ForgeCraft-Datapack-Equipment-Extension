@@ -1,0 +1,1 @@
+$execute at @s run bossbar set boss_$(id) players @a[distance..100]

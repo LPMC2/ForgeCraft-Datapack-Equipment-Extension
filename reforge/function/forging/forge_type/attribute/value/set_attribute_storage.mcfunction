@@ -1,0 +1,1 @@
+$data modify storage minecraft:attribute new.attribute set value {type:"$(attribute_actual_type)",operation:"$(attribute_operation)",slot:"$(attribute_slot)"}

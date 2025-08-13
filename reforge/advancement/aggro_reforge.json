@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:vindicator_spawn_egg"
+    },
+    "title": "The Civil War",
+    "description": "Hit an entity with an arrow, using the Provoker Reforge Ranged Weapon",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:ender_reforge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

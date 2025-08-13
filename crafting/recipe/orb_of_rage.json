@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "i1i",
+    "i2i",
+    "iai"
+],
+  "key": {
+    "i":  "minecraft:amethyst_shard"
+    ,
+    "a":  "minecraft:dragon_breath",
+    "1":  "minecraft:ominous_bottle",
+    "2":  "minecraft:crying_obsidian"
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Orb of Rage"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Raging: "},{"bold":false,"color":"gray","italic":false,"text":"Increase action & movement speed for every successful item use. Reset after 5-10s."}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee/Tool"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 15"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": {"reforgeid":22,"req_xp":15},
+      "minecraft:profile": {
+        "id": [
+          1054939182,-1952431715,-1199550706,-838206201
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY5NjNmNzllNWYwMTUzNmQwNGJlMThjOTkzMzBjZGFjZGVlOTFiMzIzMmJhZWJlNThiYWNhMDVmNDY0MGQxYSJ9fX0=",
+            "signature": "22"
+          }
+        ]
+      }
+    }
+  }
+}

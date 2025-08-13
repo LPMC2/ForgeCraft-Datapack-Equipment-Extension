@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "131",
+    "323",
+    "131"
+],
+  "key": {
+    "1":  "minecraft:breeze_rod"
+    ,
+    "2":  "minecraft:nether_star"
+    ,
+    "3":  "minecraft:sugar_cane"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Speedy Star"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Dashing: "},{"bold":false,"color":"gray","italic":false,"text":"Sprint to gain movement speed, up to +50% Per piece."}],
+        {"color":"gray","italic":false,"text":"when having at least 50% speed & hitting a mob, stuns and deals up to +5 damage per piece of armor,"},
+        {"color":"gray","italic":false,"text":"but also stuns the user. Reset the dash from not sprinting for 0.5s or hit any mob."},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 20"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": {"reforgeid":44,"req_xp":20},
+      "minecraft:profile": {
+        "id": [
+          -256966298,
+          772820181,
+          -1913608892,
+          1970941864
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q2MWMzOGE1MmVjYjAxMjk5ZTFkNmZmMjM0NTFkYmMzMjE0NjdhZDJiZGM3YzZiMjU2ZGVkNzE1ZTVjMWQifX19",
+            "signature": "44"
+          }
+        ]
+      }
+    }
+  }
+}

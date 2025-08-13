@@ -1,0 +1,9 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:consume_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": {"fireball_dust":true}
+		}}}
+	}},
+	"rewards": { "function": "tutorial:use_fireball_dust" }
+}

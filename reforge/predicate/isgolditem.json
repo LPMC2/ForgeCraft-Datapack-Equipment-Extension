@@ -1,0 +1,39 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "container.*": {
+          "items": [
+            "minecraft:golden_sword",
+            "minecraft:golden_axe",
+            "minecraft:golden_helmet",
+            "minecraft:golden_chestplate",
+            "minecraft:golden_leggings",
+            "minecraft:golden_boots",
+            "minecraft:golden_pickaxe",
+            "minecraft:golden_shovel",
+            "minecraft:golden_hoe",
+            "minecraft:golden_horse_armor",
+            "minecraft:gold_block",
+            "minecraft:gold_ingot",
+            "minecraft:gold_nugget",
+            "minecraft:golden_apple",
+            "minecraft:golden_carrot",
+            "minecraft:clock",
+            "minecraft:enchanted_golden_apple",
+            "minecraft:raw_gold",
+            "minecraft:gold_ore",
+            "minecraft:deepslate_gold_ore",
+            "minecraft:nether_gold_ore",
+            "minecraft:raw_gold_block",
+            "minecraft:glistering_melon_slice",
+            "minecraft:light_weighted_pressure_plate",
+            "minecraft:powered_rail",
+            "minecraft:bell"
+          ]
+        }
+      }
+    }
+  }
+  

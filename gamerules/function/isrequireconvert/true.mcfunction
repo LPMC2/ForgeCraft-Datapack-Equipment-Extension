@@ -1,0 +1,2 @@
+scoreboard players set .isrequireconvert const 1
+tellraw @a [{"bold":true,"color":"gold","italic":false,"text":"> ForgeCraft:"},{"bold":false,"color":"white","italic":false,"text":"\nGamerule IsRequireConvert is set to: "},{"bold":true,"color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Vanilla Items is required to converted (By the Forging Converter) to reforge.","color":"red","bold":false,"italic":false}]},"italic":false,"text":"TRUE"}]

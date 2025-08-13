@@ -1,0 +1,2 @@
+scoreboard players set .ismobmodification const 1
+tellraw @a [{"bold":true,"color":"gold","italic":false,"text":"> ForgeCraft:"},{"bold":false,"color":"white","italic":false,"text":"\nGamerule IsMobModification is set to: "},{"bold":true,"color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Mobs will be modified by custom conditions, including bosses. Be afraid!","color":"red","bold":false,"italic":false}]},"italic":false,"text":"TRUE"}]

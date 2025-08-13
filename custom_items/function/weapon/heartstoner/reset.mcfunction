@@ -1,0 +1,1 @@
+attribute @s minecraft:attack_damage modifier remove heartstoner_boost

@@ -1,0 +1,1 @@
+$attribute @s minecraft:attack_damage modifier add absorpiton_sw $(value) add_value

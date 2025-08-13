@@ -1,0 +1,1 @@
+$data modify entity @s text set value [{"bold":false,"color":"#FF0000","italic":false,"text":"❤"},{"bold":true,"color":"white","italic":false,"text":" "},{"bold":true,"color":"red","italic":false,"text":"$(currenthealth)/$(inithealth)"},{"bold":true,"color":"white","italic":false,"text":""}]

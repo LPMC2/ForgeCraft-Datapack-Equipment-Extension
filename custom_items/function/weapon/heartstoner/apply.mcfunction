@@ -1,0 +1,1 @@
+attribute @s minecraft:attack_damage modifier add heartstoner_boost 1 add_multiplied_total

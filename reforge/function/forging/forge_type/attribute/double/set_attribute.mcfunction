@@ -1,0 +1,1 @@
+$data modify entity @s Item.components.minecraft:attribute_modifiers append from storage minecraft:attribute list.$(index)

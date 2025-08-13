@@ -1,0 +1,1 @@
+$data modify storage minecraft:reforge data.player_$(player).$(id) set value 1

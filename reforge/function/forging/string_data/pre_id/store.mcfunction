@@ -1,0 +1,2 @@
+execute store result storage minecraft:string storage.index int 1 run scoreboard players get .string_index const
+execute store result storage minecraft:string storage.index_offset int 1 run scoreboard players get .string_index_offset const

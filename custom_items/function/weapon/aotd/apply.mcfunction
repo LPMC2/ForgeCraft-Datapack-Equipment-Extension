@@ -1,0 +1,2 @@
+$attribute @s minecraft:attack_damage modifier add aotd_damage $(damage) add_value
+#$tellraw @s [{"bold":false,"color":"white","italic":false,"text":">> You gained $(damage) Attack Damage from "},{"bold":true,"color":"aqua","hoverEvent":{"action":"show_text","value":[{"text":"Damage is calculated on the following:\n(Armor + Armor Toughness/2) / 2","color":"white","italic":false}]},"italic":false,"text":"Aspect of the Defense"},{"bold":false,"color":"white","italic":false,"text":" bonus! <<"}]

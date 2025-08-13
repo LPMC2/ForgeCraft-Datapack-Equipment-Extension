@@ -1,0 +1,2 @@
+execute at @s[tag=forgecraft_leaping_effect] unless block ~ ~-0.1 ~ minecraft:air run return run function custom_items:armor/leaping/reset
+execute at @s[tag=!forgecraft_leaping_effect] if block ~ ~-0.1 ~ minecraft:air run function custom_items:armor/leaping/apply

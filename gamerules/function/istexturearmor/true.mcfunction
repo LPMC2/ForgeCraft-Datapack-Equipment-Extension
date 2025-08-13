@@ -1,0 +1,2 @@
+scoreboard players set .istexturearmor const 1
+tellraw @a [{"bold":true,"color":"gold","italic":false,"text":"> ForgeCraft:"},{"bold":false,"color":"white","italic":false,"text":"\nGamerule IsTextureArmor is set to: "},{"bold":true,"color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Forged Armor Items will provide armor texture. The forged item cannot be reverted from this!","color":"red","bold":false,"italic":false}]},"italic":false,"text":"TRUE"}]

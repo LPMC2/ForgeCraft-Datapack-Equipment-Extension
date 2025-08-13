@@ -1,0 +1,1 @@
+$attribute @s minecraft:armor modifier add fortified_effect 0.$(effect) add_multiplied_total

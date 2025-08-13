@@ -1,0 +1,1 @@
+$data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1,operation:"add_value",id:"$(uuid_1)",slot:"mainhand"}]

@@ -1,0 +1,2 @@
+execute if score .isrequireconvert const matches 1.. run return run function gamerules:isrequireconvert/false
+execute unless score .isrequireconvert const matches 1.. run return run function gamerules:isrequireconvert/true

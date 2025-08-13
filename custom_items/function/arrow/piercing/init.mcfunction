@@ -1,0 +1,1 @@
+data modify entity @s PierceLevel set from entity @s weapon.components.minecraft:custom_data.piercing

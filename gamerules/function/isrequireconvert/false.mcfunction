@@ -1,0 +1,2 @@
+scoreboard players set .isrequireconvert const 0
+tellraw @a [{"bold":true,"color":"gold","italic":false,"text":"> ForgeCraft:"},{"bold":false,"color":"white","italic":false,"text":"\nGamerule IsRequireConvert is set to: "},{"bold":true,"color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Vanilla Items will be automatically converted and forged, if the type is available for the forge item.","color":"red","bold":false,"italic":false}]},"italic":false,"text":"FALSE"}]

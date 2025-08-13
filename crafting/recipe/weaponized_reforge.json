@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "131",
+    "121",
+    "111"
+],
+  "key": {
+    "1": "minecraft:stone"
+    ,
+    "2":  "minecraft:iron_block",
+    "3": "minecraft:stonecutter"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"The 'Stonecutter'"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Weaponized: "},{"bold":false,"color":"gray","italic":false,"text":"Convert the item into a weapon."}],
+        {"color":"gray","italic":false,"text":"gain 5 Attack Damage but -50% Attack Speed. Able to reforge again."},
+        {"color":"red","italic":false,"text":"Warning: The Item will have durability, even if it doesn't have one! (Default: 100)"},
+        {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item, Except Melee"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 15"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "common",
+      "minecraft:custom_data": {"reforgeid":40,"req_xp":15},
+      "minecraft:profile": {
+        "id": [
+          -1885917952,
+          -1540273202,
+          -1818323898,
+          858311246
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIxYmJkNTFkZTczYjc3Njc4OTU5ZmY5N2VkMWZjZTE5MjZjYTM0OTgxZmQ4MTI4ZjU5MGJjNGExN2U3ODg1ZCJ9fX0=",
+            "signature": "40"
+          }
+        ]
+      }
+    }
+  }
+}

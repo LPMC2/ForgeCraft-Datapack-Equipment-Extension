@@ -1,0 +1,1 @@
+$execute as @e[type=item,nbt={Age:0s},distance=..$(block_reach)] at @s unless data entity @s Owner unless data entity @s Item.components.minecraft:custom_data.global_id run function custom_items:tool/cursed/summon

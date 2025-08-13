@@ -1,0 +1,1 @@
+$summon area_effect_cloud ~ ~ ~ {ReapplicationDelay:1,Radius:2f,RadiusOnUse:-10f,Duration:10,potion_contents:{potion:"$(potion)"}}

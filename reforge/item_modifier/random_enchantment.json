@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": [
+    "minecraft:aqua_affinity",
+    "minecraft:bane_of_arthropods",
+    "minecraft:blast_protection",
+    "minecraft:breach",
+    "minecraft:channeling",
+    "minecraft:density",
+    "minecraft:depth_strider",
+    "minecraft:efficiency",
+    "minecraft:feather_falling",
+    "minecraft:fire_aspect"
+  ],
+  "only_compatible": false,
+  "conditions": []
+}

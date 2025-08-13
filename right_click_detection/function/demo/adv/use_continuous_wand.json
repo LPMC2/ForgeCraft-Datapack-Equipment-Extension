@@ -1,0 +1,9 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": {"flame_wand":true}
+		}}}
+	}},
+	"rewards": { "function": "tutorial:use_continuous_wand" }
+}

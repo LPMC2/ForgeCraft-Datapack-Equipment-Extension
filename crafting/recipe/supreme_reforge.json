@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "232",
+    "212",
+    "222"
+],
+  "key": {
+    "1": "minecraft:crafting_table"
+    ,
+    "2":  "minecraft:netherite_scrap",
+    "3": "minecraft:netherite_ingot"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Supreme Forging Converter"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Supreme: "},{"bold":false,"color":"gray","italic":false,"text":"Allows the item to Forge Double Main Reforges."}],
+        {"color":"red","italic":false,"text":"Warning: Some reforges may not compatible with each other, and you can't forge the same reforge twice"},
+        {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item, Except Other"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 50"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": {"reforgeid":19,"req_xp":50},
+      "minecraft:profile": {
+        "id": [
+-1475721597,1387938968,-1974062068,1217017185
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJiN2U2ZDJlY2ZlMWQ1OGU2NjgyMzhiYmE2ZTZlZjMwODYwMTllNzY3MmIwY2JlZTgyYzIzYTg2Zjg1ZmU3ZSJ9fX0=",
+            "signature": "19"
+          }
+        ]
+      }
+    }
+  }
+}

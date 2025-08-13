@@ -1,0 +1,1 @@
+data modify entity @s text set value [{"color":"green","italic":false,"text":""}]

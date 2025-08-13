@@ -1,0 +1,2 @@
+#$say data modify entity @s Item.components.minecraft:attribute_modifiers.modifiers append value {type:"$(attribute_actual_type)",operation:"$(attribute_operation)",slot:"$(attribute_slot)",id:"$(attribute_id)",amount:$(attribute_amount)}
+$data modify entity @s Item.components.minecraft:attribute_modifiers append value {type:"$(attribute_actual_type)",operation:"$(attribute_operation)",slot:"$(attribute_slot)",id:"$(attribute_id)",amount:$(attribute_amount)}

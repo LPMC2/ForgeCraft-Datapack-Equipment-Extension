@@ -1,0 +1,5 @@
+#$tellraw @p {"click_event":{"action":"copy_to_clipboard","value":"$(attribute)"},"text":"copy"}
+$execute if data entity @s Item.components.minecraft:attribute_modifiers[$(attribute)] run data modify storage minecraft:attribute new.id set from entity @s Item.components.minecraft:attribute_modifiers[$(attribute)].id
+$execute if data entity @s Item.components.minecraft:attribute_modifiers[$(attribute)] run data modify storage minecraft:attribute new.type set from entity @s Item.components.minecraft:attribute_modifiers[$(attribute)].operation
+$execute store result score .attribute_success const if data entity @s Item.components.minecraft:attribute_modifiers[$(attribute)]
+$data modify storage minecraft:attribute test.attribute set from entity @s Item.components.minecraft:attribute_modifiers[$(attribute)]

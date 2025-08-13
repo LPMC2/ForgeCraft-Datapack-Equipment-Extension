@@ -1,0 +1,14 @@
+$execute rotated as @s positioned ^ ^ ^1 if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^ ^ ^1 if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+execute rotated as @s positioned ^ ^ ^1 if score .type const matches 3 if block ~ ~ ~ #minecraft:crops unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+execute rotated as @s positioned ^ ^ ^1 if score .type const matches 3 if block ~ ~ ~ #minecraft:crops unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+$execute rotated as @s positioned ^ ^1 ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^ ^1 ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+$execute rotated as @s positioned ^ ^-1 ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^ ^-1 ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+$execute rotated as @s positioned ^ ^ ^-1 if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^ ^ ^-1 if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+$execute rotated as @s positioned ^1 ^ ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^1 ^ ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1
+$execute rotated as @s positioned ^-1 ^ ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run summon marker ~ ~ ~ {NoGravity:1b,Tags:["forgecraft","chaining","reforge_ability","init"],data:{chaining:1}}
+$execute rotated as @s positioned ^-1 ^ ^ if block ~ ~ ~ #minecraft:mineable/$(type) unless score .chainable const matches 1.. run scoreboard players set .chainable const 1

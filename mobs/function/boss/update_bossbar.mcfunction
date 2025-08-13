@@ -1,0 +1,1 @@
+$bossbar set boss_$(id) value $(value)

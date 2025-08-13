@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121",
+    "111"
+],
+  "key": {
+    "1":  "minecraft:iron_ingot"
+    ,
+    "2":"minecraft:elytra"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Reinforced Clipped Wings"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Armorized: "},{"bold":false,"color":"gray","italic":false,"text":"+6 Armor, +5 Armor Toughness, but -50% Item Durability"}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Elytra"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 1"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {"reforgeid":35,"req_xp":1},
+      "minecraft:profile": {
+        "id": [
+          745838821,
+          179980724,
+          -1767950945,
+          -902945853
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVlMzI2MDYyY2RjOTQ5Yjg4MzAyN2Y5YTM0YTc3ZGIzZTQyOTc2YjIyNGQ5MzY3MzljYjBhYmQ3NTEzNjhkNyJ9fX0=",
+            "signature": "35"
+          }
+        ]
+      }
+    }
+  }
+}

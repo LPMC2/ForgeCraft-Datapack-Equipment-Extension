@@ -1,0 +1,60 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category" : "misc",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#":  "minecraft:netherite_scrap"
+        
+    },
+    "result": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:max_stack_size": 16,
+        "minecraft:lore": [
+          [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Reinforced: "},{"bold":false,"color":"gray","italic":false,"text":"Double Armor Points, and + Armor Toughness by 150%"}],
+          {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+          {"text":" "},
+          [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+        ],
+        "minecraft:unbreakable": {
+          "show_in_tooltip": false
+        },
+        "damage_resistant": {"types":"#minecraft:is_fire"},
+        "minecraft:rarity": "uncommon",
+        "minecraft:custom_data": {"reforgeid":5,"req_xp":5},
+        "minecraft:custom_name": {"color":"white","italic":false,"text":"Netherite Scrap Pile"},
+        "minecraft:tool": {
+          "rules": [
+            {
+              "blocks": "minecraft:chest",
+              "speed": 0.1,
+              "correct_for_drops": true
+            }
+          ],
+          "default_mining_speed": 0,
+          "damage_per_block": 0
+        },
+        "minecraft:profile": {
+          "id": [
+            -620539537,
+            3687325,
+            -1619429703,
+            -1871620920
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlkYmE2Y2JlNzZjZDcyYTc4MmMxY2QyOWE0MmE1N2Y0MmVhM2QwYmFiZjU4ZDQzNWZhY2M5MTg1OGFhMjRmOCJ9fX0=",
+              "signature": "5"
+            }
+          ]
+        }
+      }
+    }
+}

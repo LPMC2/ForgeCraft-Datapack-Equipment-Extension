@@ -1,0 +1,1 @@
+execute at @s if entity @e[type=#entity_hit_matching:targets,distance=..2,sort=nearest,limit=1] run function custom_items:arrow/magical/action

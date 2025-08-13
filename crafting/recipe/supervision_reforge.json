@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "232",
+    " 1 "
+],
+  "key": {
+    "1":  "minecraft:golden_carrot"
+    ,
+    "2":  "minecraft:spyglass"
+    ,
+    "3":  "minecraft:iron_helmet"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Night Vision Goggles"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Super-Vision: "},{"bold":false,"color":"gray","italic":false,"text":"Permanently Gain Night-Vision Effect and removes all blinding effects, but decrease durability by half"}],
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Helmet"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {"reforgeid":31,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          1477806198,-1440136893,-1742089835,-237547933
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBmMDA3NjFiY2VlNzg4ODAwNmY4OGY4YzJkNDVlZjQxZTcwNGQ2NGQ0Yzc2ZjA1MTNkOTM1MjM1ZGY4MTU5OCJ9fX0=",
+            "signature": "31"
+          }
+        ]
+      }
+    }
+  }
+}

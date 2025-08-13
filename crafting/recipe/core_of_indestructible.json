@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category" : "misc",
+    "pattern": [
+        "III",
+        "I#I",
+        "III"
+    ],
+    "key": {
+        "#":  "minecraft:netherite_ingot"
+        ,
+        "I": "minecraft:ancient_debris"
+        
+    },
+    "result": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:max_stack_size": 16,
+        "minecraft:lore": [
+          [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Unbreakable: "},{"bold":false,"color":"gray","italic":false,"text":"pretty much self-explanatory..."}],
+          {"color":"gray","italic":false,"text":"Able to reforge again!"},
+          {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
+          {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+          {"text":" "},
+          [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Items"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+        ],
+        "minecraft:unbreakable": {
+          "show_in_tooltip": false
+        },
+        "damage_resistant": {"types":"#minecraft:is_fire"},
+        "minecraft:rarity": "epic",
+        "minecraft:custom_data": {"reforgeid":7,"req_xp":5},
+        "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Core of Indestructible"},
+        "minecraft:tool": {
+          "rules": [
+            {
+              "blocks": "minecraft:netherite_block",
+              "speed": 10,
+              "correct_for_drops": true
+            }
+          ],
+          "default_mining_speed": 0,
+          "damage_per_block": 0
+        },
+        "minecraft:profile": {
+          "id": [
+            -100552503,
+            1734034429,
+            -1816856976,
+            855364271
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU5NTI5M2FjYmNkNGY1NWZhZjU5NDdiZmM1MTM1MDM4YjI3NWE3YWI4MTA4NzM0MWI5ZWM2ZTQ1M2U4MzkifX19",
+              "signature": "7"
+            }
+          ]
+        }
+      }
+    }
+}

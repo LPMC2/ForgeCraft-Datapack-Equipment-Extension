@@ -1,0 +1,10 @@
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~
+execute as @s run summon guardian ~ ~ ~

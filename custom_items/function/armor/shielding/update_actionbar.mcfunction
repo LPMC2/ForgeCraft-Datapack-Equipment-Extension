@@ -1,0 +1,1 @@
+$title @s actionbar [{"color":"aqua","bold":true,"text":""},{"color":"gold","italic":false,"bold":false,"text":"Blocking Charges: "},$(text)]

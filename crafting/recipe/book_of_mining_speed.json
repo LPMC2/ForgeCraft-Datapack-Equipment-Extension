@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "212",
+    "232",
+    "222"
+  ],
+  "key": {
+    "1": [
+      "minecraft:resin_brick"
+    ],
+    "2": [
+      "minecraft:iron_ore",
+      "minecraft:deepslate_iron_ore"
+    ],
+    "3": [
+      "minecraft:book"
+    ]
+  },
+  "result": {
+    "id": "minecraft:book",
+    "components": {
+      "enchantment_glint_override":true,
+      "minecraft:custom_data": {
+        "reforgeid": 75,
+        "mod_type": 14,
+        "req_xp": 5
+      },
+      "minecraft:item_name": {"color":"aqua","italic":false,"text":"Book of Mining"},
+      "minecraft:rarity": "rare",
+      "minecraft:lore": [
+        {"color":"gray","italic":false,"text":"⚒ +10% Block Break Speed to the item"},
+        {"color":"dark_gray","italic":false,"text":"Total Maximum Enhancement: 10"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ]
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

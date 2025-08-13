@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bib",
+    "iai",
+    "bib"
+],
+  "key": {
+    "i":  "minecraft:obsidian"
+    ,
+    "a":  "minecraft:nether_star",
+    "b": "minecraft:dragon_breath"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Dark Matter Core"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Rampaging: "},{"bold":false,"color":"gray","italic":false,"text":"+1 attack damage for every successful item use. Max 20 Hits. Reset after 1s."}],
+        {"color":"gray","italic":false,"text":"Increase Attack Speed by 500%."},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 35"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": {"reforgeid":66,"req_xp":35},
+      "minecraft:profile": {
+        "id": [
+          -1089212003,1212826785,-1484138629,-404192881
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg4MTMwOTI1NmEwNjQxMzVjMDlkNDhiNzM4ODgxYzcwMmU5Y2RjMTMwNjJkYzk5MjdjZWM0ZWM0ZmU1ZWQ3YiJ9fX0=",
+            "signature": "66"
+          }
+        ]
+      }
+    }
+  }
+}

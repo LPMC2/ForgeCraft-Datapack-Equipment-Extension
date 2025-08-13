@@ -1,0 +1,1 @@
+execute as @a[tag=swarming] at @s run function custom_items:weapon/swarming/calculate

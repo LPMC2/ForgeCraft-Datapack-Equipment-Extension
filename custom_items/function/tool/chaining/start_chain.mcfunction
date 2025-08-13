@@ -1,0 +1,1 @@
+execute as @e[tag=forgecraft,tag=chaining,type=marker,tag=!init] at @s align xyz positioned ~0.5 ~0.5 ~0.5 rotated as @p run function custom_items:tool/chaining/chain_loop

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_helmet",
+      "components": {
+        "minecraft:custom_model_data": {"strings":["warrior"]}
+      }
+    },
+    "title": "True Warrior",
+    "description": "Equip Full Set Armor with Warrior Reforge",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:full_set_reforge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

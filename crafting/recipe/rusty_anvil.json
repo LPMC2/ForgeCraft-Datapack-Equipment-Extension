@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " i ",
+    "ini",
+    " a "
+],
+  "key": {
+    "n":  "minecraft:oxidized_copper"
+    ,
+    "i":  "minecraft:iron_ingot"
+    ,
+    "a":  "minecraft:anvil"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Ancient Anvil"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Double-Shot: "},{"bold":false,"color":"gray","italic":false,"text":"Fire an arrow will also fire another arrow on top"}],
+        {"color":"dark_gray","italic":false,"text":"Doesn't work on fireworks"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {"reforgeid":13,"req_xp":5},
+      "minecraft:profile": {
+        "id": [
+          -506380147,
+          -27178726,
+          -1741365358,
+          1762416482
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY4YWI4Y2Y1OTRkYTU1ZjkwZjU5M2JkYzBiNDFlMDU5MjVkNzVkYWEzZWU3ZjFiNDljMjQyMWQyYmRlYWQwIn19fQ==",
+            "signature": "13"
+          }
+        ]
+      }
+    }
+  }
+}

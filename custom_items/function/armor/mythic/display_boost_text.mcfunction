@@ -1,0 +1,1 @@
+$tellraw @s [{"bold":true,"color":"light_purple","italic":false,"text":"Mythic Bonus - $(type): "},{"bold":false,"color":"gold","italic":false,"text":"\n$(text)"}]

@@ -1,0 +1,9 @@
+scoreboard players set @s projectile_damage 20
+scoreboard players set @s projectile_speed_digit 1
+scoreboard players set @s projectile_speed_demical 0
+scoreboard players set @s projectile_contact_range_digit 1
+scoreboard players set @s projectile_contact_range_demical 8
+scoreboard players set @s projectile_duration 200
+scoreboard players set @s projectile_aoe 3
+scoreboard players set @s projectile_ispiercing 0
+scoreboard players set @s projectile_type 1

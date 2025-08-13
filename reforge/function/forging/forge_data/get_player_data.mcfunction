@@ -1,0 +1,1 @@
+$execute store result score .reforge_length const run data get storage minecraft:reforge data.player_$(player)

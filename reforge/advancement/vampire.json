@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "id": [
+            1661659996,
+            -1796389195,
+            -1499893873,
+            852265311
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWIwYzJkYjQyZTkwZjgzZmFlNjU1MWM5NmU4MzY2OTIxMWE3N2MyYzE1NWM1NGQxNTIzYWYzMDc5Zjk1NjVlZCJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "title": "The Vampire",
+    "description": "Spawn a vampire zombie\nHint: a dimension you won't see it spawn in.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "reforge:forging_beginning",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

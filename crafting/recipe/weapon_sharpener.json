@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category" : "misc",
+    "pattern": [
+        "2#2",
+        "#I#",
+        "2#2"
+    ],
+    "key": {
+        "#":  "minecraft:obsidian"
+        ,
+        "I":  "minecraft:iron_ingot",
+        "2":  "minecraft:smooth_stone"
+        
+    },
+    "result": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:max_stack_size": 16,
+          "minecraft:custom_name": {"color":"white","italic":false,"text":"Weapon Sharpener"},
+          "minecraft:lore": [
+            [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Sharp:"},{"bold":false,"color":"gray","italic":false,"text":" Increase attack damage by 50%,"}],
+            {"color":"gray","italic":false,"text":"and increase attack range by 10%"},
+            {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+            {"text":" "},
+            [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: 15"}
+          ],
+          "minecraft:unbreakable": {
+            "show_in_tooltip": false
+          },
+          "damage_resistant": {"types":"#minecraft:is_fire"},
+          "minecraft:rarity": "uncommon",
+          "minecraft:custom_data": {"reforgeid":4,"req_xp":15},
+          "minecraft:tool": {
+            "rules": [
+              {
+                "blocks": "#minecraft:dirt",
+                "speed": 0.1,
+                "correct_for_drops": true
+              }
+            ],
+            "default_mining_speed": 0,
+            "damage_per_block": 0
+          },
+          "minecraft:profile": {
+            "id": [
+              1823667272,
+              -1532738009,
+              -1077633678,
+              1880044442
+            ],
+            "properties": [
+              {
+                "name": "textures",
+                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q5NjNiZTUzYmRkYzIyYmJjZmJhOGYyOTE5NDJkMmY2NzJiZDM4M2U2ZTczM2I5NDllOWJhNzA4YTc3NzRjOCJ9fX0=",
+                "signature": "4"
+              }
+            ]
+          }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+execute if score @s dashing_count matches 1.. run function custom_items:armor/dashing/action

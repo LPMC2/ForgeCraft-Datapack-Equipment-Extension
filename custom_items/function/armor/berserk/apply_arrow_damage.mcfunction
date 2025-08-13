@@ -1,0 +1,1 @@
+$execute as @s run data modify entity @s damage set value $(damage)

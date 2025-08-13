@@ -1,0 +1,10 @@
+$execute if score .random_effect const matches 1 run effect give @s minecraft:speed $(value) $(power) false
+$execute if score .random_effect const matches 2 run effect give @s minecraft:strength $(value) $(power) false
+$execute if score .random_effect const matches 3 run effect give @s minecraft:regeneration $(value) $(power) false
+$execute if score .random_effect const matches 4 run effect give @s minecraft:resistance $(value) $(power) false
+$execute if score .random_effect const matches 5 run effect give @s minecraft:fire_resistance $(value) 0 false
+$execute if score .random_effect const matches 6 run effect give @s minecraft:water_breathing $(value) 0 false
+$execute if score .random_effect const matches 7 run effect give @s minecraft:health_boost $(value) $(power) false
+$execute if score .random_effect const matches 8 run effect give @s minecraft:haste $(value) $(power) false
+$execute if score .random_effect const matches 9 run effect give @s minecraft:night_vision $(value) 0 false
+$execute if score .random_effect const matches 10 run effect give @s minecraft:jump_boost $(value) $(power) false

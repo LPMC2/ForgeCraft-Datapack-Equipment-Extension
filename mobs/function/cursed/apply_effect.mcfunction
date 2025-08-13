@@ -1,0 +1,9 @@
+execute if score .random_effect const matches 1 run effect give @s minecraft:weakness 10 0 false
+execute if score .random_effect const matches 2 run effect give @s minecraft:blindness 10 0 false
+execute if score .random_effect const matches 3 run effect give @s minecraft:darkness 10 0 false
+execute if score .random_effect const matches 4 run effect give @s minecraft:hunger 10 9 false
+execute if score .random_effect const matches 5 run effect give @s minecraft:instant_damage 1 0 false
+execute if score .random_effect const matches 6 run effect give @s minecraft:poison 10 0 false
+execute if score .random_effect const matches 7 run effect give @s minecraft:wither 10 0 false
+execute if score .random_effect const matches 8 run effect give @s minecraft:mining_fatigue 10 0 false
+execute if score .random_effect const matches 9 run effect give @s minecraft:slowness 10 0 false

@@ -1,0 +1,1 @@
+execute as @s run function custom_items:general/on_hit_by_mob

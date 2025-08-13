@@ -1,0 +1,1 @@
+execute as @a if data entity @s SelectedItem.components.minecraft:custom_data.hyperion if score @s cd matches 1.. run function right_click_detection:hyperion/cd

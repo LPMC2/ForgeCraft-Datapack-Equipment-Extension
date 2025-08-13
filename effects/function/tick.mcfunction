@@ -1,0 +1,2 @@
+execute as @e[type=#entity_hit_matching:targets_including_player] at @s if score @s heal matches 0.. run function effects:heal
+execute as @e[type=#entity_hit_matching:targets_including_player] at @s if entity @s[tag=assassin_effect] run function effects:assassin/tick

@@ -1,0 +1,2 @@
+execute store result storage minecraft:mining store.block_reach float 1.5 run attribute @s minecraft:block_interaction_range get
+execute as @s run function custom_items:tool/cleaving/detection with storage minecraft:mining store

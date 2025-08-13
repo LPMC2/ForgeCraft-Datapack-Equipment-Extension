@@ -1,0 +1,1 @@
+$function reforge:forging/forge_type/getter/$(forge_id)

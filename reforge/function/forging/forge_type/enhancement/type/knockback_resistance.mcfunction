@@ -1,0 +1,2 @@
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:knockback_resistance",operation:"add_value",slot:"$(slot)"}
+data modify storage minecraft:attribute new.attribute_amount set value 0.05

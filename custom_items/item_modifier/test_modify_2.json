@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": ".test"
+        },
+        "score": "const"
+      }
+    },
+    "add": true
+  }
+]

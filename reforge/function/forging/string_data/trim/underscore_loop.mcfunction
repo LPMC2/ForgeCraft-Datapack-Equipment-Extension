@@ -1,0 +1,2 @@
+execute if data storage minecraft:string storage.item_name[{text:"_"}] run data modify storage minecraft:string storage.item_name[{text:"_"}].text set value " "
+execute if data storage minecraft:string storage.item_name[{text:"_"}] run function reforge:forging/string_data/trim/underscore_loop

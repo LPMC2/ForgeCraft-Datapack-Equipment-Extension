@@ -1,0 +1,2 @@
+$execute if score .rage rage_meter_tool matches ..9 run execute at @s run playsound minecraft:entity.ravager.attack master @a ~ ~ ~ 0.2 $(value_digit).0$(value_demical) 0
+$execute if score .rage rage_meter_tool matches 10.. run execute at @s run playsound minecraft:entity.ravager.attack master @a ~ ~ ~ 0.2 $(value_digit).$(value_demical) 0

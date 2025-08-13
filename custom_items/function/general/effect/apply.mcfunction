@@ -1,0 +1,1 @@
+$effect give @s minecraft:$(name) $(duration) $(amp) $(no_particle)
