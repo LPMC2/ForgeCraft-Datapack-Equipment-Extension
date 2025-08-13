@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "entity_hit_matching:load"
+        "forgecraft_lpmc2:load"
     ]
 }
