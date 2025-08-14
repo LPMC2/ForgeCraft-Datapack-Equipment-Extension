@@ -5,9 +5,6 @@
             "conditions": {
                 "blocked": false,
                 "damage": {
-                    "source_entity": {
-                        "type": "#entity_hit_matching:targets"
-                    }
                 }
             }
         },

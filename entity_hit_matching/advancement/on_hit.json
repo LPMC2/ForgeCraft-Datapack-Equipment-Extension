@@ -1,12 +1,7 @@
 {
     "criteria": {
         "target": {
-            "trigger": "minecraft:player_hurt_entity",
-            "conditions": {
-                "entity": {
-                    "type": "#entity_hit_matching:targets"
-                }
-            }
+            "trigger": "minecraft:player_hurt_entity"
         },
         "not_target": {
             "trigger": "minecraft:player_hurt_entity",
@@ -16,10 +11,7 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "type": "#entity_hit_matching:targets"
-                            }
+                            "entity": "this"
                         }
                     }
                 ]
