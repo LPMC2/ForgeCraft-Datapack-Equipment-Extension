@@ -36,7 +36,7 @@ execute as @p[tag=onHit] if data entity @s SelectedItem.components.minecraft:cus
 execute as @s if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.chaining_melee run function custom_items:weapon/chaining/init
 
 execute as @s[tag=!block_mob] if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.provoker run function custom_items:weapon/provoker/apply
-execute if score @s[type=#entity_hit_matching:targets] max_shielding_charges matches 1.. if score @s shielding_charges matches 1.. run function custom_items:armor/shielding/remove_charge
+#execute if score @s[type=!#entity_hit_matching:non_mob] max_shielding_charges matches 1.. if score @s shielding_charges matches 1.. run function custom_items:armor/shielding/remove_charge
 execute as @s run function mobs:on_hit
 
 # Poisoned

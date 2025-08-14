@@ -1,2 +1,2 @@
-execute at @s run execute as @e[type=#entity_hit_matching:targets,distance=..30,tag=!sneaky] at @s run function custom_items:armor/sneaky/add_mob
+execute at @s run execute as @e[type=!#entity_hit_matching:non_mob,type=!player,distance=..30,tag=!sneaky] at @s run function custom_items:armor/sneaky/add_mob
 execute at @s run playsound minecraft:block.wool.step master @a ~ ~ ~ 0.1 0.5 0

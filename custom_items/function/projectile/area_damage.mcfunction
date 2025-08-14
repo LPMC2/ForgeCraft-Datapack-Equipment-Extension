@@ -1,1 +1,1 @@
-$execute as @e[type=#entity_hit_matching:targets_including_player,distance=..$(aoe),tag=!projectile_ignore] at @s unless score @s id = @n[tag=proj_source] projectile_source_id run function custom_items:projectile/apply
+$execute as @e[type=!#entity_hit_matching:non_mob,distance=..$(aoe),tag=!projectile_ignore] at @s unless score @s id = @n[tag=proj_source] projectile_source_id run function custom_items:projectile/apply

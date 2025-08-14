@@ -1,4 +1,4 @@
-execute as @e[type=#entity_hit_matching:targets_including_player] at @s if score @s id = @n[tag=proj_source] projectile_source_id run tag @s add projectile_owner
+execute as @e[type=!#entity_hit_matching:non_mob] at @s if score @s id = @n[tag=proj_source] projectile_source_id run tag @s add projectile_owner
 execute as @n[tag=proj_source] at @s run function custom_items:projectile/effect
 execute store result storage minecraft:projectile store.damage int 1 run scoreboard players get @n[tag=proj_source] projectile_damage
 execute if score @n[tag=proj_source] projectile_aoe matches 1.. run execute store result storage minecraft:projectile store.aoe int 1 run scoreboard players get @n[tag=proj_source] projectile_aoe

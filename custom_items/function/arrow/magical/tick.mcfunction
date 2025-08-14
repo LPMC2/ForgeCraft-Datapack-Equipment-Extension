@@ -1,1 +1,1 @@
-execute at @s if entity @e[type=#entity_hit_matching:targets,distance=..2,sort=nearest,limit=1] run function custom_items:arrow/magical/action
+execute at @s if entity @e[type=!#entity_hit_matching:non_mob,distance=..2,sort=nearest,limit=1,type=!player] run function custom_items:arrow/magical/action

@@ -5,7 +5,7 @@
 #     Edit not_mob.json in tags/entities to change which entities will not be targetted
 #     Change the "positioned" offsets to change projectile size
 #       - If > 1 block, just use one dx detection
-execute as @e[tag=!raycast,tag=!ray_hit,type=#entity_hit_matching:targets_including_player,dx=0] positioned ~-0.95 ~-0.95 ~-0.95 if entity @s[dx=0] positioned ~0.95 ~0.95 ~0.95 run function custom_items:arrow/guardian/collide
+execute as @e[tag=!raycast,tag=!ray_hit,type=!#entity_hit_matching:non_mob,dx=0] positioned ~-0.95 ~-0.95 ~-0.95 if entity @s[dx=0] positioned ~0.95 ~0.95 ~0.95 run function custom_items:arrow/guardian/collide
 
 
 scoreboard players add .distance const 1

@@ -1,2 +1,1 @@
-execute as @e[tag=!entityidset,type=#entity_hit_matching:targets] run function entity_hit_matching:assign_id
-
+execute as @e[tag=!entityidset,type=!#entity_hit_matching:non_mob,type=!#minecraft:impact_projectiles] run function entity_hit_matching:assign_id
