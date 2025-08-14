@@ -82,6 +82,7 @@ execute if score .itemtype id matches 3 run data modify storage minecraft:reforg
 execute if score .itemtype id matches 4 run data modify storage minecraft:reforge forge.slot set value "chest"
 execute if score .itemtype id matches 5 run data modify storage minecraft:reforge forge.slot set value "legs"
 execute if score .itemtype id matches 6 run data modify storage minecraft:reforge forge.slot set value "feet"
+execute as @n[tag=targetforgeitem] if data entity @s item.components.minecraft:custom_data.runic run data modify storage minecraft:reforge forge.slot set value "offhand"
 execute unless score .itemtype id matches 1.. run scoreboard players set .isnotlisted const 1
 # Returns if potential repeated forge ids
 execute if score .is_repeated const matches 1.. run return run function reforge:forging/detection_reset
