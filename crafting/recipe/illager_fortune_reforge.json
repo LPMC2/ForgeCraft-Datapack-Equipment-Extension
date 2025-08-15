@@ -26,11 +26,11 @@
       "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Illager's Mini Mansion"},
       "minecraft:lore": [
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Illager's Fortune: "},{"bold":false,"color":"gray","italic":false,"text":""}],
-        {"color":"gray","italic":false,"text":"Each use have 1% chance to drop 1x random illager mansion chest loot,"},
+        {"color":"gray","italic":false,"text":"Each use have 10% (Tool) / 25% (Melee) chance to drop 1x random illager mansion chest loot,"},
         {"color":"gray","italic":false,"text":"Also -20% Attack Speed & +30% Attack Damage."},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee/Tool"}],
         {"color":"green","italic":false,"text":"Xp Level Cost: 10"}
       ],
       "minecraft:unbreakable": {
