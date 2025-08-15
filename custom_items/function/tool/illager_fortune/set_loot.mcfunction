@@ -1,0 +1,13 @@
+execute if score .chest_type const matches 1..2 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/generic
+execute if score .chest_type const matches 3 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/evoker_chest
+execute if score .chest_type const matches 4 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/ancient_city_raid_chest
+execute if score .chest_type const matches 5 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/kitchen
+execute if score .chest_type const matches 6 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/library_chest
+execute if score .chest_type const matches 7 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/map_chest
+execute if score .chest_type const matches 8 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/pillager_chest
+execute if score .chest_type const matches 9 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/ravager_chest
+execute if score .chest_type const matches 10 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/secret_room
+execute if score .chest_type const matches 11 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/smithing_room
+execute if score .chest_type const matches 12 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/vindicator_chest
+execute if score .chest_type const matches 13 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/witch_chest
+execute if score .chest_type const matches 14 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/wool

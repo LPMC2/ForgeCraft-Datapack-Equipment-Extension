@@ -1,11 +1,26 @@
 $data modify entity @s Item.components.minecraft:custom_name set value {"color":"aqua","italic":false,"text":"⚒ Prospector's $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Prospector\s: 10% Chance to gain 1 emerald"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Prospector's: 10% Chance to gain 1 emerald"}
+data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Prospector's: Convert Mined item into Emerald"}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Prospector $(name)"
 
+data remove storage minecraft:attribute new.attribute
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:block_break_speed",operation:"add_multiplied_total",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
+data modify storage minecraft:attribute new.attribute_amount set value -0.90
+execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
+data remove storage minecraft:attribute new.attribute
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:mining_efficiency",operation:"add_multiplied_total",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute_id set value $(uuid2)
+data modify storage minecraft:attribute new.attribute_amount set value -0.90
+execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
+data remove storage minecraft:attribute new.attribute
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:attack_damage",operation:"add_multiplied_total",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute_id set value $(uuid3)
+data modify storage minecraft:attribute new.attribute_amount set value -1
+execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 data modify entity @s Item.components.minecraft:custom_data.prospector set value 1
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid

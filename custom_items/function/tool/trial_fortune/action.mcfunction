@@ -1,0 +1,2 @@
+execute at @s unless score .is_trial_omen const matches 1.. if predicate reforge:10_percentage run return run function custom_items:tool/trial_fortune/base_loot
+execute at @s if score .is_trial_omen const matches 1.. if predicate reforge:1_percentage run return run function custom_items:tool/trial_fortune/ominous_loot

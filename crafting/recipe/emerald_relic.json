@@ -19,7 +19,8 @@
       "minecraft:max_stack_size": 16,
       "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Emerald Relic"},
       "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Prospector's: "},{"bold":false,"color":"gray","italic":false,"text":"Each drop has 10% Chance to gain 1x Emerald on use"}],
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Prospector's: "},{"bold":false,"color":"gray","italic":false,"text":"Convert the Mined Item drop into Emerald"}],
+        {"color":"gray","italic":false,"text":"However, reduce Mining Speed & Mining Efficiency by 90%!"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Tool"}],

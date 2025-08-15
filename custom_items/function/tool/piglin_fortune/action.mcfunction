@@ -1,0 +1,1 @@
+execute at @s run function custom_items:tool/piglin_fortune/base_loot
