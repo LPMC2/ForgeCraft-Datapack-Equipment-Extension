@@ -32,6 +32,10 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_sword",c
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_sword",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 250
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_sword",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:4,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.6,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
 
+# Copper Sword
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_sword",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_sword",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:4,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.6,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
 # Iron Sword
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_sword",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 400
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_sword",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.6,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
@@ -60,6 +64,10 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_axe",cou
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_axe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 250
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_axe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:8,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.8,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
 
+# Copper Axe
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_axe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_axe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:8,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.8,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
+
 # Iron Axe
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_axe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 400
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_axe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:8,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.775,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
@@ -76,9 +84,37 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_axe",co
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_axe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 3000
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_axe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:9,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.75,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.25,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
 
-# Mace (Upcoming Item)
+# Mace
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:mace",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 1000
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:mace",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.85,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Wooden Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 118
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:0.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.615,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Stone Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 250
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.6675,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Copper Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1.25,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.705,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Iron Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 400
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7375,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Golden Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:golden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 320
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:golden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.705,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Diamond Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 2500
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:3,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7625,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+
+# Netherite Spear
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 3000
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:4,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7825,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
 
 #-------- Ranged --------
 # Bow
@@ -118,6 +154,20 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:chainmail_leggi
 # - Feet
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:chainmail_boots",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 390
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:chainmail_boots",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:1,operation:"add_value",id:"$(1)",slot:"feet"},{type:"armor_toughness",amount:0.5,operation:"add_value",id:"$(2)",slot:"feet"}]
+
+# Copper
+# - Head
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_helmet",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 242
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_helmet",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:2,operation:"add_value",id:"$(1)",slot:"head"},{type:"armor_toughness",amount:0.25,operation:"add_value",id:"$(2)",slot:"head"}]
+# - Chest
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_chestplate",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 352
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_chestplate",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:4,operation:"add_value",id:"$(1)",slot:"chest"},{type:"armor_toughness",amount:0.5,operation:"add_value",id:"$(2)",slot:"chest"}]
+# - Legs
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_leggings",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 330
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_leggings",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:3,operation:"add_value",id:"$(1)",slot:"legs"},{type:"armor_toughness",amount:0.5,operation:"add_value",id:"$(2)",slot:"legs"}]
+# - Feet
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_boots",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 286
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_boots",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"armor",amount:1,operation:"add_value",id:"$(1)",slot:"feet"},{type:"armor_toughness",amount:0.25,operation:"add_value",id:"$(2)",slot:"feet"}]
 
 # Iron
 # - Head
@@ -193,6 +243,10 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_pickaxe"
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 262
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
 
+# > Copper
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.125,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
+
 # > Iron
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 500
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_pickaxe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:3,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.15,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
@@ -217,6 +271,10 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_shovel",
 # > Stone
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_shovel",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 262
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_shovel",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.75,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
+
+# > Copper
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_shovel",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_shovel",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.75,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
 
 # > Iron
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_shovel",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 500
@@ -243,6 +301,10 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_hoe",cou
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 262
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.25,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
 
+# > Copper
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.25,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.10,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
+
 # > Iron
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 500
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_hoe",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.25,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"},{type:"block_break_speed",name:"block_break_speed",amount:0.15,operation:"add_multiplied_total",id:"$(3)",slot:"mainhand"}]
@@ -264,7 +326,6 @@ execute if entity @s[type=item_display,nbt={item:{id:"minecraft:shears",count:1}
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:shears",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"block_interaction_range",amount:0.25,operation:"add_multiplied_total",id:"$(1)",slot:"mainhand"}]
 
 # -------- Utilities --------
-
 
 # - Brush
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:brush",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 128
