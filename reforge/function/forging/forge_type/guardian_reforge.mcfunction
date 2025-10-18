@@ -1,7 +1,7 @@
 execute if data entity @s Item.components.minecraft:custom_data.ender_reforge run return fail
 execute if data entity @s Item.components.minecraft:custom_data.dispenser run return fail
 execute if data entity @s Item.components.minecraft:custom_data.supercharged run return fail
-$data modify entity @s Item.components.minecraft:custom_name set value {"color":"light_purple","italic":false,"text":"⚒ Guardian $(name)"}
+$data modify entity @s Item.components.minecraft:item_name set value {"color":"light_purple","italic":false,"text":"⚒ Guardian $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Guardian: Arrow -> fires Laser Beam & deals arrow damage. 2x damage in water."},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
 data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Guardian: Arrow -> fires Laser Beam & deals arrow damage. 2x damage in water."}

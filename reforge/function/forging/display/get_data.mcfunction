@@ -1,3 +1,4 @@
+data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:item_name
 data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:custom_name
 data modify storage minecraft:reforge temp.display.description set from entity @s Item.components.minecraft:custom_data.custom_lore.forge
 execute if data storage minecraft:reforge temp.display.description[0] run data modify storage minecraft:reforge temp.display.description[0].color set value "gray"

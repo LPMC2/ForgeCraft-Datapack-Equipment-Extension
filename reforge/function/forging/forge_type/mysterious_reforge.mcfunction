@@ -1,4 +1,4 @@
-$data modify entity @s Item.components.minecraft:custom_name set value {"color":"aqua","italic":false,"text":"⚒ Mysterious $(name)"}
+$data modify entity @s Item.components.minecraft:item_name set value {"color":"aqua","italic":false,"text":"⚒ Mysterious $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Mysterious: Random +Effect I-II for +15s/60s"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
 data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Mysterious: Random +Effect I-II for +15s/60s"}

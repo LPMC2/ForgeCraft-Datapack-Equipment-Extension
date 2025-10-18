@@ -6,7 +6,7 @@ data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_dat
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_data.itemtype set from storage minecraft:reforge vanilla.type
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_data.typename set from storage minecraft:reforge vanilla.typename
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_data.typeid set from storage minecraft:reforge vanilla.typeid
-$data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
+$data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
 $data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ This item can be reforged!"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(type)"}]]
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:attribute_modifiers set from storage minecraft:reforge vanilla.modifier
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability

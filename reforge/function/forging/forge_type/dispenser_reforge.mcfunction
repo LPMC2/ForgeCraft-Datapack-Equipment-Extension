@@ -1,7 +1,7 @@
 execute if data entity @s Item.components.minecraft:custom_data.supercharged run return fail
 execute if data entity @s Item.components.minecraft:custom_data.ender_reforge run return fail
 execute if data entity @s Item.components.minecraft:custom_data.guardian run return fail
-$data modify entity @s Item.components.minecraft:custom_name set value {"color":"light_purple","italic":false,"text":"⚒ Dispenser $(name)"}
+$data modify entity @s Item.components.minecraft:item_name set value {"color":"light_purple","italic":false,"text":"⚒ Dispenser $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Dispenser: Arrow + Item in Left Hand -> Convert as item/projectile"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
 data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Dispenser: Arrow + Item in Left Hand -> Convert as item/projectile"}

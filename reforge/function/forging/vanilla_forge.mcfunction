@@ -9,7 +9,7 @@ data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_d
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.typeid set from storage minecraft:reforge vanilla.typeid
 execute as @n[type=item,tag=iteminit] if data entity @s Item.components.minecraft:lore run data modify entity @s Item.components.minecraft:custom_data.custom_lore.base set from entity @s Item.components.minecraft:lore
 execute as @n[type=item,tag=iteminit] unless data entity @s Item.components.minecraft:lore run data modify entity @s Item.components.minecraft:custom_data.custom_lore.base set value {}
-$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
+$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
 $data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(type)"}]
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore.forge set value {"color":"dark_gray","italic":false,"text":"⚒ This item can be reforged!"}
 data modify storage minecraft:reforge temp.display.lore set from entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore
@@ -26,3 +26,4 @@ execute if entity @e[tag=iteminit] run function reforge:forging/resetreforgeitem
 tag @n[type=item,tag=iteminit] remove iteminit
 data remove storage minecraft:reforge forge_itemid
 data remove storage minecraft:reforge forge_itemcomponents
+scoreboard players reset .isnotlisted const

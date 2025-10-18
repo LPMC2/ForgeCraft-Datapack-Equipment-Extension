@@ -14,7 +14,7 @@ data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_d
 data modify storage minecraft:reforge temp.display.lore set from entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore
 execute as @n[type=item,tag=iteminit] run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore.forge set value []
-$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
+$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
 #$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ This item can be reforged!"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(type)"}]]
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:attribute_modifiers set from storage minecraft:reforge vanilla.modifier
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability
@@ -30,3 +30,4 @@ execute if score .itemtype id matches 5 run data modify storage minecraft:reforg
 execute if score .itemtype id matches 6 run data modify storage minecraft:reforge forge.slot set value "feet"
 execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.global_id int 1 run scoreboard players get .global_itemid id
 execute as @e[tag=iteminit] if items entity @s container.0 minecraft:structure_void run kill @s
+scoreboard players reset .isnotlisted const
