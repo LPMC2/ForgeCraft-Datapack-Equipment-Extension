@@ -6,6 +6,10 @@ scoreboard players operation .type const = @s[tag=forgecraft,tag=chaining,type=m
 scoreboard players set .chainable const 0
 # Mine Block
 data remove storage minecraft:chainable temp.type
+execute if score .type const matches 0 run data modify storage minecraft:chainable temp.type set value "pickaxe"
+execute if score .type const matches 0 if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ air destroy
+execute if score .type const matches 0 if block ~ ~ ~ #minecraft:mineable/axe run setblock ~ ~ ~ air destroy
+execute if score .type const matches 0 if block ~ ~ ~ #minecraft:mineable/shovel run setblock ~ ~ ~ air destroy
 execute if score .type const matches 1 run data modify storage minecraft:chainable temp.type set value "pickaxe"
 execute if score .type const matches 1 if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ air destroy
 execute if score .type const matches 2 run data modify storage minecraft:chainable temp.type set value "axe"

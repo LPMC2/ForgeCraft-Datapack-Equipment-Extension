@@ -18,20 +18,20 @@
       "minecraft:max_stack_size": 16,
       "minecraft:custom_name": {"color":"white","italic":false,"text":"Flesh Chunk"},
       "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Rotten: "},{"bold":false,"color":"gray","italic":false,"text":"Increase Attack Damage by 4,"}],
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Rotten: "},{"bold":false,"color":"gray","italic":false,"text":"Increase Attack Damage by 3,"}],
         {"color":"gray","italic":false,"text":"but decrease Attack Speed by 25%."},
         {"color":"gray","italic":false,"text":"Also apply Weakness I for 5s to target."},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
-        {"color":"green","italic":false,"text":"Xp Level Cost: 12"}
+        {"color":"green","italic":false,"text":"Xp Level Cost: 17"}
       ],
       "minecraft:unbreakable": {
         "show_in_tooltip": false
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "common",
-      "minecraft:custom_data": {"reforgeid":73,"req_xp":12},
+      "minecraft:custom_data": {"reforgeid":73,"req_xp":17},
       "minecraft:profile": {
         "id": [
           548689313,360662868,-1841692132,12141077
