@@ -1,7 +1,7 @@
 # Required Commands: #
 execute store result score @s itemid run data get entity @s SelectedItem.components.minecraft:custom_data.global_id
 execute if items entity @s weapon.mainhand #custom_items:netherite_weapons unless data entity @s SelectedItem.components.minecraft:custom_data.netherite_convert run function custom_items:weapon/itemslot/update_netherite
-execute if items entity @s weapon.mainhand minecraft:netherite_spear unless data entity @s SelectedItem.components.minecraft:custom_data.netherite_convert run function custom_items:weapon/itemslot/update_netherite
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_spear"}}] unless data entity @s SelectedItem.components.minecraft:custom_data.netherite_convert run function custom_items:weapon/itemslot/update_netherite
 data modify storage minecraft:item store.itemid set from entity @s SelectedItem.components.minecraft:custom_data.typename
 execute store result storage minecraft:item store.playerid int 1 run scoreboard players get @s id
 function custom_items:weapon/itemslot/store_scoreboard_obj with storage minecraft:item store
