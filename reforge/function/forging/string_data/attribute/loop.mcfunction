@@ -1,7 +1,9 @@
 execute store result storage minecraft:reforge temp.attribute.index int 1 run scoreboard players add .attribute_index const 1
 execute if score .attribute_index const > .attribute_length const run return fail
+data remove storage minecraft:reforge temp.attribute.display_text
 $data modify storage minecraft:reforge temp.attribute.target_attribute set from entity @s Item.components.minecraft:attribute_modifiers[$(index)].type
 $data modify storage minecraft:reforge temp.attribute.attribute_operation set from entity @s Item.components.minecraft:attribute_modifiers[$(index)].operation
+$data modify storage minecraft:reforge temp.attribute.display_text set from entity @s Item.components.minecraft:attribute_modifiers[$(index)].display.value
 $execute if data storage minecraft:reforge temp.attribute{attribute_operation:"add_value"} run data modify storage minecraft:reforge temp.attribute.attribute_value set from entity @s Item.components.minecraft:attribute_modifiers[$(index)].amount
 $execute if data storage minecraft:reforge temp.attribute{attribute_operation:"add_multiplied_total"} store result storage minecraft:reforge temp.attribute.attribute_value int 1 run data get entity @s Item.components.minecraft:attribute_modifiers[$(index)].amount 100
 $execute if data storage minecraft:reforge temp.attribute{attribute_operation:"add_multiplied_base"} store result storage minecraft:reforge temp.attribute.attribute_value int 1 run data get entity @s Item.components.minecraft:attribute_modifiers[$(index)].amount 100

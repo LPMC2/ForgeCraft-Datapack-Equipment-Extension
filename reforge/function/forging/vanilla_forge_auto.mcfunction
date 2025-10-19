@@ -17,6 +17,7 @@ data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_d
 $data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ $(name)"}
 #$data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ This item can be reforged!"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(type)"}]]
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:attribute_modifiers set from storage minecraft:reforge vanilla.modifier
+execute as @n[type=item,tag=iteminit] run function reforge:forging/display/attribute/get_init
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:damage set value 0
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.reforgeid set value 0

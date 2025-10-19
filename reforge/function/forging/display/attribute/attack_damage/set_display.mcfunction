@@ -1,0 +1,1 @@
+$data modify entity @s Item.components.minecraft:attribute_modifiers[{id:"$(id)"}].display set value {type:"override",value:[{"color":"dark_green","italic":false,"text":" $(display_value) Attack Damage "},{"color":"blue","italic":false,"text":"[+$(og_value)]"}]}

@@ -3,6 +3,7 @@ data remove storage minecraft:reforge temp.display.lore
 execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 run summon item ~ ~ ~ {PickupDelay:5,Age:-32768,Tags:["iteminit"],Motion:[0.0,0.25,0.0],Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_data":{is_empty:1}}}}
 data modify entity @n[type=item,tag=iteminit] Item.id set from storage minecraft:reforge forge_itemid
 data modify entity @n[type=item,tag=iteminit] Item.components set from storage minecraft:reforge forge_itemcomponents
+data remove entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_name
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.itemname set from storage minecraft:reforge vanilla.name
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.itemtype set from storage minecraft:reforge vanilla.type
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.typename set from storage minecraft:reforge vanilla.typename
@@ -16,6 +17,7 @@ data modify storage minecraft:reforge temp.display.lore set from entity @n[type=
 execute as @n[type=item,tag=iteminit] run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.custom_lore.forge set value []
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:attribute_modifiers set from storage minecraft:reforge vanilla.modifier
+execute as @n[type=item,tag=iteminit] run function reforge:forging/display/attribute/get_init
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:damage set value 0
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.reforgeid set value 0

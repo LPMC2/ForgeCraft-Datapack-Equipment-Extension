@@ -94,10 +94,12 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:mace",count:1}}
 # Wooden Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 118
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:0.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.615,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:wooden_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 # Stone Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 250
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.6675,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:stone_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 # Copper Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 380
@@ -107,18 +109,22 @@ execute if entity @s[type=item_display,nbt={item:{id:"minecraft:copper_spear",co
 # Iron Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 400
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7375,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:iron_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 # Golden Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:golden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 320
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:golden_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:1.5,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.705,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:golden_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 # Diamond Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 2500
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:3,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7625,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:diamond_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 # Netherite Spear
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 3000
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:4,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"attack_speed",amount:-0.7825,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
+execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear",count:1}}] run scoreboard players set .isnotlisted const 0
 
 #-------- Ranged --------
 # Bow
