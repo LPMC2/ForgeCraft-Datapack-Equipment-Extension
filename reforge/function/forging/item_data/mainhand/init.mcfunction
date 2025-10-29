@@ -11,4 +11,4 @@ execute as @s run function reforge:forging/item_data/mainhand/ranged/get
 execute as @s run function reforge:forging/item_data/mainhand/tool/get
 execute as @s run function reforge:forging/item_data/mainhand/armor/get
 
-#function reforge:forging/item_data/clear_slots
+function reforge:forging/item_data/clear_slots

@@ -30,7 +30,7 @@
       "minecraft:rarity": "rare",
       "minecraft:lore": [
         {"color":"gray","italic":false,"text":"⚒ +2 Oxygen Bonus to the item"},
-        {"color":"dark_gray","italic":false,"text":"Total Maximum Enhancement: 10"},
+        {"color":"dark_gray","italic":false,"text":"Total Maximum Enhancement (Default): 10"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item"}],
         {"color":"green","italic":false,"text":"Xp Level Cost: 5"}

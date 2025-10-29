@@ -17,7 +17,7 @@
       "minecraft:max_stack_size": 16,
       "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Stack of Iron"},
       "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Efficient: "},{"bold":false,"color":"gray","italic":false,"text":"Each use will also mine 6 adjacent blocks (With a chance)"}],
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Efficient: "},{"bold":false,"color":"gray","italic":false,"text":"Each use will also mine 14 adjacent blocks (With a chance)"}],
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Tool"}],
