@@ -11,3 +11,4 @@ execute if score .chest_type const matches 11 run loot replace entity @s contain
 execute if score .chest_type const matches 12 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/vindicator_chest
 execute if score .chest_type const matches 13 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/witch_chest
 execute if score .chest_type const matches 14 run loot replace entity @s container.0 loot minecraft:chests/illager_mansion/wool
+scoreboard players set .illager_fortune_success const 1
