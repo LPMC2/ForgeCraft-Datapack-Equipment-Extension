@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "nnn",
+    "121",
+    "nnn"
+],
+  "key": {
+    "1": "minecraft:amethyst_shard"
+    ,
+    "2":  "minecraft:enchanted_book"
+    ,
+    "n":  "minecraft:obsidian"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"The Cube of Enchanting"},
+      "minecraft:lore": [
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Enchanting: "},{"bold":false,"color":"gray","italic":false,"text":"Randomly enchant your item, with power"}],
+        [{"color":"gray","italic":false,"text":"based on the Player's Current XP Level."},{"color":"dark_gray","italic":false,"text":" [Max: 50]"}],
+        {"color":"gray","italic":false,"text":"Able to reforge again!"},
+        {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
+        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+        {"text":" "},
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any, Except Other"}],
+        {"color":"green","italic":false,"text":"Xp Level Cost: Your Current XP Level!"}
+      ],
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {"reforgeid":82,"req_xp":1},
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2JiNzg4YzBmZjBmYzU3NDY5ODc4N2MzYzdmMWIzODVhMTljMTczODM1OTMyMzU2MzU0MmI1MzdkMDVmMWYyZSJ9fX0=",
+            "signature": "82"
+          }
+        ]
+      }
+    }
+  }
+}

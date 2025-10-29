@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:block_break_speed get 1000

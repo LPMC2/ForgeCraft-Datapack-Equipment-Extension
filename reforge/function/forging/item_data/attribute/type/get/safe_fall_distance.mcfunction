@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:safe_fall_distance get 1000

@@ -1,0 +1,1 @@
+loot replace entity @s container.0 loot minecraft:chests/woodland_mansion

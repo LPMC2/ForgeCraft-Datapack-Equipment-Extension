@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:explosion_knockback_resistance get 1000

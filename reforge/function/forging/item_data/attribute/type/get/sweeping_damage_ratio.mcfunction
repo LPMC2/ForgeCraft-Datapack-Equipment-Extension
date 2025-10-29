@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:sweeping_damage_ratio get 1000

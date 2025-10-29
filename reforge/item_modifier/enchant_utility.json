@@ -1,0 +1,8 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": [
+    "minecraft:unbreaking",
+    "minecraft:mending"
+  ],
+  "only_compatible": false
+}

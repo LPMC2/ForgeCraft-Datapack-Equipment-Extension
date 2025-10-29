@@ -1,0 +1,1 @@
+execute as @s run function reforge:forging/item_data/attribute/type/get with storage minecraft:reforge vanilla

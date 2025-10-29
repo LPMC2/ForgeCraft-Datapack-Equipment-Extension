@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:luck get 1000

@@ -1,0 +1,1 @@
+return run execute store result score .attribute_value const run attribute @s minecraft:burning_time get 1000
