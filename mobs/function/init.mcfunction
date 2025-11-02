@@ -3,8 +3,9 @@ execute if score .ismobmodification const matches 1.. as @s run function mobs:in
 # ---------------------- #
 
 # ----- < Core > ------ #
-execute if entity @s[tag=!absorption_main] run scoreboard players add .global_mobid const 11
+execute if entity @s[tag=!absorption_main] run scoreboard players add .global_mobid const 1
 execute if entity @s[tag=!absorption_main] run scoreboard players operation @s id = .global_mobid const
+execute if score .global_mobid const matches 99999999 run scoreboard players set .global_mobid const 0
 execute if entity @s[tag=!absorption_main] run execute store result score @s init_health run attribute @s minecraft:max_health get
 execute if entity @s[tag=!absorption_main] run execute store result score @s init_health run data get entity @s Health
 tag @s add initialized

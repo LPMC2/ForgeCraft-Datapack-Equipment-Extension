@@ -9,6 +9,7 @@ tag @s add find
 #function custom_items:arrow/remove_unused
 execute as @a at @s run function custom_items:arrow/find_players
 # ------------- #
+execute if data entity @s weapon.components.minecraft:custom_data.midas_reforge_melee run execute as @s run function custom_items:arrow/midas/init
 execute if data entity @s weapon.components.minecraft:custom_data.tactical_bow run execute as @s run function custom_items:arrow/tactical/init
 execute if data entity @s[tag=!arrow_ignore] weapon.components.minecraft:custom_data.doubleshot run execute as @s run function custom_items:arrow/doubleshot/init
 execute if data entity @s[tag=!arrow_ignore] weapon.components.minecraft:custom_data.rapid run execute as @s run function custom_items:arrow/rapid/init

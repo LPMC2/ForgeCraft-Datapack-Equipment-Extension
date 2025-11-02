@@ -42,6 +42,9 @@ execute as @s run function mobs:on_hit
 # Poisoned
 execute as @s if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.poisoned_melee run function custom_items:weapon/poisoned/apply
 
+# Midas's
+execute as @s if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.midas_reforge_melee run function custom_items:weapon/midas/on_touch
+
 # Reset
 scoreboard players set @p[tag=onHit] damage_dealt 0
 tag @a remove onHit

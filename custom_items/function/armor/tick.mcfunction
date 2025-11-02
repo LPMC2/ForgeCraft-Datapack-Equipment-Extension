@@ -5,5 +5,6 @@ execute if score @s dashing_amount matches 1.. run function custom_items:armor/d
 execute if score @s mysterious_count matches 1.. run function custom_items:armor/mysterious/tick
 execute if score @s warrior_hit matches 1.. run function custom_items:armor/warrior/tick
 execute if score @s healthful_count matches 1.. run function custom_items:armor/healthful/tick
+execute if score @s midas_forge_armor_count matches 1.. run function custom_items:armor/midas/on_block_touch
 execute if score @s berserk_armor_count matches 1.. if score @s berserk_armor_kill_count matches 1.. run function custom_items:armor/berserk/tick
 execute if score @s absorption_armor_count matches 1.. if score @s absorption_armor_cd matches 1.. run function custom_items:armor/absorption/tick

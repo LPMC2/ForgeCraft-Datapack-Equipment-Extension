@@ -126,6 +126,8 @@ scoreboard objectives add poison_bow_cd dummy
 scoreboard objectives add poison_bow_tick dummy
 scoreboard objectives add forest_count dummy
 scoreboard objectives add super_tank_count dummy
+scoreboard objectives add midas_forge_armor_count dummy
+scoreboard objectives add midas_converted dummy
 scoreboard objectives add fire dummy
 scoreboard objectives add arrow_potion_id dummy
 scoreboard objectives add use dummy

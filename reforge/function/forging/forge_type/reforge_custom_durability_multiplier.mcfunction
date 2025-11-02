@@ -1,0 +1,1 @@
+$execute store result entity @s Item.components.minecraft:max_damage double 1 run data get entity @s Item.components.minecraft:max_damage $(multiplier)

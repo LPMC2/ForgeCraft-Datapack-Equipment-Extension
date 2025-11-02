@@ -5,6 +5,7 @@ execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .re
 execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 81.. run advancement grant @s only reforge:forge_all_unique
 execute if entity @s[advancements={reforge:item_enhance=false}] if score .item_reforge reforgeId matches 0 if score .itemtype id matches 1.. run advancement grant @s only reforge:item_enhance
 execute if entity @s[advancements={reforge:weapon_beginning=false}] if score .item_reforge reforgeId matches 1.. if score .itemtype id matches 1..2 run advancement grant @s only reforge:weapon_beginning
+execute if entity @s[advancements={reforge:midas_power=false}] if score .item_reforge reforgeId matches 6 if score .item reforgeId matches 6 run advancement grant @s only reforge:midas_power
 execute if entity @s[advancements={reforge:heavy_reforge=false}] if score .item_reforge reforgeId matches 2 run advancement grant @s only reforge:heavy_reforge
 execute if entity @s[advancements={reforge:maxed_out=false}] if score .enhancement_count const matches 10.. run advancement grant @s only reforge:maxed_out
 execute if entity @s[advancements={reforge:enhanced_reforge=false}] if score .item_reforge reforgeId matches 68 run advancement grant @s only reforge:enhanced_reforge

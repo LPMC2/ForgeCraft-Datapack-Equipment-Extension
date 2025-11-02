@@ -1,0 +1,1 @@
+execute at @s[nbt={inGround:0b}] run particle block_crumble{block_state:"minecraft:gold_block"} ~ ~ ~ 0.1 0.1 0.1 1 3 normal

@@ -1,3 +1,5 @@
+data remove storage minecraft:reforge temp.display.name
+data remove storage minecraft:reforge temp.display.description
 data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:item_name
 data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:custom_name
 data modify storage minecraft:reforge temp.display.description set from entity @s Item.components.minecraft:custom_data.custom_lore.forge
@@ -8,6 +10,8 @@ execute if data storage minecraft:reforge temp.display.description[3] run data m
 execute if data storage minecraft:reforge temp.display.description[4] run data modify storage minecraft:reforge temp.display.description[4].color set value "gray"
 execute if data storage minecraft:reforge temp.display.description[5] run data modify storage minecraft:reforge temp.display.description[5].color set value "gray"
 execute if data storage minecraft:reforge temp.display.description[6] run data modify storage minecraft:reforge temp.display.description[6].color set value "gray"
+execute if data storage minecraft:reforge temp.display.description[7] run data modify storage minecraft:reforge temp.display.description[7].color set value "gray"
+execute unless data storage minecraft:reforge temp.display.description run data modify storage minecraft:reforge temp.display.description set from entity @s Item.components.minecraft:lore
 data modify storage minecraft:reforge temp.display.description.color set value "white"
 data modify storage minecraft:reforge temp.display.item set from entity @s Item
 execute as @s run function reforge:forging/string_data/attribute/init

@@ -35,6 +35,8 @@ execute as @s if score @s contagion_armor_count matches 1.. run function custom_
 execute as @s if items entity @s armor.* *[minecraft:custom_data~{contagion:1}] run function custom_items:armor/contagion/get_data
 execute as @s if score @s poisoned_armor_count matches 1.. run function custom_items:armor/poisoned/get_data
 execute as @s if items entity @s armor.* *[minecraft:custom_data~{poisoned_armor:1}] run function custom_items:armor/poisoned/get_data
+execute as @s if score @s midas_forge_armor_count matches 1.. run function custom_items:armor/midas/get_data
+execute as @s if items entity @s armor.* *[minecraft:custom_data~{midas_reforge_armor:1}] run function custom_items:armor/midas/get_data
 scoreboard players set @s supervision_count 0
 execute if items entity @s armor.head *[minecraft:custom_data~{supervision:1}] run scoreboard players set @s supervision_count 1
 scoreboard players set @s sneaky_count 0

@@ -13,5 +13,6 @@ execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.il
 execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.warden_fortune if predicate reforge:1_percentage run function custom_items:tool/warden_fortune/pre_detection
 execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.trial_fortune run function custom_items:tool/trial_fortune/pre_detection
 execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.illager_fortune_tool if predicate reforge:10_percentage run function custom_items:tool/illager_fortune/pre_detection
+execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.midas_reforge_tool run function custom_items:tool/midas/pre_detection
 execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.fortunate run function custom_items:tool/fortunate/pre_detection
 execute as @s if data entity @s SelectedItem.components.minecraft:custom_data.cursed run function custom_items:tool/cursed/pre_detection

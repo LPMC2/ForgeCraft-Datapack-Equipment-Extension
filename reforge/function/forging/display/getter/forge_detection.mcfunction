@@ -28,6 +28,7 @@ scoreboard players set .isnotlisted const 0
 scoreboard players set .is_supreme const 0
 scoreboard players set .item_forge_count const 0
 scoreboard players set .is_repeated const 0
+scoreboard players set .is_item_reforge_item const -1
 
 execute as @e[tag=target_type_item] at @s if score @s id = .self_id const run tag @s add targetforgeitem
 execute as @e[tag=target_type_reforge] at @s if score @s id = .self_id const run tag @s add targetforgemodifier
@@ -54,6 +55,7 @@ execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute unless
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] if data entity @s item.components.minecraft:custom_data.enhancement_count run execute store result score .enhancement_count const run data get entity @s item.components.minecraft:custom_data.enhancement_count
 execute if data entity @n[tag=targetforgeitem] item.components.minecraft:custom_data.supreme_reforge run scoreboard players set .is_supreme const 1
 execute as @n[tag=targetforgeitem] if data entity @s item.components.minecraft:custom_data.forge_count store result score .item_forge_count const run data get entity @s item.components.minecraft:custom_data.forge_count
+execute as @n[type=minecraft:item_display,tag=targetforgeitem] if data entity @s item.components.minecraft:profile.properties[0].signature store result score .is_item_reforge_item const run data get entity @s item.components.minecraft:profile.properties[0].signature
 # Store reforge id from the forge item
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run execute store result score .item_reforge reforgeId run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run scoreboard players set .item_reforge reforgeId -1
@@ -92,9 +94,10 @@ execute if score .item reforgeId matches -1 if score .item_reforge reforgeId mat
 # Normal Reforge
 execute as @s if score .item reforgeId matches 0 if score .itemtype id matches 1.. unless score .item_reforge reforgeId matches 39 unless score .item_reforge reforgeId matches 75 if score .item_reforge reforgeId matches 1.. run function reforge:forging/display/getter/forge_item
 # Special Reforges
+execute as @s if score .item reforgeId matches 6 if score .item_reforge reforgeId matches 6 if score .is_item_reforge_item const matches 1.. run function reforge:forging/display/getter/forge_item
 execute as @s if score .item reforgeId matches 1.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 1.. if score .is_supreme const matches 1.. unless score .item reforgeId = .item_reforge reforgeId unless score .item_forge_count const matches 2.. run function reforge:forging/display/getter/forge_item
 execute as @s if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 39 unless data entity @n[tag=targetforgeitem] item{id:"minecraft:structure_void"} run function reforge:forging/display/getter/forge_item
-execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 75 run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 75 unless score .is_item_reforge_item const matches 0.. run function reforge:forging/display/getter/forge_item
 
 execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 0 run execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run function reforge:forging/getvanilladata with storage minecraft:reforge uuid
 execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 0 run function reforge:forging/display/getter/vanilla_forge with storage minecraft:reforge vanilla 

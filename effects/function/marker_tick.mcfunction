@@ -1,0 +1,2 @@
+execute if entity @s[tag=midas_converted_block,tag=!block_init] run function effects:midas/block/tick
+execute if entity @s[tag=midas_converted_entity,tag=!entity_init] run function effects:midas/entity/detect
