@@ -1,10 +1,17 @@
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ Piercing $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Piercing: Arrow can pierce through mobs up to 5 times"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Piercing: Arrow can pierce through mobs up to 5 times"}
+data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Piercing: +5 Piercing Level"}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Piercing $(name)"
+
+# Attack Damage (Arrow Power)
+data remove storage minecraft:attribute new.attribute
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:attack_damage",operation:"add_value",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
+data modify storage minecraft:attribute new.attribute_amount set value 1
+execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 data modify entity @s Item.components.minecraft:custom_data.piercing set value 5
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid

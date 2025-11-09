@@ -1,4 +1,6 @@
+scoreboard players set .100 const 100
 scoreboard players operation @s projectile_damage = .damage const
+scoreboard players operation @s projectile_damage /= .100 const
 execute if score .crit_damage const matches ..0 run scoreboard players set @s projectile_speed_digit 1
 execute if score .crit_damage const matches 1.. run scoreboard players set @s projectile_speed_digit 2
 execute if score .crit_damage const matches 1.. run tag @s add crit_proj

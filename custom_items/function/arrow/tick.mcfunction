@@ -2,7 +2,7 @@
 execute as @s[tag=!initialized,tag=!onground] run function custom_items:arrow/init
 
 # Custom Items functions
-execute as @s[tag=initialized] at @s if data entity @s weapon.components.minecraft:custom_data.magical run function custom_items:arrow/magical/tick
+execute as @s[tag=initialized,tag=magical] at @s if data entity @s weapon.components.minecraft:custom_data.magical run function custom_items:arrow/magical/tick
 execute as @s[tag=initialized,tag=midas_arrow] at @s run function custom_items:arrow/midas/tick
 #execute as @s[tag=initialized,tag=poison_arrow] at @s run function custom_items:arrow/poison/tick
 execute as @s[tag=initialized,tag=poisoned_arrow] at @s run function custom_items:arrow/poisoned/tick

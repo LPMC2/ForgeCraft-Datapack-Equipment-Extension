@@ -1,5 +1,6 @@
 $data modify storage minecraft:test storage append value {$(id):{id:$(id)}}
 #$execute store result storage minecraft:arrow storage.$(id).id int 1 run scoreboard players add @s id 0
+$data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].id set value $(id)
 $data modify storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).potion set from entity @s item.components.minecraft:potion_contents.potion
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).owner1 set from entity @s Owner[0]
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).owner2 set from entity @s Owner[1]
@@ -15,7 +16,6 @@ $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).arrow_we
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).Rotation set from entity @s Rotation
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).arrow_owner set from entity @s Owner
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).pos set from entity @s Pos
-$data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].id set value $(id)
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).fire set from entity @s Fire
 
 

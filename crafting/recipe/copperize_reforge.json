@@ -22,7 +22,7 @@
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Copperized: "},{"bold":false,"color":"gray","italic":false,"text":"Provide different stats for different type -"}],
         {"color":"gray","italic":false,"text":"Any: +25% Durability"},
         {"color":"gray","italic":false,"text":"Melee: +2 Attack Damage and +50% Attack Knockback"},
-        {"color":"gray","italic":false,"text":"Ranged: +1 Arrow Power, +1 Arrow Pierce Level"},
+        {"color":"gray","italic":false,"text":"Ranged: +0.5 Arrow Power, +1 Arrow Pierce Level"},
         {"color":"gray","italic":false,"text":"Armor - Helmet: +1 Armor, +2 Armor Toughness"},
         {"color":"gray","italic":false,"text":"Armor - Chestplate: +2 Armor, +2 Knockback Resistance"},
         {"color":"gray","italic":false,"text":"Armor - Leggings: +2 Armor, +0.5 Blast Knockback Resistance"},
@@ -36,7 +36,6 @@
         {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
       ],
       "minecraft:unbreakable": {
-        "show_in_tooltip": false
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "rare",

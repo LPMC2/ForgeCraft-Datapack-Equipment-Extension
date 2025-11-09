@@ -5,12 +5,9 @@ data modify storage minecraft:reforge temp.display.lore set from entity @s Item.
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Midas's $(name)"
 
-# Mining Speed
-data remove storage minecraft:attribute new.attribute
-$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:block_break_speed",operation:"add_multiplied_total",slot:"$(slot)"}
-$data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
-data modify storage minecraft:attribute new.attribute_amount set value 0.5
-execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
+data modify storage minecraft:attribute store.amount set value 500d
+execute as @s at @s run function reforge:forging/forge_type/attribute/value/get_attribute_init
+
 data modify entity @s Item.components.minecraft:custom_data.midas_reforge_tool set value 1
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 data modify storage forgecraft:midas temp.multiplier set value 10d

@@ -1,10 +1,17 @@
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"aqua","italic":false,"text":"⚒ Tactical $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Tactical: Uses 50% of Player Attack Damage as Arrow Damage"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Tactical: Uses 50% of Player Attack Damage as Arrow Damage"}
+data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Tactical: +3 Arrow Power. +2 Arrow Count."}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Tactical $(name)"
+
+# Attack Damage (Arrow Power)
+data remove storage minecraft:attribute new.attribute
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:attack_damage",operation:"add_value",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
+data modify storage minecraft:attribute new.attribute_amount set value 3
+execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 data modify entity @s Item.components.minecraft:custom_data.combat_bow set value 1
 data modify entity @s Item.components.minecraft:rarity set value "rare"

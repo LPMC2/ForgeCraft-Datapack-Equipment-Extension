@@ -9,7 +9,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 #execute unless data entity @s Item.components.minecraft:custom_data.forge_data run data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge set value []
 
 data modify entity @s Item.components.minecraft:rarity set value "epic"
-data modify entity @s Item.components.minecraft:unbreakable set value {show_in_tooltip:true}
+data modify entity @s Item.components.minecraft:unbreakable set value {}
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 0
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Unbreakable $(name)"
 data modify entity @s Item.components.minecraft:custom_data.unbreakable set value 1

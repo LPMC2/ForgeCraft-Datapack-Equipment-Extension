@@ -1,8 +1,8 @@
 execute if score @s[advancements={reforge:forge_5_items=false}] forge_count matches 10.. run advancement grant @s only reforge:forge_5_items
 execute as @s run function reforge:forging/forge_data/store
 execute as @s run function reforge:forging/forge_data/get_init
-execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 81.. run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 0.95 0
-execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 81.. run advancement grant @s only reforge:forge_all_unique
+execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 82.. run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 0.95 0
+execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 82.. run advancement grant @s only reforge:forge_all_unique
 execute if entity @s[advancements={reforge:item_enhance=false}] if score .item_reforge reforgeId matches 0 if score .itemtype id matches 1.. run advancement grant @s only reforge:item_enhance
 execute if entity @s[advancements={reforge:weapon_beginning=false}] if score .item_reforge reforgeId matches 1.. if score .itemtype id matches 1..2 run advancement grant @s only reforge:weapon_beginning
 execute if entity @s[advancements={reforge:midas_power=false}] if score .item_reforge reforgeId matches 6 if score .item reforgeId matches 6 run advancement grant @s only reforge:midas_power

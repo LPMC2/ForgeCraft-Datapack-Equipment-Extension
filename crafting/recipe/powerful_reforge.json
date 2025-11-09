@@ -22,19 +22,18 @@
       "minecraft:custom_name": {"color":"white","italic":false,"text":"Artifact of Power"},
       "minecraft:lore": [
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Powerful: "},{"bold":false,"color":"gray","italic":false,"text":"Melee: Increase damage of the weapon by 4"}],
-        {"color":"gray","italic":false,"text":"Ranged: Increase Arrow Power by 3"},
+        {"color":"gray","italic":false,"text":"Ranged: Increase Arrow Power by 2"},
         {"color":"gray","italic":false,"text":"Armor: +0.75 Attack Damage"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee/Ranged/Armor"}],
-        {"color":"green","italic":false,"text":"Xp Level Cost: 20"}
+        {"color":"green","italic":false,"text":"Xp Level Cost: 15"}
       ],
       "minecraft:unbreakable": {
-        "show_in_tooltip": false
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "uncommon",
-      "minecraft:custom_data": {"reforgeid":55,"req_xp":20},
+      "minecraft:custom_data": {"reforgeid":55,"req_xp":15},
       "minecraft:profile": {
         "id": [
           -256167374,

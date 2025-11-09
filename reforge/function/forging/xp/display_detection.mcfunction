@@ -1,4 +1,4 @@
-scoreboard players set .apply_cost const -1
+scoreboard players set .apply_cost const 20
 scoreboard players set .apply_id const -1
 scoreboard players set .forge_item_id const -1
 scoreboard players set .forge_type_id const -1

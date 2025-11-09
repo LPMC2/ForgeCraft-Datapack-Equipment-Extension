@@ -8,7 +8,7 @@
       }
     },
     "title": "A Tactical Move",
-    "description": "Fire an arrow with over 9 Arrow Power using the Tactical Reforged Ranged Weapon",
+    "description": "Fire an arrow with over 8 Arrow Power.",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

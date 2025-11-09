@@ -129,11 +129,11 @@ execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_spear"
 #-------- Ranged --------
 # Bow
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:bow",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 750
-$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:bow",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"movement_speed",name:"movement_speed",amount:0.01,operation:"add_multiplied_total",id:"$(1)",slot:"mainhand"}]
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:bow",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"movement_speed",name:"movement_speed",amount:0.01,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
 
 # Crossbow
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:crossbow",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 700
-$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:crossbow",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"movement_speed",name:"movement_speed",amount:0.01,operation:"add_multiplied_total",id:"$(1)",slot:"mainhand"}]
+$execute if entity @s[type=item_display,nbt={item:{id:"minecraft:crossbow",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"attack_damage",amount:2,operation:"add_value",id:"$(1)",slot:"mainhand"},{type:"movement_speed",name:"movement_speed",amount:0.01,operation:"add_multiplied_total",id:"$(2)",slot:"mainhand"}]
 
 # -------- Armor --------
 

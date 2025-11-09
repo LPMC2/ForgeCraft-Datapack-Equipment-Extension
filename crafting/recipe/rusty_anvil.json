@@ -29,7 +29,6 @@
         {"color":"green","italic":false,"text":"Xp Level Cost: 5"}
       ],
       "minecraft:unbreakable": {
-        "show_in_tooltip": false
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "uncommon",

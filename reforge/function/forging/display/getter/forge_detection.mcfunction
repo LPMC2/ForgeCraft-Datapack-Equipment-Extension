@@ -35,6 +35,7 @@ execute as @e[tag=target_type_reforge] at @s if score @s id = .self_id const run
 # ----- Special Detections -----
 # > 1. Gilded:
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if predicate reforge:isgolditem run scoreboard players set .specialtype id 1
+execute as @e[type=minecraft:item_display,tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if items entity @s container.0 minecraft:golden_spear run scoreboard players set .specialtype id 1
 # > 2. Axe:
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if predicate reforge:isaxe run scoreboard players set .specialtype_axe id 1
 # > 3. Bow:

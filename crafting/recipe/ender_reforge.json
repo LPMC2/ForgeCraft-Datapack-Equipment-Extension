@@ -22,14 +22,13 @@
       "minecraft:lore": [
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Ender: "},{"bold":false,"color":"gray","italic":false,"text":"Fire the eye of ender instead."}],
         {"color":"gray","italic":false,"text":"Can damage enderman. Projectile: Block Shaped, Single Hit"},
-        {"color":"gray","italic":false,"text":"Damage calculation: (Arrow Damage + Power Enchantment Level + 3 (Crit Shot)) * 2"},
+        {"color":"gray","italic":false,"text":"Damage calculation: {Arrow Power + (Power Enchantment Level / 2) + 3(Crit Shot)} * 2"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
         {"color":"green","italic":false,"text":"Xp Level Cost: 30"}
       ],
       "minecraft:unbreakable": {
-        "show_in_tooltip": false
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "epic",
