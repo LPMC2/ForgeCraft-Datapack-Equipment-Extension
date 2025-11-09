@@ -1,3 +1,4 @@
+return fail
 scoreboard players set .5 const 5
 execute store result score .storedamage const run data get entity @s damage 1
 scoreboard players operation .storedamage const += .5 const

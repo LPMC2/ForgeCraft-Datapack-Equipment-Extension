@@ -22,6 +22,7 @@
       "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Power Core"},
       "minecraft:lore": [
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Super-Charged: "},{"bold":false,"color":"gray","italic":false,"text":"Increase the speed and damage of crit arrow!"}],
+        {"color":"gray","italic":false,"text":"+5 Arrow Power."},
         {"color":"dark_gray","italic":false,"text":"Doesn't work on fireworks"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
