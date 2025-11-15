@@ -6,7 +6,7 @@ data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge ap
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Enchanting $(name)"
-
+function reforge:forging/item_data/enchantment/get_enchant_player_xp
 execute if score .itemtype id matches 1..7 run item modify entity @s container.0 reforge:random_enchantment_req
 execute if score .itemtype id matches 8 run item modify entity @s container.0 reforge:enchant_utility
 data modify entity @s Item.components.minecraft:rarity set value "rare"

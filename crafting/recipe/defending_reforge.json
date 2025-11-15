@@ -26,7 +26,7 @@
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor/Melee/Ranged/Tool/Utilities"}],
-        {"color":"green","italic":false,"text":"Xp Level Cost: 8"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 8"}
       ],
       "minecraft:unbreakable": {
       },

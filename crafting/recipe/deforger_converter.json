@@ -16,16 +16,16 @@
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"white","italic":false,"text":"Forging Item Resetter"},
+      "minecraft:custom_name": {"color":"white","italic":false,"text":"Item De-forger"},
       "minecraft:lore": [
         [{"color":"gray","italic":false,"text":"⚒ Upon applying, RESET the item back to its base form."}],
-        {"color":"red","italic":false,"text":"(Removes all Enchantments, Name & Reforges. INCLUDING customized components)"},
+        {"color":"red","italic":false,"text":"(Removes all Enchantments, Name, Attributes & Reforges. INCLUDING customized components)"},
         {"color":"gray","italic":false,"text":"Refund 75% of the Experience Levels you spent on the reforges."},
-        {"color":"dark_gray","italic":false,"text":"Only works in version V1.65 or newer reforged items!"},
+        {"color":"dark_gray","italic":false,"text":"Refund ONLY works in version V1.65 or newer reforged items!"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to apply the effects!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item (Reforged)"}],
-        {"color":"green","italic":false,"text":"Xp Level Cost: 0"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 0"}
       ],
       "minecraft:unbreakable": {
       },
