@@ -99,3 +99,4 @@ recipe give @s crafting:illager_fortune_reforge
 recipe give @s crafting:warden_fortune_reforge
 recipe give @s crafting:trial_fortune_reforge
 recipe give @s crafting:enchanting_reforge
+recipe give @s crafting:deforger_converter

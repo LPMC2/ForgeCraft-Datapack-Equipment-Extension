@@ -31,4 +31,4 @@ data modify storage minecraft:attribute new.attribute_amount set value -0.5
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

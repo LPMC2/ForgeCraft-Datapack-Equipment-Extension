@@ -19,4 +19,4 @@ data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 
 execute as @s at @s run function reforge:forging/forge_type/gilded_reforge_doubledurability
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Gilded $(name)"
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

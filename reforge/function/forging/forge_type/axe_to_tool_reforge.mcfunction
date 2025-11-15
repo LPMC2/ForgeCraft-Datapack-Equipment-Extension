@@ -25,4 +25,4 @@ data modify entity @s Item.components.minecraft:custom_data.axe_tool set value 1
 data modify entity @s Item.components.minecraft:custom_data.typeid set value 7
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 0
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

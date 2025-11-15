@@ -16,4 +16,4 @@ execute as @s run function reforge:forging/forge_type/gilded_reforge_doubledurab
 
 
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

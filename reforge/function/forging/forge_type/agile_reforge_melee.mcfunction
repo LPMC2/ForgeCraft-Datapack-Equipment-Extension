@@ -21,4 +21,4 @@ execute store result entity @s Item.components.minecraft:custom_data.forge_count
 
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

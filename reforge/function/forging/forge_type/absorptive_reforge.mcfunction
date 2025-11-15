@@ -14,7 +14,7 @@ execute as @s run function reforge:forging/forge_type/attribute/operation/get_ty
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count
 scoreboard players add .forge_count const 1
-execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.forge_count int 1 run scoreboard players get .forge_count const
+execute store result entity @s Item.components.minecraft:custom_data.forge_count int 1 run scoreboard players get .forge_count const
 data modify entity @s Item.components.minecraft:custom_data.absorption set value 1
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
@@ -27,4 +27,4 @@ $execute unless score .istexturearmor const matches 0 if items entity @n[tag=ite
 $execute unless score .istexturearmor const matches 0 if items entity @n[tag=iteminit,limit=1] container.* #reforge:netherite run data modify entity @n[tag=iteminit,limit=1] Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"absorptive/netherite"}
 $execute unless score .istexturearmor const matches 0 if items entity @n[tag=iteminit,limit=1] container.* minecraft:turtle_helmet run data modify entity @n[tag=iteminit,limit=1] Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"absorptive/turtle"}
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

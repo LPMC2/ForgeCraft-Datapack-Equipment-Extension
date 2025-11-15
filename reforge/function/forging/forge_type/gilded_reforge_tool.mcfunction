@@ -8,4 +8,4 @@ data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:rarity set
 execute as @e[tag=iteminit,limit=1] at @s if entity @s[type=item,nbt={Item:{id:"minecraft:golden_pickaxe"}}] run data modify entity @s Item.components.minecraft:tool set value {default_mining_speed:1,damage_per_block:1,rules:[{speed:15,correct_for_drops:true,blocks:"#mineable/pickaxe"}]}
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

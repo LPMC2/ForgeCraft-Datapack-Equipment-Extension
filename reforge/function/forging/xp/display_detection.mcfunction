@@ -6,11 +6,13 @@ scoreboard players set .enhancement_count const 0
 scoreboard players set .has_profile const 0
 scoreboard players set .is_rename const 0
 scoreboard players set .is_supreme const 0
-execute at @s run execute as @n[type=item_display,tag=target_type_item,sort=nearest,limit=1] if data entity @s item.components.minecraft:custom_data.reforgeid store result score .forge_item_id const run data get entity @s item.components.minecraft:custom_data.reforgeid
-execute at @s run execute as @n[type=item_display,tag=target_type_item,sort=nearest,limit=1] if data entity @s item.components.minecraft:profile run scoreboard players set .has_profile const 1
-execute at @s run execute as @n[type=item_display,tag=target_type_item,sort=nearest,limit=1] if data entity @s item{id:"minecraft:structure_void"} run scoreboard players set .forge_item_id const -2
-execute at @s run execute as @n[type=item_display,tag=target_type_item,sort=nearest,limit=1] unless data entity @s item run scoreboard players set .forge_item_id const -2
-execute at @s run execute as @n[type=item_display,tag=target_type_reforge,sort=nearest,limit=1] if data entity @s item.components.minecraft:custom_data.reforgeid store result score .apply_id const run data get entity @s item.components.minecraft:custom_data.reforgeid
+scoreboard players set .refund_amount const 0
+execute at @s run execute as @n[type=item_display,tag=target_type_item] if data entity @s item.components.minecraft:custom_data.reforgeid store result score .forge_item_id const run data get entity @s item.components.minecraft:custom_data.reforgeid
+execute at @s run execute as @n[type=item_display,tag=target_type_item] if data entity @s item.components.minecraft:custom_data.forgecraft.xp_cost store result score .refund_amount const run data get entity @s item.components.minecraft:custom_data.forgecraft.xp_cost 0.75
+execute at @s run execute as @n[type=item_display,tag=target_type_item] if data entity @s item.components.minecraft:profile run scoreboard players set .has_profile const 1
+execute at @s run execute as @n[type=item_display,tag=target_type_item] if data entity @s item{id:"minecraft:structure_void"} run scoreboard players set .forge_item_id const -2
+execute at @s run execute as @n[type=item_display,tag=target_type_item] unless data entity @s item run scoreboard players set .forge_item_id const -2
+execute at @s run execute as @n[type=item_display,tag=target_type_reforge] if data entity @s item.components.minecraft:custom_data.reforgeid store result score .apply_id const run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.enhancement_count store result score .enhancement_count const run data get entity @s item.components.minecraft:custom_data.enhancement_count
 execute if score .enhancement_count const matches 1.. if score .apply_id const matches 75 run scoreboard players add .enhancement_count const 1
 execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.supreme_reforge store result score .enhancement_count const run scoreboard players set .is_supreme const 1
@@ -22,5 +24,6 @@ execute at @s run execute as @n[tag=target_type_reforge,sort=nearest,limit=1] if
 execute at @s run execute as @n[tag=target_type_reforge,sort=nearest,limit=1] if entity @s[nbt={item:{id:"minecraft:name_tag"}}] run scoreboard players set .apply_cost const 1
 execute store result storage minecraft:xp store.enhancement_count int 1 run scoreboard players get .enhancement_count const
 execute store result storage minecraft:xp store.enhancement_max int 1 run scoreboard players get .enhancementmaxcount const
+execute store result storage minecraft:xp store.refund_amount int 1 run scoreboard players get .refund_amount const
 execute store result storage minecraft:xp store.apply_amt int 1 run scoreboard players get .apply_cost const
 execute as @s run function reforge:forging/xp/set_display with storage minecraft:xp store 

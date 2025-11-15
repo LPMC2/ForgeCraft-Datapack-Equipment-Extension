@@ -32,7 +32,7 @@
         },
         "damage_resistant": {"types":"#minecraft:is_fire"},
         "minecraft:rarity": "uncommon",
-        "minecraft:custom_data": {"reforgeid":0,"req_xp":0},
+        "minecraft:custom_data": {"reforgeid":0,"req_xp":0,"forgecraft_forge_item":1},
         "minecraft:tool": {
           "rules": [
             {

@@ -21,4 +21,4 @@ data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["assassin"]}
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

@@ -13,4 +13,3 @@ data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 0
 
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem

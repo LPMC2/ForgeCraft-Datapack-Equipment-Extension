@@ -28,4 +28,4 @@ data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 execute as @s at @s run function reforge:forging/forge_type/reforge_halfdurability
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

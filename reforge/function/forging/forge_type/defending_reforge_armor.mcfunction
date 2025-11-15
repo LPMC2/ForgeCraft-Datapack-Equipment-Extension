@@ -29,4 +29,4 @@ scoreboard players add .forge_count const 1
 execute store result entity @s Item.components.minecraft:custom_data.forge_count int 1 run scoreboard players get .forge_count const
 
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

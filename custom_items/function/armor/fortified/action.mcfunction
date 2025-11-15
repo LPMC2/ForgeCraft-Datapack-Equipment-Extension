@@ -1,2 +1,2 @@
-execute as @s at @s if entity @e[type=#entity_hit_matching:targets,distance=..5] run function custom_items:armor/fortified/apply_pre
-execute as @s at @s unless entity @e[type=#entity_hit_matching:targets,distance=..5] run execute as @s run function custom_items:armor/fortified/reset
+execute as @s at @s if entity @e[type=#entity_hit_matching:non_mob,distance=..5] run function custom_items:armor/fortified/apply_pre
+execute as @s at @s unless entity @e[type=#entity_hit_matching:non_mob,distance=..5] run execute as @s run function custom_items:armor/fortified/reset

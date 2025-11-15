@@ -6,4 +6,4 @@ data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:custom_dat
 data modify entity @e[tag=iteminit,limit=1] Item.components.minecraft:rarity set value "epic"
 execute as @e[tag=iteminit,limit=1] at @s run function reforge:forging/forge_type/gilded_reforge_doubledurability
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+

@@ -15,4 +15,4 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data modify entity @s Item.components.minecraft:custom_data.unbreakable set value 1
 #data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .isreforged const 1
-function reforge:forging/resetreforgeitem
+
