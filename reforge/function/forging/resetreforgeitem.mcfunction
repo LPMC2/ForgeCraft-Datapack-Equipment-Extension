@@ -13,3 +13,4 @@ execute as @e[type=text_display,tag=target_forge_display_text] at @s if score @s
 execute as @e[type=item_display,tag=target_forge_display_item] at @s if score @s id = @n[tag=targetforgemodifier] id run function reforge:forging/display/reset
 data remove storage minecraft:reforge forge_itemid
 data remove storage minecraft:reforge forge_itemcomponents
+tag @n[type=minecraft:item,tag=iteminit] remove iteminit

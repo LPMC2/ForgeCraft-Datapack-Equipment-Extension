@@ -1,2 +1,2 @@
-# Craftable Item: Supreme Gold Alloy
+# Craftable Item: Pure Gold Alloy
 execute as @s if score .item reforgeId matches 6 if score .item_reforge reforgeId matches 6 run function reforge:forging/forge_type/craft/midas/get_supreme_gold_alloy with storage minecraft:reforge forge

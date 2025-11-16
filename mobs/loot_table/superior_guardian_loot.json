@@ -13,12 +13,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:max_stack_size": 16,
+      "minecraft:max_stack_size": 16,
                 "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Eye of the Guardian"},
                 "minecraft:lore": [
                   [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Guardian: "},{"bold":false,"color":"gray","italic":false,"text":"Fire a laser beam of bubble instead of arrow. Damage dealt is based on a calculation (Below)."}],
-                  {"color":"gray","italic":false,"text":"While in water, deals double the damage. Doesn’t work on fireworks."},
-                  {"color":"dark_gray","italic":false,"text":"Damage calculation: (Arrow Damage + Power Enchantment Level + Player Damage) *1.5(Crit) * 2(In Water)"},
+                  {"color":"gray","italic":false,"text":"While in water, deals triple the damage. Doesn’t work on fireworks."},
+                  {"color":"dark_gray","italic":false,"text":"Damage calculation: {Arrow Power + (Power Enchantment Level/2)} *2(Crit) * 3(In Water)"},
                   {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
                   {"text":" "},
                   [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],

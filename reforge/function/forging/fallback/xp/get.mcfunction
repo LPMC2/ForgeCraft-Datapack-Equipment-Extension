@@ -22,7 +22,7 @@ execute if score .item_reforge reforgeId matches 20 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 21 run scoreboard players set .req_xp const 25
 execute if score .item_reforge reforgeId matches 22 run scoreboard players set .req_xp const 15
 execute if score .item_reforge reforgeId matches 23 run scoreboard players set .req_xp const 10
-execute if score .item_reforge reforgeId matches 24 run scoreboard players set .req_xp const 5
+execute if score .item_reforge reforgeId matches 24 run scoreboard players set .req_xp const 7
 execute if score .item_reforge reforgeId matches 25 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 26 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 27 run scoreboard players set .req_xp const 10
