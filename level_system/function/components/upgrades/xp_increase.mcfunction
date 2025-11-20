@@ -1,0 +1,1 @@
+scoreboard players add @s forgecraft_lvl_xp_boost 1

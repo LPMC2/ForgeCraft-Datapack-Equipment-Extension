@@ -1,0 +1,1 @@
+scoreboard players add @s forgecraft_lvl_stat_boost 4

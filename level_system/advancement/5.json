@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:anvil"
+    },
+    "title": "Level 5",
+    "description": {
+      "text": "Achieve 2000 Xp Level used in Forging",
+      "color": "white",
+      "extra": [
+        {
+          "text": "\nReward: +50% Experience Orb gain,",
+          "color": "green"
+        },
+        {
+          "text": "\n+4% Attribute Stats boost when forging",
+          "color": "gold"
+        }
+      ]
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "level_system:4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

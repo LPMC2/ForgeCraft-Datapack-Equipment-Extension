@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:anvil"
+    },
+    "title": "Level 23",
+    "description": {
+      "text": "Achieve 20000 Xp Level used in Forging",
+      "color": "white",
+      "extra": [
+        {
+          "text": "\nReward: +230% Experience Orb gain",
+          "color": "green"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "level_system:22",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}
