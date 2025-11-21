@@ -1,1 +1,2 @@
-$xp add @s -$(remove_amt) levels
+$xp add @s -$(amount) levels
+$function level_system:components/levels/gain {amount:$(amount)}

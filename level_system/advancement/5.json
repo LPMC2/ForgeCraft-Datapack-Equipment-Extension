@@ -9,11 +9,11 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +50% Experience Orb gain,",
+          "text": "\nReward: +5 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n+4% Attribute Stats boost when forging",
+          "text": "\n+5% Attribute Stats boost when forging",
           "color": "gold"
         }
       ]

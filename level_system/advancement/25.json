@@ -9,16 +9,16 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +250% Experience Orb gain,",
+          "text": "\nReward: +25 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n+20% Attribute Stats boost when forging",
+          "text": "\n+25% Attribute Stats boost when forging",
           "color": "gold"
         }
       ]
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

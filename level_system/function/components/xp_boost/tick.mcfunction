@@ -1,0 +1,1 @@
+execute at @s as @e[type=minecraft:experience_orb,distance=..20,tag=!xp_init] run function level_system:components/xp_boost/init

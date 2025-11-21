@@ -1,1 +1,3 @@
-scoreboard players add @s forgecraft_lvl_stat_boost 4
+execute if score @s forgecraft_lvl matches 1..25 run scoreboard players add @s forgecraft_lvl_stat_boost 5
+execute if score @s forgecraft_lvl matches 26.. run scoreboard players add @s forgecraft_lvl_stat_boost 1
+tellraw @s [{"color":"blue","italic":false,"obfuscated":false,"text":"⬆ Attributes Boost on reforge "},{"color":"white","text":"+"},{"color":"white","italic":false,"obfuscated":false,"score":{"name":"@s","objective":"forgecraft_lvl_stat_boost"}},{"color":"white","italic":false,"obfuscated":false,"text":"%"}]
