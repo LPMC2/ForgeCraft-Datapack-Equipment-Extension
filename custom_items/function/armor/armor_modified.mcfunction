@@ -41,3 +41,4 @@ scoreboard players set @s supervision_count 0
 execute if items entity @s armor.head *[minecraft:custom_data~{supervision:1}] run scoreboard players set @s supervision_count 1
 scoreboard players set @s sneaky_count 0
 execute if items entity @s armor.feet *[minecraft:custom_data~{sneaky:1}] run scoreboard players set @s sneaky_count 1
+tag @s remove target_armor

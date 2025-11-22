@@ -1,0 +1,1 @@
+$execute if data storage forgecraft:string temp.numberic{result:"$(text_before_decimal).0"} run data modify storage forgecraft:string temp.numberic.result set value "$(text_before_decimal)"

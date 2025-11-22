@@ -12,6 +12,7 @@ $execute store result score .attribute_amount const run data get storage minecra
 scoreboard players set .-1 const -1
 execute if score .attribute_amount const matches ..-1 run scoreboard players operation .attribute_amount const *= .-1 const
 execute store result storage minecraft:attribute new.attribute_amount double 0.001 run scoreboard players get .attribute_amount const
+execute as @p[tag=targetplayer] run function reforge:forging/forge_type/attribute/bonus/get
 execute as @s run function reforge:forging/forge_type/attribute/value/set_attribute_storage with storage minecraft:attribute new
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 

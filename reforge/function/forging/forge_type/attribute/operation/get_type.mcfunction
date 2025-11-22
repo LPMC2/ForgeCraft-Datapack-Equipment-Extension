@@ -8,8 +8,12 @@ scoreboard players set .attribute_success const 0
 execute as @s run function reforge:forging/forge_type/attribute/operation/find/init
 #execute if score .attribute_success const matches 1 run say success finding!
 #execute as @s unless score .attribute_success const matches 1 run say failed finding!
+# > Bonus Apply from Player Level
+execute as @p[tag=targetplayer] run function reforge:forging/forge_type/attribute/bonus/get
+
 execute as @s if score .attribute_success const matches 1 if data storage minecraft:attribute new{type:add_multiplied_base} run function reforge:forging/forge_type/attribute/operation/type/add_multiplied_base/action with storage minecraft:attribute new
 execute as @s if score .attribute_success const matches 1 if data storage minecraft:attribute new{type:add_multiplied_total} run function reforge:forging/forge_type/attribute/operation/type/add_multiplied_total/action with storage minecraft:attribute new
 execute as @s if score .attribute_success const matches 1 if data storage minecraft:attribute new{type:add_value} run function reforge:forging/forge_type/attribute/operation/type/add_value/action with storage minecraft:attribute new
+
 execute as @s unless score .attribute_success const matches 1 run function reforge:forging/forge_type/attribute/operation/fallback_set
 execute as @s unless score .attribute_success const matches 1 run function reforge:forging/forge_type/attribute/operation/add_type with storage minecraft:attribute new

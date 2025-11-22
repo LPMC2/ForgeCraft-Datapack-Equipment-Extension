@@ -24,7 +24,7 @@ execute as @s run function reforge:forging/forge_type/attribute/operation/get_ty
 # Movement Speed
 #$data modify entity @s Item.components.minecraft:attribute_modifiers.modifiers append value {type:"movement_speed",amount:-0.6,operation:"add_multiplied_total",id:"$(uuid9)",slot:"$(slot)"}
 data remove storage minecraft:attribute new.attribute
-$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:movement_speed",operation:"add_multiplied_total",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:movement_speed",operation:"add_multiplied_base",slot:"$(slot)"}
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid9)
 data modify storage minecraft:attribute new.attribute_amount set value -0.5
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
