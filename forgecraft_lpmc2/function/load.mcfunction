@@ -142,3 +142,4 @@ execute unless score .forgecraft_loaded const matches 0.. run tellraw @a [{"colo
 execute unless score .forgecraft_loaded const matches 0.. run scoreboard players set .forgecraft_loaded const 1
 execute unless score .enhancementmaxcount const matches 0.. run scoreboard players set .enhancementmaxcount const 10
 function forgecraft_lpmc2:load/reforge_data
+function level_system:init

@@ -1,6 +1,7 @@
 #Forge Anvil Setup
 execute as @e[type=marker,tag=forge_base] at @s unless block ~ ~ ~ minecraft:anvil unless block ~ ~ ~ minecraft:chipped_anvil unless block ~ ~ ~ minecraft:damaged_anvil run function reforge:anvil_remove
 execute as @e[type=block_display,tag=reforge_anvil] at @s if entity @s[tag=init] align xyz positioned ~0.5 ~ ~0.5 run function reforge:setup
+execute as @e[type=marker,tag=reforge_crafter] at @s if entity @s[tag=init] align xyz positioned ~0.5 ~ ~0.5 run function reforge:procedure_generated/crafter/setup
 
 #Forge Anvil Item Detection
 execute as @e[type=interaction,tag=inputitem] at @s run function reforge:detection_slot

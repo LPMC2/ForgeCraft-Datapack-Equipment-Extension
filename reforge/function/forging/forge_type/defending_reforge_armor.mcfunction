@@ -1,7 +1,7 @@
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ Defending $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Defending: +1 Armor Point"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Defending: +1.25 Armor Point"}
+data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Defending: +1.5 Armor Point"}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Defending $(name)"
@@ -10,7 +10,7 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data remove storage minecraft:attribute new.attribute
 $data modify storage minecraft:attribute new.attribute set value {type:"minecraft:armor",operation:"add_value",slot:"$(slot)"}
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
-data modify storage minecraft:attribute new.attribute_amount set value 1.25
+data modify storage minecraft:attribute new.attribute_amount set value 1.5
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["defending"]}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/leather"}
