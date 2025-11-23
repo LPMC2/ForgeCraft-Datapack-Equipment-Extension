@@ -11,7 +11,7 @@
       "color":"dark_purple"
     },
     "description": {
-      "text": "This is a prison...The PAIN\nAchieve 444,311,550 Total Xp Level used in Forging\n",
+      "text": "This is a prison...The PAIN\nAchieve 444,280,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -36,6 +36,6 @@
     }
   },
   "rewards": {
-    "experience": 500
+    "experience": 30000
   }
 }

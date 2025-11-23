@@ -11,7 +11,7 @@
       "color":"red"
     },
     "description": {
-      "text": "❔ Wow! I wasn't expecting that...\nI guess you have no life...\nAchieve 1,058,976,550 Total Xp Level used in Forging\n",
+      "text": "❔ Wow! I wasn't expecting that...\nI guess you have no life...\nAchieve 1,058,945,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -36,6 +36,6 @@
     }
   },
   "rewards": {
-    "experience": 500
+    "experience": 40000
   }
 }

@@ -11,7 +11,7 @@
       "color":"blue"
     },
     "description": {
-      "text": "💯 How much did you GRIND?!\nAchieve 14,981,550 Total Xp Level used in Forging\n",
+      "text": "💯 How much did you GRIND?!\nAchieve 14,950,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -36,6 +36,6 @@
     }
   },
   "rewards": {
-    "experience": 500
+    "experience": 10000
   }
 }

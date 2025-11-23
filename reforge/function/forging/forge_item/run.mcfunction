@@ -24,5 +24,6 @@ execute as @e[type=minecraft:item_display,tag=target_forge_display_item] if scor
 
 # Reset Detections & Data
 scoreboard players set .isdisplay const 0
+scoreboard players set .disable_xp_actionbar const 30
 function reforge:forging/resetreforgeitem
 function reforge:forging/detection_reset

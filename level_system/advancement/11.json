@@ -5,7 +5,7 @@
     },
     "title": "Level 11",
     "description": {
-      "text": "Achieve 1700 Xp Level used in Forging\n",
+      "text": "Achieve 750 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -32,6 +32,6 @@
     }
   },
   "rewards": {
-    "experience": 100
+    "experience": 1100
   }
 }

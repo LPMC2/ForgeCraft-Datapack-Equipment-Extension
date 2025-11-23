@@ -5,7 +5,7 @@
     },
     "title": "Level 23",
     "description": {
-      "text": "Achieve 8000 Xp Level used in Forging\n",
+      "text": "Achieve 4350 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -26,6 +26,6 @@
     }
   },
   "rewards": {
-    "experience": 100
+    "experience": 2300
   }
 }

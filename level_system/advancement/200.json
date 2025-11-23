@@ -11,7 +11,7 @@
       "color":"light_purple"
     },
     "description": {
-      "text": "200? What have you done!!!\nAchieve 129,646,550 Total Xp Level used in Forging\n",
+      "text": "200? What have you done!!!\nAchieve 129,615,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -36,6 +36,6 @@
     }
   },
   "rewards": {
-    "experience": 500
+    "experience": 20000
   }
 }

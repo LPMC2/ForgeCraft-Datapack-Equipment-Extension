@@ -5,7 +5,7 @@
     },
     "title": "Level 19",
     "description": {
-      "text": "Achieve 4000 Xp Level used in Forging\n",
+      "text": "Achieve 2350 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
@@ -32,6 +32,6 @@
     }
   },
   "rewards": {
-    "experience": 100
+    "experience": 1900
   }
 }
