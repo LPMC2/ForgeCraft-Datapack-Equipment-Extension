@@ -5,12 +5,18 @@
     },
     "title": "Level 8",
     "description": {
-      "text": "Achieve 5000 Xp Level used in Forging",
+      "text": "Achieve 1150 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +8 Experience Orb Value",
+          "text": "\nReward:\n +11 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Gilded, Shielding, Rapid",
+          "color": "gray"
         }
       ]
     },

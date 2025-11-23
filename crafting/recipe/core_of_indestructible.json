@@ -24,14 +24,15 @@
           {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
           {"text":" "},
           [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Items"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 5"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 30"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 5"}
         ],
         "minecraft:unbreakable": {
           "show_in_tooltip": false
         },
         "damage_resistant": {"types":"#minecraft:is_fire"},
         "minecraft:rarity": "epic",
-        "minecraft:custom_data": {"reforgeid":7,"req_xp":5},
+        "minecraft:custom_data": {"reforgeid":7,"req_xp":30,"req_lvl":5},
         "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Core of Indestructible"},
         "minecraft:tool": {
           "rules": [

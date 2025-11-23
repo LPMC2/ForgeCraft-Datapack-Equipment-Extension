@@ -24,13 +24,14 @@
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Tool/Utilities"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 15"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 80"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 10"}
       ],
       "minecraft:unbreakable": {
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "uncommon",
-      "minecraft:custom_data": {"reforgeid":29,"req_xp":15},
+      "minecraft:custom_data": {"reforgeid":29,"req_xp":80,"req_lvl":10},
       "minecraft:profile": {
         "id": [
           -1688581797,

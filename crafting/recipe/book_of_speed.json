@@ -25,16 +25,19 @@
       "minecraft:custom_data": {
         "reforgeid": 75,
         "mod_type": 17,
-        "req_xp": 10
+        "req_xp": 15,
+        "req_lvl":13
       },
       "minecraft:item_name": {"color":"aqua","italic":false,"text":"Book of Movement Speed"},
       "minecraft:rarity": "rare",
       "minecraft:lore": [
-        {"color":"gray","italic":false,"text":"⚒ +2.5% Movement Speed to the item"},
+        {"color":"gray","italic":false,"text":"⚒ Armor: +2.5% Movement Speed to the item"},
+        {"color":"gray","italic":false,"text":"Other Types: +5% Movement Speed to the item"},
         {"color":"dark_gray","italic":false,"text":"Total Maximum Enhancement (Default): 10"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 10"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 15"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 13"}
       ]
     },
     "count": 1

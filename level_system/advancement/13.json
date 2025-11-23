@@ -5,12 +5,18 @@
     },
     "title": "Level 13",
     "description": {
-      "text": "Achieve 10000 Xp Level used in Forging",
+      "text": "Achieve 2100 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +13 Experience Orb Value",
+          "text": "\nReward:\n +24 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Feature - Enhancement Books",
+          "color": "gold"
         }
       ]
     },

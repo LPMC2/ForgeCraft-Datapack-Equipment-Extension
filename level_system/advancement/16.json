@@ -5,12 +5,18 @@
     },
     "title": "Level 16",
     "description": {
-      "text": "Achieve 13000 Xp Level used in Forging",
+      "text": "Achieve 2750 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +16 Experience Orb Value",
+          "text": "\nReward:\n +34 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforge:\n",
+          "color": "red"
+        },{
+          "text": "Sneaky",
+          "color": "gray"
         }
       ]
     },

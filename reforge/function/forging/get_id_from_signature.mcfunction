@@ -3,3 +3,4 @@ $execute if data entity @s item.components.minecraft:profile.properties[0].signa
 execute if score .store_reforgeid const matches 0.. run scoreboard players operation .item_reforge reforgeId = .store_reforgeid const
 execute if score .store_reforgeid const matches 0.. run execute store result storage minecraft:reforge forge.forgeid int 1 run scoreboard players get .store_reforgeid const
 execute if score .store_reforgeid const matches 0.. run function reforge:forging/fallback/xp/get
+execute if score .store_reforgeid const matches 0.. run function reforge:forging/fallback/level/get

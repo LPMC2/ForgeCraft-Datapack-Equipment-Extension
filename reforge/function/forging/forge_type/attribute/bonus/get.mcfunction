@@ -1,3 +1,6 @@
+execute if data storage minecraft:attribute new{attribute_actual_type:"minecraft:gravity"} run return fail
+execute if data storage minecraft:attribute new{attribute_actual_type:"minecraft:scale"} run return fail
+execute if data storage minecraft:attribute new{attribute_actual_type:"minecraft:burning_time"} run return fail
 scoreboard players set .temp_bonus_amount const 0
 scoreboard players set .temp_attribute_amount const 0
 scoreboard players set .temp_cal_attribute_amount const 0

@@ -5,12 +5,18 @@
     },
     "title": "Level 11",
     "description": {
-      "text": "Achieve 8000 Xp Level used in Forging",
+      "text": "Achieve 1700 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +11 Experience Orb Value",
+          "text": "\nReward:\n +18 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Raging",
+          "color": "gray"
         }
       ]
     },

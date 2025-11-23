@@ -7,7 +7,8 @@
       }
     },
     "title": {
-      "text":"⦿ Forging Level"
+      "text":"⦿ Forging Level",
+      "color": "green"
     },
     "description": [{
       "text": "Path to be a Absolute Menace",

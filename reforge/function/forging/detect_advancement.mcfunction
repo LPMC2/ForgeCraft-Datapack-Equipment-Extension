@@ -11,7 +11,7 @@ execute if entity @s[advancements={reforge:midas_power=false}] if score .item_re
 execute if entity @s[advancements={reforge:heavy_reforge=false}] if score .item_reforge reforgeId matches 2 run advancement grant @s only reforge:heavy_reforge
 execute if entity @s[advancements={reforge:maxed_out=false}] if score .enhancement_count const matches 10.. run advancement grant @s only reforge:maxed_out
 execute if entity @s[advancements={reforge:enhanced_reforge=false}] if score .item_reforge reforgeId matches 68 run advancement grant @s only reforge:enhanced_reforge
-execute if entity @s[advancements={reforge:evolving_reforge=false}] if data entity @n[type=item_display,limit=1,tag=targetforgeitem] item.components.minecraft:custom_data.evolving_reforge if score .detect_xp_cost const matches 150.. run advancement grant @s only reforge:evolving_reforge
+execute if entity @s[advancements={reforge:evolving_reforge=false}] if data entity @n[type=item_display,limit=1,tag=targetforgeitem] item.components.minecraft:custom_data.evolving_reforge if score .detect_xp_cost const matches 200.. run advancement grant @s only reforge:evolving_reforge
 execute if entity @s[advancements={reforge:runic_reforge=false}] if score .item_reforge reforgeId matches 69 run advancement grant @s only reforge:runic_reforge
 execute if entity @s[advancements={reforge:sniping_reforge=false}] if score .item_reforge reforgeId matches 20 run advancement grant @s only reforge:sniping_reforge
 execute if entity @s[advancements={reforge:supercharged_reforge=false}] if score .item_reforge reforgeId matches 14 run advancement grant @s only reforge:supercharged_reforge

@@ -25,13 +25,14 @@
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Helmet"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 5"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 15"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 1"}
       ],
       "minecraft:unbreakable": {
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "uncommon",
-      "minecraft:custom_data": {"reforgeid":31,"req_xp":5},
+      "minecraft:custom_data": {"reforgeid":31,"req_xp":15,"req_lvl":1},
       "minecraft:profile": {
         "id": [
           1477806198,-1440136893,-1742089835,-237547933

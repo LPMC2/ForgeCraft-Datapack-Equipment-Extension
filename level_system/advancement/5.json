@@ -1,20 +1,29 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:anvil"
+      "id": "minecraft:anvil",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
     },
     "title": "Level 5",
     "description": {
-      "text": "Achieve 2000 Xp Level used in Forging",
+      "text": "Achieve 700 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +5 Experience Orb Value,",
+          "text": "\nReward:\n +5 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n+5% Attribute Stats boost when forging",
+          "text": "\n +5% Attribute Stats boost when forging",
           "color": "gold"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Unbreakable, Efficient, Speedy, Assassin, Mysterious, Provoker, Sharp",
+          "color": "gray"
         }
       ]
     },

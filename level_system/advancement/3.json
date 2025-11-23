@@ -5,12 +5,18 @@
     },
     "title": "Level 3",
     "description": {
-      "text": "Achieve 1000 Xp Level used in Forging",
+      "text": "Achieve 400 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +3 Experience Orb Value",
+          "text": "\nReward:\n +3 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Self-Repairing, Striking, Leaping, Rotten, Long",
+          "color": "gray"
         }
       ]
     },

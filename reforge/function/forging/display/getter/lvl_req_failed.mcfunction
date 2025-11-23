@@ -1,0 +1,2 @@
+#tellraw @p[tag=targetplayer] [{"color":"red","italic":false,"text":"❌ Warning: Your current ⚒ Forging Level doesn't match the requirement ["},{"color":"white","italic":false,"score":{"name":"@p[tag=targetplayer]","objective":"forgecraft_lvl"}},{"text":"/"},{"color":"white","italic":false,"score":{"name":".require_level","objective":"const"}},{"color":"red","italic":false,"text":"]!"}]
+function reforge:forging/detection_reset

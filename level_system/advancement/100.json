@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:anvil",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": {
+      "text":"Level 100 - Elite",
+      "color":"blue"
+    },
+    "description": {
+      "text": "💯 How much did you GRIND?!\nAchieve 14,981,550 Total Xp Level used in Forging\n",
+      "color": "white",
+      "extra": [
+        {
+          "text": "\nReward:\n +450 Experience Orb Value,",
+          "color": "green"
+        },
+        {
+          "text": "\n +40% Attribute Stats boost when forging",
+          "color": "gold"
+        }
+      ]
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "level_system:25",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

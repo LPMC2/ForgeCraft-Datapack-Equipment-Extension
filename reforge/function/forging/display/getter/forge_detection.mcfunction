@@ -31,6 +31,9 @@ scoreboard players set .is_repeated const 0
 scoreboard players set .is_item_reforge_item const -1
 scoreboard players set .non_repairable const 0
 scoreboard players set .xp_cost const 20
+scoreboard players set .require_level const 0
+scoreboard players set .player_lvl const 0
+scoreboard players operation .player_lvl const = @p[tag=targetplayer] forgecraft_lvl
 
 execute as @e[tag=target_type_item] at @s if score @s id = .self_id const run tag @s add targetforgeitem
 execute as @e[tag=target_type_reforge] at @s if score @s id = .self_id const run tag @s add targetforgemodifier
@@ -60,6 +63,7 @@ execute if data entity @n[tag=targetforgeitem] item.components.minecraft:custom_
 execute as @n[tag=targetforgeitem] if data entity @s item.components.minecraft:custom_data.forge_count store result score .item_forge_count const run data get entity @s item.components.minecraft:custom_data.forge_count
 execute as @n[type=minecraft:item_display,tag=targetforgeitem] if data entity @s item.components.minecraft:profile.properties[0].signature store result score .is_item_reforge_item const run data get entity @s item.components.minecraft:profile.properties[0].signature
 # Store reforge id from the forge item
+execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s store result score .require_level const run data get entity @s item.components.minecraft:custom_data.req_lvl
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run execute store result score .item_reforge reforgeId run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run scoreboard players set .item_reforge reforgeId -1
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run data modify storage minecraft:item store.reforge_id set from entity @s item.components.minecraft:profile.properties[0].signature
@@ -94,6 +98,8 @@ execute as @n[tag=targetforgeitem] if data entity @s item.components.minecraft:c
 execute unless score .itemtype id matches 1.. run scoreboard players set .isnotlisted const 1
 # Returns if potential repeated forge ids
 execute if score .is_repeated const matches 1.. run return run function reforge:forging/detection_reset
+# Returns if Player Level doesn't match
+execute if score .player_lvl const < .require_level const run return run function reforge:forging/display/getter/lvl_req_failed
 function reforge:forging/randomizeduuid
 # Auto-Convert
 execute if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. unless score .isrequireconvert const matches 1.. unless score .item_reforge reforgeId matches 85 run function reforge:forging/display/getter/auto_convert

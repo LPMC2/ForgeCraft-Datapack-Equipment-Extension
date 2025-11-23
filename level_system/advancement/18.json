@@ -5,12 +5,18 @@
     },
     "title": "Level 18",
     "description": {
-      "text": "Achieve 15000 Xp Level used in Forging",
+      "text": "Achieve 3500 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +18 Experience Orb Value",
+          "text": "\nReward:\n +42 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforge:\n",
+          "color": "red"
+        },{
+          "text": "Guardian",
+          "color": "gray"
         }
       ]
     },

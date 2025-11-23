@@ -26,7 +26,8 @@
       "minecraft:custom_data": {
         "reforgeid": 75,
         "mod_type": 14,
-        "req_xp": 5
+        "req_xp": 15,
+        "req_lvl":13
       },
       "minecraft:item_name": {"color":"aqua","italic":false,"text":"Book of Mining"},
       "minecraft:rarity": "rare",
@@ -35,7 +36,8 @@
         {"color":"dark_gray","italic":false,"text":"Total Maximum Enhancement (Default): 10"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 5"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 15"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 13"}
       ]
     },
     "count": 1

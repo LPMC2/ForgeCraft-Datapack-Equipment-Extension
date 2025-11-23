@@ -5,12 +5,18 @@
     },
     "title": "Level 7",
     "description": {
-      "text": "Achieve 4000 Xp Level used in Forging",
+      "text": "Achieve 1000 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +7 Experience Orb Value",
+          "text": "\nReward:\n +9 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Dispenser, Reinforced, Powerful, Weaponized",
+          "color": "gray"
         }
       ]
     },

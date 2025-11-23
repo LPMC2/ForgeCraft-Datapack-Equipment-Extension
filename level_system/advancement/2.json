@@ -5,12 +5,18 @@
     },
     "title": "Level 2",
     "description": {
-      "text": "Achieve 500 Xp Level used in Forging",
+      "text": "Achieve 250 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +2 Experience Orb Value",
+          "text": "\nReward:\n +2 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Spiky, Drilling, Farm-Replenisher, Fortified, Piercing",
+          "color": "gray"
         }
       ]
     },

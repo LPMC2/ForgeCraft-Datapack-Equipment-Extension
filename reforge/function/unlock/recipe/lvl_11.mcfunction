@@ -1,0 +1,1 @@
+recipe give @s crafting:orb_of_rage

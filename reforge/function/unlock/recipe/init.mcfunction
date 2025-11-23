@@ -1,0 +1,21 @@
+function reforge:unlock_base_reforges
+execute if score @s forgecraft_lvl matches 1.. run function reforge:unlock/recipe/lvl_1
+execute if score @s forgecraft_lvl matches 2.. run function reforge:unlock/recipe/lvl_2
+execute if score @s forgecraft_lvl matches 3.. run function reforge:unlock/recipe/lvl_3
+execute if score @s forgecraft_lvl matches 4.. run function reforge:unlock/recipe/lvl_4
+execute if score @s forgecraft_lvl matches 5.. run function reforge:unlock/recipe/lvl_5
+execute if score @s forgecraft_lvl matches 6.. run function reforge:unlock/recipe/lvl_6
+execute if score @s forgecraft_lvl matches 7.. run function reforge:unlock/recipe/lvl_7
+execute if score @s forgecraft_lvl matches 8.. run function reforge:unlock/recipe/lvl_8
+execute if score @s forgecraft_lvl matches 9.. run function reforge:unlock/recipe/lvl_9
+execute if score @s forgecraft_lvl matches 10.. run function reforge:unlock/recipe/lvl_10
+execute if score @s forgecraft_lvl matches 11.. run function reforge:unlock/recipe/lvl_11
+execute if score @s forgecraft_lvl matches 12.. run function reforge:unlock/recipe/lvl_12
+execute if score @s forgecraft_lvl matches 13.. run function reforge:unlock/recipe/lvl_13
+execute if score @s forgecraft_lvl matches 14.. run function reforge:unlock/recipe/lvl_14
+execute if score @s forgecraft_lvl matches 15.. run function reforge:unlock/recipe/lvl_15
+execute if score @s forgecraft_lvl matches 16.. run function reforge:unlock/recipe/lvl_16
+execute if score @s forgecraft_lvl matches 18.. run function reforge:unlock/recipe/lvl_18
+execute if score @s forgecraft_lvl matches 19.. run function reforge:unlock/recipe/lvl_19
+execute if score @s forgecraft_lvl matches 20.. run function reforge:unlock/recipe/lvl_20
+execute if score @s forgecraft_lvl matches 25.. run function reforge:unlock/recipe/lvl_25

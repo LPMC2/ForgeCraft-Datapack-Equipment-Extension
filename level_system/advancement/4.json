@@ -5,12 +5,18 @@
     },
     "title": "Level 4",
     "description": {
-      "text": "Achieve 1500 Xp Level used in Forging",
+      "text": "Achieve 550 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +4 Experience Orb Value",
+          "text": "\nReward:\n +4 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Turbo, Light, Energetic, Reflective",
+          "color": "gray"
         }
       ]
     },

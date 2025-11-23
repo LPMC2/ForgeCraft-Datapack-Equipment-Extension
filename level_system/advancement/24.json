@@ -5,11 +5,11 @@
     },
     "title": "Level 24",
     "description": {
-      "text": "Achieve 21000 Xp Level used in Forging",
+      "text": "Achieve 9000 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +24 Experience Orb Value",
+          "text": "\nReward:\n +70 Experience Orb Value",
           "color": "green"
         }
       ]

@@ -1,20 +1,29 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:anvil"
+      "id": "minecraft:anvil",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
     },
     "title": "Level 15",
     "description": {
-      "text": "Achieve 12000 Xp Level used in Forging",
+      "text": "Achieve 2500 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +15 Experience Orb Value,",
+          "text": "\nReward:\n +30 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n+15% Attribute Stats boost when forging",
+          "text": "\n +15% Attribute Stats boost when forging",
           "color": "gold"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Absorptive, Warrior, Fortunate, Leeching, Tactical",
+          "color": "gray"
         }
       ]
     },

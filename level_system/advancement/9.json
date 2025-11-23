@@ -5,12 +5,18 @@
     },
     "title": "Level 9",
     "description": {
-      "text": "Achieve 6000 Xp Level used in Forging",
+      "text": "Achieve 1300 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +9 Experience Orb Value",
+          "text": "\nReward:\n +13 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Stunning, Swarming",
+          "color": "gray"
         }
       ]
     },

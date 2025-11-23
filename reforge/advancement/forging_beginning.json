@@ -27,7 +27,7 @@
     }
   },
   "rewards": {
-    "function": "reforge:unlock_all_reforges",
+    "function": "reforge:unlock/recipe/init",
     "experience": 5
   }
 }

@@ -5,12 +5,18 @@
     },
     "title": "Level 14",
     "description": {
-      "text": "Achieve 11000 Xp Level used in Forging",
+      "text": "Achieve 2300 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +14 Experience Orb Value",
+          "text": "\nReward:\n +27 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Chaining, Sniping",
+          "color": "gray"
         }
       ]
     },

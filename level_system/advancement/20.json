@@ -1,20 +1,29 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:anvil"
+      "id": "minecraft:anvil",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
     },
     "title": "Level 20",
     "description": {
-      "text": "Achieve 17000 Xp Level used in Forging",
+      "text": "Achieve 5000 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +20 Experience Orb Value,",
+          "text": "\nReward:\n +50 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n+20% Attribute Stats boost when forging",
+          "text": "\n +20% Attribute Stats boost when forging",
           "color": "gold"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Cursed, Evolving, Inferno, Super-Charged, Rampaging, Runic",
+          "color": "gray"
         }
       ]
     },

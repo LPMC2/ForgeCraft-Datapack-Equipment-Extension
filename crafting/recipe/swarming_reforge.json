@@ -24,13 +24,14 @@
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 15"}
+        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 40"},
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 9"}
       ],
       "minecraft:unbreakable": {
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "rare",
-      "minecraft:custom_data": {"reforgeid":67,"req_xp":15},
+      "minecraft:custom_data": {"reforgeid":67,"req_xp":40,"req_lvl":9},
       "minecraft:profile": {
         "id": [
           -639619351,17779990,-1433926960,2061113653

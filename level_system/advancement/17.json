@@ -5,12 +5,18 @@
     },
     "title": "Level 17",
     "description": {
-      "text": "Achieve 14000 Xp Level used in Forging",
+      "text": "Achieve 3000 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward: +17 Experience Orb Value",
+          "text": "\nReward:\n +38 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforge:\n",
+          "color": "red"
+        },{
+          "text": "Midas's",
+          "color": "gray"
         }
       ]
     },
