@@ -134,7 +134,7 @@ scoreboard objectives add use dummy
 scoreboard objectives add type dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
 scoreboard players set @a leave_game 0
-execute as @a at @s if score @s id matches 0.. run function reforge:unlock/recipe/init
+execute as @a at @s run function reforge:unlock/recipe/init
 execute unless score .ismobmodification const matches 0.. run scoreboard players set .ismobmodification const 0
 execute unless score .isrequireconvert const matches 0.. run scoreboard players set .isrequireconvert const 0
 execute unless score .istexturearmor const matches 0.. run scoreboard players set .istexturearmor const 1
