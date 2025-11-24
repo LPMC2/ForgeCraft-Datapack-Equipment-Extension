@@ -16,7 +16,11 @@ data modify storage minecraft:reforge temp.display.description.color set value "
 data modify storage minecraft:reforge temp.display.item set from entity @s Item
 execute as @s run function reforge:forging/string_data/attribute/init
 data modify storage minecraft:reforge temp.display.attributes set from storage minecraft:reforge temp.attribute.data
-execute as @e[type=item_display,tag=target_forge_display_item] if score @s id = .self_id const run data modify entity @s item set from storage minecraft:reforge temp.display.item
+execute as @e[type=item_display,tag=target_forge_display_item] if score @s id = .self_id const run tag @s add temp_target_display_item
+data remove entity @n[type=minecraft:item_display,tag=temp_target_display_item] data.data
+execute as @n[type=item_display,tag=temp_target_display_item] run data modify entity @s item set from storage minecraft:reforge temp.display.item
+execute as @n[type=item_display,tag=temp_target_display_item] run data modify entity @s data.data set from entity @n[type=minecraft:item,tag=iteminit] data
 execute as @e[type=text_display,tag=target_forge_display_text] if score @s id = .self_id const run function reforge:forging/display/set_details with storage minecraft:reforge temp.display
 execute as @e[type=interaction,tag=forge_detection] if score @s id = .self_id const run data modify entity @s width set value 0.5
 execute as @e[type=interaction,tag=forge_detection] if score @s id = .self_id const run data modify entity @s height set value 0.5
+tag @e[type=item_display,tag=temp_target_display_item] remove temp_target_display_item

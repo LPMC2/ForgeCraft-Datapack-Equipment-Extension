@@ -73,7 +73,6 @@ execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s if data entity
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.mod_type store result score .item_mod id run data get entity @s item.components.minecraft:custom_data.mod_type
 # Store reforge id from the item
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute store result score .item reforgeId store result storage minecraft:reforge forge.forge_itemid int 1 run data get entity @s item.components.minecraft:custom_data.reforgeid
-execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s if data entity @s item.components.minecraft:custom_data.forgecraft_forge_item run say d
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s if data entity @s item.components.minecraft:custom_data.forgecraft_forge_item run scoreboard players set .item reforgeId 99999999
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run scoreboard players set .item reforgeId -1
 # Detect if potential repeated forge ids

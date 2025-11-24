@@ -24,5 +24,6 @@ execute if score .itemtype id matches 3 run data modify storage minecraft:reforg
 execute if score .itemtype id matches 4 run data modify storage minecraft:reforge forge.slot set value "chest"
 execute if score .itemtype id matches 5 run data modify storage minecraft:reforge forge.slot set value "legs"
 execute if score .itemtype id matches 6 run data modify storage minecraft:reforge forge.slot set value "feet"
+execute as @n[type=item,tag=iteminit] run data modify entity @s data.req_xp set value 0
 data remove storage minecraft:reforge forge_itemid
 data remove storage minecraft:reforge forge_itemcomponents

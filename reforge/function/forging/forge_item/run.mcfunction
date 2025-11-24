@@ -1,10 +1,12 @@
 tag @s add find
+scoreboard players set .temp_anvil_id const 0
+scoreboard players operation .temp_anvil_id const = @s id
 # Find Player
 execute as @a run function reforge:find_players
 
 # Add Tags for identification to target item displays
-execute as @e[tag=target_type_item] at @s if score @s id = @e[tag=find,limit=1] id run tag @s add targetforgeitem
-execute as @e[tag=target_type_reforge] at @s if score @s id = @e[tag=find,limit=1] id run tag @s add targetforgemodifier
+execute as @e[tag=target_type_item] at @s if score @s id = .temp_anvil_id const run tag @s add targetforgeitem
+execute as @e[tag=target_type_reforge] at @s if score @s id = .temp_anvil_id const run tag @s add targetforgemodifier
 
 # Detect if the player have enough xp
 scoreboard players set .xp_matched const 0
@@ -27,3 +29,4 @@ scoreboard players set .isdisplay const 0
 scoreboard players set .disable_xp_actionbar const 30
 function reforge:forging/resetreforgeitem
 function reforge:forging/detection_reset
+scoreboard players reset .temp_anvil_id const
