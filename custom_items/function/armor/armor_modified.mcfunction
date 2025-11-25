@@ -1,8 +1,8 @@
-tag @s add target_armor
 execute as @s run function custom_items:armor/get_armor_data
 execute as @s run function custom_items:armor/tanky/get_data
 execute as @s run function custom_items:armor/glasscannon/reset
-execute as @s if items entity @s armor.* *[minecraft:custom_data~{glasscannon:1}] run schedule function custom_items:armor/glasscannon/update_value 2t replace
+execute as @s if items entity @s armor.* *[minecraft:custom_data~{glasscannon:1}] run tag @s add target_armor
+execute as @s if items entity @s armor.* *[minecraft:custom_data~{glasscannon:1}] run schedule function custom_items:armor/glasscannon/update_value 2t append
 execute as @s run function custom_items:armor/mythic/get_data
 execute as @s if score @s mythic_count matches 1.. run function custom_items:armor/mythic/get_boost
 
@@ -41,4 +41,4 @@ scoreboard players set @s supervision_count 0
 execute if items entity @s armor.head *[minecraft:custom_data~{supervision:1}] run scoreboard players set @s supervision_count 1
 scoreboard players set @s sneaky_count 0
 execute if items entity @s armor.feet *[minecraft:custom_data~{sneaky:1}] run scoreboard players set @s sneaky_count 1
-tag @s remove target_armor
+#tag @s remove target_armor
