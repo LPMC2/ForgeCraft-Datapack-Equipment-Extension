@@ -9,8 +9,7 @@ execute as @s run function custom_items:armor/glasscannon/reset
 execute if data entity @s equipment.head.components.minecraft:custom_data.glasscannon run scoreboard players add .armor_count const 1
 execute if data entity @s equipment.chest.components.minecraft:custom_data.glasscannon run scoreboard players add .armor_count const 1
 execute if data entity @s equipment.legs.components.minecraft:custom_data.glasscannon run scoreboard players add .armor_count const 1
-execute if data entity @s equipment.feet.components.minecraft:custom_data.glasscannon run scoreboard players add .armor_count const 1
-say f
+execute if data entity @s equipment.feet.components.minecraft:custom_data.glasscannon run scoreboard players add .armor_count const 1f
 # Calculate Armor Points
 execute store result score .armor_points const run attribute @s minecraft:armor get
 execute if score .armor_points const matches 20.. run scoreboard players set .armor_points const 20
