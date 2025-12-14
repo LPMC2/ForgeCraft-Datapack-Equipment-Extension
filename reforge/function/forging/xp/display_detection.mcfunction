@@ -14,7 +14,7 @@ execute at @s run execute as @n[type=item_display,tag=target_type_item] if data 
 execute at @s run execute as @n[type=item_display,tag=target_type_item] unless data entity @s item run scoreboard players set .forge_item_id const -2
 execute at @s run execute as @n[type=item_display,tag=target_type_reforge] if data entity @s item.components.minecraft:custom_data.reforgeid store result score .apply_id const run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.enhancement_count store result score .enhancement_count const run data get entity @s item.components.minecraft:custom_data.enhancement_count
-execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.enhancement_count run tellraw @p {"score":{"name":".enhancement_count","objective":"const"}}
+#execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.enhancement_count run tellraw @p {"score":{"name":".enhancement_count","objective":"const"}}
 execute if score .enhancement_count const matches 1.. if score .apply_id const matches 75 run scoreboard players add .enhancement_count const 1
 execute at @s as @e[tag=target_type_item,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.supreme_reforge run scoreboard players set .is_supreme const 1
 #execute if data storage minecraft:reforge components.minecraft:custom_data.reforgeid store result score .apply_id const run data get storage minecraft:reforge components.minecraft:custom_data.reforgeid

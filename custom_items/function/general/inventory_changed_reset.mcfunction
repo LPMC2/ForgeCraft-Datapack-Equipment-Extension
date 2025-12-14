@@ -1,0 +1,1 @@
+advancement revoke @a only entity_hit_matching:on_inventory_changed
