@@ -1,0 +1,2 @@
+execute if score .istextureequipment const matches 1.. run return run function gamerules:istextureequipment/false
+execute unless score .istextureequipment const matches 1.. run return run function gamerules:istextureequipment/true

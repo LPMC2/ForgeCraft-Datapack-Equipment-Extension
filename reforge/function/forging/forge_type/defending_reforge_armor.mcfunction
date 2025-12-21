@@ -12,7 +12,7 @@ $data modify storage minecraft:attribute new.attribute set value {type:"minecraf
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
 data modify storage minecraft:attribute new.attribute_amount set value 1.5
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["defending"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "defending"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/iron"}
@@ -21,7 +21,7 @@ $execute unless score .istexturearmor const matches 0 if items entity @s contain
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:netherite run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/netherite"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* minecraft:turtle_helmet run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"defending/turtle"}
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["defending"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "defending"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count

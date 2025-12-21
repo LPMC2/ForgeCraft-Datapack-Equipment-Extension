@@ -20,7 +20,7 @@ execute as @s run function reforge:forging/forge_type/attribute/operation/get_ty
 
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 execute as @s run function reforge:forging/forge_type/copperize_reforge_durability
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["copperized"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "copperized"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/iron"}

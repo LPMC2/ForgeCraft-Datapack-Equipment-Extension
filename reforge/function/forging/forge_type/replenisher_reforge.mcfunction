@@ -9,7 +9,7 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data modify entity @s Item.components.minecraft:custom_data.replenisher set value 1
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["replenisher"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "replenisher"
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count
 scoreboard players add .forge_count const 1

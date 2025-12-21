@@ -19,6 +19,6 @@ execute store result entity @s Item.components.minecraft:custom_data.forge_count
 
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["assassin"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "assassin"
 scoreboard players set .isreforged const 1
 

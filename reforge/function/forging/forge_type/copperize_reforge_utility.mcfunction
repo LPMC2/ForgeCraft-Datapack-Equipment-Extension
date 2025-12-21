@@ -12,7 +12,7 @@ data modify storage minecraft:attribute new.attribute set value {type:"minecraft
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
 data modify storage minecraft:attribute new.attribute_amount set value 0.25
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["copperized"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "copperized"
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 execute as @s if data entity @s Item.components.minecraft:max_damage run function reforge:forging/forge_type/copperize_reforge_durability
 

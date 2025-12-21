@@ -23,7 +23,7 @@ data modify storage minecraft:attribute new.attribute_amount set value -3
 $execute if data entity @s Item.components.minecraft:attribute_modifiers[{type:"minecraft:armor",operation:"add_value",slot:"$(slot)"}] run execute store result score .attribute_amount const run data get entity @s Item.components.minecraft:attribute_modifiers[{type:"minecraft:armor",operation:"add_value",slot:"$(slot)"}].amount -100
 $execute if data entity @s Item.components.minecraft:attribute_modifiers[{type:"minecraft:armor",operation:"add_value",slot:"$(slot)"}] run execute store result storage minecraft:attribute new.attribute_amount double 0.01 run scoreboard players get .attribute_amount const
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["leaflet"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "leaflet"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"leaflet/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"leaflet/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"leaflet/iron"}

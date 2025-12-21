@@ -15,7 +15,7 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data modify entity @s Item.components.minecraft:custom_data.defending set value 1
 data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",sound:"item.shield.block",has_consume_particles:false}
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["defending"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "defending"
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid

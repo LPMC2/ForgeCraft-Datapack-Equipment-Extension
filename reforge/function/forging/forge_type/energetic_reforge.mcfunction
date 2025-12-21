@@ -23,7 +23,7 @@ execute as @s run function reforge:forging/forge_type/attribute/operation/get_ty
 data modify entity @s Item.components.minecraft:custom_data.energetic set value 1
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["energetic"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "energetic"
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count
 scoreboard players add .forge_count const 1

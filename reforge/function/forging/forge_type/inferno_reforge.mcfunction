@@ -25,7 +25,7 @@ data modify entity @s Item.components.minecraft:damage_resistant set value {type
 data modify entity @s Item.components.minecraft:custom_data.inferno set value 1
 data modify entity @s Item.components.minecraft:rarity set value "epic"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["inferno"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "inferno"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"inferno/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"inferno/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"inferno/iron"}

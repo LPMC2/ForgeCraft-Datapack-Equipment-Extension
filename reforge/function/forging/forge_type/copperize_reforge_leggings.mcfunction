@@ -17,7 +17,7 @@ $data modify storage minecraft:attribute new.attribute set value {type:"minecraf
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid2)
 data modify storage minecraft:attribute new.attribute_amount set value 0.5
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["copperized"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "copperized"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"copperized/iron"}

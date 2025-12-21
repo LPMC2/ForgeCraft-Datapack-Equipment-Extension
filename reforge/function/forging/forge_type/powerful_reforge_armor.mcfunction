@@ -14,7 +14,7 @@ data modify storage minecraft:attribute new.attribute_amount set value 0.75
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["powerful"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "powerful"
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:leather run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"powerful/leather"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:chainmail run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"powerful/chainmail"}
 $execute unless score .istexturearmor const matches 0 if items entity @s container.* #reforge:iron run data modify entity @s Item.components.minecraft:equippable set value {slot:"$(slot)",asset_id:"powerful/iron"}

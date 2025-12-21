@@ -22,7 +22,7 @@ $data modify storage minecraft:attribute new.attribute set value {type:"minecraf
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid5)
 data modify storage minecraft:attribute new.attribute_amount set value 0.1
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
-data modify entity @s Item.components.minecraft:custom_model_data set value {strings:["sharp"]}
+execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "sharp"
 
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .forge_count const 0
