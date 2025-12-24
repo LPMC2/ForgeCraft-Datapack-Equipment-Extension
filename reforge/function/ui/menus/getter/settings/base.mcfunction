@@ -20,7 +20,7 @@ $dialog show @s { \
       "key": "enhancementmaxcount",\
       "width": 300,\
       "label": {\
-        "text": "Maximum Applied Enhancement Books ",\
+        "text": "Maximum Applied Enhancement Books",\
         "type": "text",\
         "color": "white",\
         "hover_event": {\
@@ -116,6 +116,28 @@ $dialog show @s { \
       "initial": $(istextureequipment),\
       "on_true": "1",\
       "on_false": "0"\
+    },\
+    {\
+      "type": "minecraft:number_range",\
+      "key": "forgingxpmultiplier",\
+      "width": 300,\
+      "label": {\
+        "text": "Forging XP Multiplier",\
+        "type": "text",\
+        "color": "white",\
+        "hover_event": {\
+          "action": "show_text",\
+          "value": {\
+            "text": "ℹ Multiplies the amount of Forging XP gained, which makes the gameplay easier.",\
+            "type": "text",\
+            "color": "yellow"\
+          }\
+        }\
+      },\
+      "start": 1,\
+      "end": 10,\
+      "step": 1,\
+      "initial": $(forgingxpmultiplier)\
     }\
   ],\
   "can_close_with_escape": true,\
@@ -134,7 +156,7 @@ $dialog show @s { \
     "width": 80,\
     "action": {\
       "type": "minecraft:dynamic/run_command",\
-      "template": "function reforge:ui/components/settings/set {enhancementmaxcount:\"\u0024(enhancementmaxcount)\",ismobmodification:\"\u0024(ismobmodification)\",isrequireconvert:\"\u0024(isrequireconvert)\",istexturearmor:\"\u0024(istexturearmor)\",istextureequipment:\"\u0024(istextureequipment)\"}"\
+      "template": "function reforge:ui/components/settings/set {enhancementmaxcount:\"\u0024(enhancementmaxcount)\",ismobmodification:\"\u0024(ismobmodification)\",isrequireconvert:\"\u0024(isrequireconvert)\",istexturearmor:\"\u0024(istexturearmor)\",istextureequipment:\"\u0024(istextureequipment)\",forgingxpmultiplier:\"\u0024(forgingxpmultiplier)\"}"\
     }\
   },\
   "columns": 2\
