@@ -1,0 +1,1 @@
+recipe give @s crafting:power_core

@@ -28,13 +28,13 @@
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
         {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 40"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 8"}
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 20"}
       ],
       "minecraft:unbreakable": {
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":32,"req_xp":40,"req_lvl":8},
+      "minecraft:custom_data": {"reforgeid":32,"req_xp":40,"req_lvl":20},
       "minecraft:profile": {
         "id": [
           1138890476,

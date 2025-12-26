@@ -11,6 +11,12 @@
         {
           "text": "\nReward:\n +55 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Super-Charged",
+          "color": "gray"
         }
       ]
     },

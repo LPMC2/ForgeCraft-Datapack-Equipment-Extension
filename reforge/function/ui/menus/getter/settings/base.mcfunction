@@ -122,20 +122,20 @@ $dialog show @s { \
       "key": "forgingxpmultiplier",\
       "width": 300,\
       "label": {\
-        "text": "Forging XP Multiplier",\
+        "text": "⚒ Forging XP Multiplier",\
         "type": "text",\
         "color": "white",\
         "hover_event": {\
           "action": "show_text",\
           "value": {\
-            "text": "ℹ Multiplies the amount of Forging XP gained, which makes the gameplay easier.",\
+            "text": "ℹ Multiplies the amount of Forging XP gained, which can make leveling up either easier, or much harder.",\
             "type": "text",\
             "color": "yellow"\
           }\
         }\
       },\
       "start": 1,\
-      "end": 10,\
+      "end": 20,\
       "step": 1,\
       "initial": $(forgingxpmultiplier)\
     }\

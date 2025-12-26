@@ -34,7 +34,7 @@
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":86,"req_xp":100,"req_lvl":20},
+      "minecraft:custom_data": {"reforgeid":86,"req_xp":100,"req_lvl":23},
       "minecraft:profile": {
         "properties": [
           {

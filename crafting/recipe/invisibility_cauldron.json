@@ -34,13 +34,13 @@
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
         {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 25"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 5"}
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 8"}
       ],
       "minecraft:unbreakable": {
       },
       "damage_resistant": {"types":"#minecraft:is_fire"},
       "minecraft:rarity": "uncommon",
-      "minecraft:custom_data": {"reforgeid":46,"req_xp":25,"req_lvl":5},
+      "minecraft:custom_data": {"reforgeid":46,"req_xp":25,"req_lvl":8},
       "minecraft:profile": {
         "id": [
           597465659,

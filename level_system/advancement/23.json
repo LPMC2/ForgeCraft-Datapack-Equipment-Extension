@@ -11,6 +11,12 @@
         {
           "text": "\nReward:\n +65 Experience Orb Value",
           "color": "green"
+        },{
+          "text": "\n\n⚒ Unlock Reforges:\n",
+          "color": "red"
+        },{
+          "text": "Evolving",
+          "color": "gray"
         }
       ]
     },
