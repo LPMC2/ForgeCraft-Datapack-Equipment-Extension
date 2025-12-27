@@ -10,9 +10,9 @@ execute if score .item_reforge reforgeId matches 8 run scoreboard players set .r
 execute if score .item_reforge reforgeId matches 9 run scoreboard players set .req_xp const 35
 execute if score .item_reforge reforgeId matches 10 run scoreboard players set .req_xp const 5
 execute if score .item_reforge reforgeId matches 11 run scoreboard players set .req_xp const 10
-execute if score .item_reforge reforgeId matches 12 run scoreboard players set .req_xp const 30
+execute if score .item_reforge reforgeId matches 12 run scoreboard players set .req_xp const 60
 execute if score .item_reforge reforgeId matches 13 run scoreboard players set .req_xp const 10
-execute if score .item_reforge reforgeId matches 14 run scoreboard players set .req_xp const 90
+execute if score .item_reforge reforgeId matches 14 run scoreboard players set .req_xp const 120
 execute if score .item_reforge reforgeId matches 15 run scoreboard players set .req_xp const 15
 execute if score .item_reforge reforgeId matches 16 run scoreboard players set .req_xp const 30
 execute if score .item_reforge reforgeId matches 17 run scoreboard players set .req_xp const 35
@@ -30,7 +30,7 @@ execute if score .item_reforge reforgeId matches 28 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 29 run scoreboard players set .req_xp const 80
 execute if score .item_reforge reforgeId matches 30 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 31 run scoreboard players set .req_xp const 15
-execute if score .item_reforge reforgeId matches 32 run scoreboard players set .req_xp const 40
+execute if score .item_reforge reforgeId matches 32 run scoreboard players set .req_xp const 100
 execute if score .item_reforge reforgeId matches 33 run scoreboard players set .req_xp const 15
 execute if score .item_reforge reforgeId matches 34 run scoreboard players set .req_xp const 15
 execute if score .item_reforge reforgeId matches 35 run scoreboard players set .req_xp const 1
@@ -53,7 +53,7 @@ execute if score .item_reforge reforgeId matches 51 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 52 run scoreboard players set .req_xp const 20
 execute if score .item_reforge reforgeId matches 53 run scoreboard players set .req_xp const 15
 execute if score .item_reforge reforgeId matches 54 run scoreboard players set .req_xp const 20
-execute if score .item_reforge reforgeId matches 55 run scoreboard players set .req_xp const 28
+execute if score .item_reforge reforgeId matches 55 run scoreboard players set .req_xp const 42
 execute if score .item_reforge reforgeId matches 56 run scoreboard players set .req_xp const 5
 execute if score .item_reforge reforgeId matches 57 run scoreboard players set .req_xp const 35
 execute if score .item_reforge reforgeId matches 58 run scoreboard players set .req_xp const 10
@@ -67,11 +67,11 @@ execute if score .item_reforge reforgeId matches 65 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 66 run scoreboard players set .req_xp const 80
 execute if score .item_reforge reforgeId matches 67 run scoreboard players set .req_xp const 40
 execute if score .item_reforge reforgeId matches 68 run scoreboard players set .req_xp const 30
-execute if score .item_reforge reforgeId matches 69 run scoreboard players set .req_xp const 50
+execute if score .item_reforge reforgeId matches 69 run scoreboard players set .req_xp const 150
 execute if score .item_reforge reforgeId matches 70 run scoreboard players set .req_xp const 40
 execute if score .item_reforge reforgeId matches 71 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 72 run scoreboard players set .req_xp const 10
-execute if score .item_reforge reforgeId matches 73 run scoreboard players set .req_xp const 23
+execute if score .item_reforge reforgeId matches 73 run scoreboard players set .req_xp const 33
 execute if score .item_reforge reforgeId matches 74 run scoreboard players set .req_xp const 8
 execute if score .item_reforge reforgeId matches 75 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 76 run scoreboard players set .req_xp const 50

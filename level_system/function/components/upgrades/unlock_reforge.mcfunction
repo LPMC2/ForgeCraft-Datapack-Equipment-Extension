@@ -18,7 +18,7 @@ execute if score @s forgecraft_lvl matches 16 run tellraw @s [{"color":"red","it
 execute if score @s forgecraft_lvl matches 17 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Mythic"}]
 execute if score @s forgecraft_lvl matches 18 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Guardian"}]
 execute if score @s forgecraft_lvl matches 19 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Illager's Fortune, Piglin's Fortune, Trial's Fortune, Warden's Fortune"}]
-execute if score @s forgecraft_lvl matches 20 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Cursed, Inferno, Super-Charged, Rampaging, Shielding, Midas's"}]
+execute if score @s forgecraft_lvl matches 20 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Cursed, Inferno, Rampaging, Shielding, Midas's"}]
 execute if score @s forgecraft_lvl matches 21 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Super-Charged"}]
 execute if score @s forgecraft_lvl matches 22 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Runic"}]
 execute if score @s forgecraft_lvl matches 23 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Evolving"}]

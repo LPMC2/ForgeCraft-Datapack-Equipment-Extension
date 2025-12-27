@@ -1,0 +1,3 @@
+$execute unless data storage forgecraft:player store run data modify storage forgecraft:player store append value {id:$(playerid)}
+$execute unless data entity @s equipment.offhand run data modify storage forgecraft:player store[{id:$(playerid)}].offhand_item set value {id:"minecraft:air"}
+$data modify storage forgecraft:player store[{id:$(playerid)}].offhand_item set from entity @s equipment.offhand

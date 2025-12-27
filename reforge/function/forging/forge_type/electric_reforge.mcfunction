@@ -9,6 +9,9 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data modify entity @s Item.components.minecraft:custom_data.electric set value 1
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
+#data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
+#data modify entity @s Item.components.consumable set value {consume_seconds:0.05,animation:"block",sound:"item.shield.block",has_consume_particles:false}
+data modify entity @s Item.components.minecraft:use_cooldown set value {seconds:5,cooldown_group:"forgecraft:use_ability"}
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "electric"
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count

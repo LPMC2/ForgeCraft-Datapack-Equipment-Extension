@@ -1,0 +1,1 @@
+$execute unless data storage forgecraft:player store[{id:$(id)}].offhand_item{id:"minecraft:air"} run function right_click_detection:consumable/retrieve_offhand with storage forgecraft:plaer temp

@@ -5,6 +5,8 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_spear"}}] unless
 data modify storage minecraft:item store.itemid set from entity @s SelectedItem.components.minecraft:custom_data.typename
 execute store result storage minecraft:item store.playerid int 1 run scoreboard players get @s id
 function custom_items:weapon/itemslot/store_scoreboard_obj with storage minecraft:item store
+#function custom_items:weapon/itemslot/store_mainhand_data with storage minecraft:item store
+#function custom_items:weapon/itemslot/store_offhand_data with storage minecraft:item store
 scoreboard players operation @s last.slot = @s sel.slot
 # ------------------ #
 # -----< Custom >----#

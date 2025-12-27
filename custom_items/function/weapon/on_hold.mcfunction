@@ -1,2 +1,3 @@
 execute if data entity @s SelectedItem.components.minecraft:custom_data.defending run effect give @s resistance 1 2 true
 execute if data entity @s equipment.offhand.components.minecraft:custom_data.defending run effect give @s resistance 1 2 true
+say test

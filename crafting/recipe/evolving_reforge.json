@@ -28,7 +28,7 @@
         {"text":" "},
         [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item, Except Other"}],
         {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 100"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 20"}
+        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 23"}
       ],
       "minecraft:unbreakable": {
       },
