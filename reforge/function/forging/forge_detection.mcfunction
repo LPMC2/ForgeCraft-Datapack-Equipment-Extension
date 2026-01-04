@@ -8,7 +8,7 @@ tag @s add find
 # 5 = Armor - Legs
 # 6 = Armor - Feet
 # 7 = Tools
-# 8 = Utilities
+# 8 = Utility
 # Note to .specialtype id:
 # 0 = Unknown
 # 1 = Gilded

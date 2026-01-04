@@ -87,7 +87,7 @@ scoreboard objectives add supervision_count dummy
 scoreboard objectives add sneaky_count dummy
 scoreboard objectives add self_repairing dummy
 execute as @a at @s unless score @s last.slot matches 0.. run scoreboard players set @s last.slot 0
-function find_looking:internal/load
+#function find_looking:internal/load
 scoreboard objectives add ability_cd1 dummy
 scoreboard objectives add ability_cd2 dummy
 scoreboard objectives add ability_cd3 dummy
@@ -128,19 +128,33 @@ scoreboard objectives add forest_count dummy
 scoreboard objectives add super_tank_count dummy
 scoreboard objectives add midas_forge_armor_count dummy
 scoreboard objectives add midas_converted dummy
+scoreboard objectives add breezy_reforge_cd dummy
+scoreboard objectives add electric_reforge_cd dummy
+scoreboard objectives add effect_slowness_cd dummy
+scoreboard objectives add effect_slowness_tick dummy
+scoreboard objectives add effect_armor_reduction dummy
+scoreboard objectives add effect_armor_reduction_cd dummy
 scoreboard objectives add fire dummy
 scoreboard objectives add arrow_potion_id dummy
+scoreboard objectives add g_x dummy
+scoreboard objectives add g_y dummy
+scoreboard objectives add g_z dummy
+scoreboard objectives add g_dx dummy
+scoreboard objectives add g_dy dummy
+scoreboard objectives add g_dz dummy
 scoreboard objectives add use dummy
 scoreboard objectives add type dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
 scoreboard players set @a leave_game 0
-execute as @a at @s run function reforge:unlock/recipe/init
+function forgecraft_lpmc2:version
+execute unless score .forgecraft_version const = .pre_forgecraft_version const as @a at @s run function reforge:unlock/recipe/init
+execute unless score .forgecraft_version const = .pre_forgecraft_version const run function forgecraft_lpmc2:load/reforge_data
+#execute unless score .forgecraft_loaded const matches 0.. run function forgecraft_lpmc2:load/reforge_data
 execute unless score .ismobmodification const matches 0.. run scoreboard players set .ismobmodification const 0
 execute unless score .isrequireconvert const matches 0.. run scoreboard players set .isrequireconvert const 0
 execute unless score .istexturearmor const matches 0.. run scoreboard players set .istexturearmor const 1
 execute unless score .istextureequipment const matches 0.. run scoreboard players set .istextureequipment const 1
 execute unless score .forgecraft_loaded const matches 0.. run tellraw @a [{"color":"dark_gray","italic":false,"text":"--------------------"},{"bold":true,"color":"gold","italic":false,"text":"ForgeCraft"},{"bold":false,"color":"dark_gray","italic":false,"text":"--------------------\n\n"},{"bold":false,"color":"white","italic":false,"text":"Made by "},{"bold":true,"color":"aqua","italic":false,"text":"LPMC2\n"},{"color":"red","text":"\nWarning: This datapack requires resource pack to work.\n(Or else armor texture will be MISSING!)\n"},{"bold":false,"color":"light_purple","italic":false,"text":"To get the resource pack, "},{"bold":false,"click_event":{"action":"open_url","url":"https://www.curseforge.com/minecraft/texture-packs/forgecraft-support-resource-pack"},"color":"white","italic":false,"text":"download it here: https://www.curseforge.com/minecraft/texture-packs/forgecraft-support-resource-pack"},{"text":"\n\n"},{"bold":true,"color":"gold","italic":false,"text":"⚙ Settings [⚠ Require Cheats On]","click_event":{"action":"run_command","command":"function forgecraft_lpmc2:settings"}},{"bold":false,"color":"dark_gray","italic":false,"text":"\n\n----------------------------------------"}]
-execute unless score .forgecraft_loaded const matches 0.. run function forgecraft_lpmc2:load/reforge_data
 execute unless score .forgecraft_loaded const matches 0.. run scoreboard players set .forgecraft_loaded const 1
 execute unless score .enhancementmaxcount const matches 0.. run scoreboard players set .enhancementmaxcount const 10
 execute unless score .forgingxpmultiplier const matches 0.. run scoreboard players set .forgingxpmultiplier const 5

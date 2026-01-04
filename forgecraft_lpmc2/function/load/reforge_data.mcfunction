@@ -90,3 +90,6 @@ data modify storage minecraft:reforge data.reforge_data append value {id:83,name
 # data modify storage minecraft:reforge data.reforge_data append value {id:84,name:"Craftable item"}
 data modify storage minecraft:reforge data.reforge_data append value {id:85,name:"Item De-forger",info:"Completely reset the item\n and receive 75% of used Experience Levels on forging as refund."}
 data modify storage minecraft:reforge data.reforge_data append value {id:86,name:"Star-Infused Experience Orb [Evolving]",info:"On each forge,\nIncrease all attribute stats by +0.5% per used Experience levels"}
+data modify storage minecraft:reforge data.reforge_data append value {id:87,name:"Eye of Warped [Warped]",info:"Allow user to teleport at the cost of 20% Movement Speed"}
+data modify storage minecraft:reforge data.reforge_data append value {id:88,name:"Orb of Wind [Breezing]",info:"Allow firing wind charge with right clicking"}
+data modify storage minecraft:reforge data.reforge_data append value {id:89,name:"Essence of Magic [Sorcerer]",info:"Allow firing magic bullet with right clicking, dealing magic damage."}

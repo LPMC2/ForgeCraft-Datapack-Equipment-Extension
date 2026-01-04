@@ -1,0 +1,1 @@
+attribute @s minecraft:armor modifier remove fc_effect_armor_reduction

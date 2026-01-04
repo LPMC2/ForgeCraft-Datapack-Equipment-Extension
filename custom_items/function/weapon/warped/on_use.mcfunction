@@ -1,0 +1,2 @@
+execute unless score @s use matches 1.. unless score @s effect_slowness_tick matches 5.. at @s anchored eyes positioned ^ ^ ^ run function custom_items:weapon/warped/ray_start
+scoreboard players set @s use 2

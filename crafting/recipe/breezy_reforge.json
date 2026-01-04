@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "323",
+    "212",
+    "323"
+],
+  "key": {
+    "1": "minecraft:flow_armor_trim_smithing_template"
+    ,
+    "2":  "minecraft:breeze_rod",
+    "3": "minecraft:wind_charge"
+    
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:max_stack_size": 16,
+                "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Orb of Wind"},
+                "minecraft:lore": [
+                  [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Breezy: "},{"color":"gray","italic":false,"text":"+20% Attack Speed"}],
+                  {"color":"gray","italic":false,"text":"When right clicked, fires an wind charge in front."},
+                  {"color":"gray","italic":false,"text":"While also sneaking, fires two wind charges downwards"},
+                  {"color":"dark_gray","italic":false,"text":"(Cooldown: 5s)"},
+                  {"color":"dark_gray","italic":false,"text":"Do not expect it to work on all items!"},
+                  {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
+                  {"text":" "},
+                  [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee/Tool/Utility"}],
+                  {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 40"},
+                  {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 9"}
+                ],
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "damage_resistant": {"types":"#minecraft:is_fire"},
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {"reforgeid":88,"req_xp":40,"req_lvl":9},
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTY2ZDdiOTEyOTRiOWIxY2I5ZjQxMzJjMDJkZDUzMzIyMTMyMGZjZjA2OTZlMWExMTUxNTQzZDYxMmQyZGIifX19",
+                      "signature": "88"
+                    }
+                  ]
+                }
+    }
+  }
+}

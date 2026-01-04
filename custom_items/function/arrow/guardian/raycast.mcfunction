@@ -21,5 +21,5 @@ execute if score .crit_damage const matches 1.. if predicate reforge:50_50 run p
 #    Edit raycast_pass.json in tags/blocks to change which blocks the raycast ignores
 #    "rotated" controls arc/curve of raycast path
 
-execute if score .distance const matches ..2000 positioned ^ ^ ^0.1 rotated ~ ~ if block ~ ~ ~ #minecraft:replaceable run function custom_items:arrow/guardian/raycast
-execute if score .distance const matches ..2000 positioned ^ ^ ^0.1 rotated ~ ~ unless block ~ ~ ~ #minecraft:replaceable run function custom_items:arrow/guardian/on_hit
+execute if score .distance const matches ..500 positioned ^ ^ ^0.25 rotated ~ ~ if block ~ ~ ~ #minecraft:replaceable run function custom_items:arrow/guardian/raycast
+execute if score .distance const matches ..500 positioned ^ ^ ^0.25 rotated ~ ~ unless block ~ ~ ~ #minecraft:replaceable run function custom_items:arrow/guardian/on_hit

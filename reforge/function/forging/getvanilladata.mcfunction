@@ -342,7 +342,7 @@ $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:netherite_hoe",
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:shears",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 476
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:shears",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"block_interaction_range",amount:0.25,operation:"add_multiplied_total",id:"$(1)",slot:"mainhand"}]
 
-# -------- Utilities --------
+# -------- Utility --------
 
 # - Brush
 execute if entity @s[type=item_display,nbt={item:{id:"minecraft:brush",count:1}}] run data modify storage minecraft:reforge vanilla.durability set value 128

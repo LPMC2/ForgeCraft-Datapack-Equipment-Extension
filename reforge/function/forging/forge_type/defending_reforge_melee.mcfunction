@@ -1,3 +1,4 @@
+execute if data entity @s Item.components.minecraft:custom_data.right_click_detection run return fail
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ Defending $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Defending: Gain Resistance III/1s while right clicking"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
@@ -15,7 +16,7 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 data modify entity @s Item.components.minecraft:custom_data.defending set value 1
 data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",sound:"item.shield.block",has_consume_particles:false}
-data modify entity @s Item.components.minecraft:use_cooldown set value {seconds:5,cooldown_group:"forgecraft:use_ability"}
+#data modify entity @s Item.components.minecraft:use_cooldown set value {seconds:1,cooldown_group:"forgecraft:use_ability"}
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "defending"
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 

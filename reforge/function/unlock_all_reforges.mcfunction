@@ -101,3 +101,6 @@ recipe give @s crafting:trial_fortune_reforge
 recipe give @s crafting:enchanting_reforge
 recipe give @s crafting:deforger_converter
 recipe give @s crafting:evolving_reforge
+recipe give @s crafting:warped_reforge
+recipe give @s crafting:breezy_reforge
+recipe give @s crafting:sorcerer_reforge

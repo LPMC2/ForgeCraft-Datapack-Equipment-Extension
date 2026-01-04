@@ -21,7 +21,7 @@ execute if score .item_reforge reforgeId matches 19 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 20 run scoreboard players set .req_xp const 50
 execute if score .item_reforge reforgeId matches 21 run scoreboard players set .req_xp const 50
 execute if score .item_reforge reforgeId matches 22 run scoreboard players set .req_xp const 50
-execute if score .item_reforge reforgeId matches 23 run scoreboard players set .req_xp const 20
+execute if score .item_reforge reforgeId matches 23 run scoreboard players set .req_xp const 50
 execute if score .item_reforge reforgeId matches 24 run scoreboard players set .req_xp const 17
 execute if score .item_reforge reforgeId matches 25 run scoreboard players set .req_xp const 10
 execute if score .item_reforge reforgeId matches 26 run scoreboard players set .req_xp const 30
@@ -85,4 +85,7 @@ execute if score .item_reforge reforgeId matches 83 run scoreboard players set .
 # execute if score .item_reforge reforgeId matches 84 run scoreboard players set .req_xp const 0
 execute if score .item_reforge reforgeId matches 85 run scoreboard players set .req_xp const 0
 execute if score .item_reforge reforgeId matches 86 run scoreboard players set .req_xp const 100
+execute if score .item_reforge reforgeId matches 87 run scoreboard players set .req_xp const 75
+execute if score .item_reforge reforgeId matches 88 run scoreboard players set .req_xp const 40
+execute if score .item_reforge reforgeId matches 89 run scoreboard players set .req_xp const 66
 execute store result entity @n[type=item_display,tag=targetforgemodifier] item.components.minecraft:custom_data.req_xp int 1 run scoreboard players operation .apply_cost const = .req_xp const

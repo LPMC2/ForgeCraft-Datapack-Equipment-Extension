@@ -21,7 +21,7 @@ execute if score .item_reforge reforgeId matches 19 run scoreboard players set .
 execute if score .item_reforge reforgeId matches 20 run scoreboard players set .require_level const 14
 execute if score .item_reforge reforgeId matches 21 run scoreboard players set .require_level const 15
 execute if score .item_reforge reforgeId matches 22 run scoreboard players set .require_level const 11
-execute if score .item_reforge reforgeId matches 23 run scoreboard players set .require_level const 0
+execute if score .item_reforge reforgeId matches 23 run scoreboard players set .require_level const 11
 execute if score .item_reforge reforgeId matches 24 run scoreboard players set .require_level const 3
 execute if score .item_reforge reforgeId matches 25 run scoreboard players set .require_level const 10
 execute if score .item_reforge reforgeId matches 26 run scoreboard players set .require_level const 5
@@ -85,4 +85,7 @@ execute if score .item_reforge reforgeId matches 83 run scoreboard players set .
 # execute if score .item_reforge reforgeId matches 84 run scoreboard players set .require_level const 0
 execute if score .item_reforge reforgeId matches 85 run scoreboard players set .require_level const 0
 execute if score .item_reforge reforgeId matches 86 run scoreboard players set .require_level const 23
+execute if score .item_reforge reforgeId matches 87 run scoreboard players set .require_level const 12
+execute if score .item_reforge reforgeId matches 88 run scoreboard players set .require_level const 9
+execute if score .item_reforge reforgeId matches 89 run scoreboard players set .require_level const 16
 execute store result entity @n[type=item_display,tag=targetforgemodifier] item.components.minecraft:custom_data.req_lvl int 1 run scoreboard players get .require_level const

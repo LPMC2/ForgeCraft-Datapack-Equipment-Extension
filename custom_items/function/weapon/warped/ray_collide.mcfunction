@@ -1,0 +1,1 @@
+execute as @s run function custom_items:weapon/warped/teleport with storage forgecraft:temp temp

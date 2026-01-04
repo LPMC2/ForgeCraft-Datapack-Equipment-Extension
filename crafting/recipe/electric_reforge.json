@@ -19,18 +19,23 @@
       "minecraft:max_stack_size": 16,
                 "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Electric Skull"},
                 "minecraft:lore": [
-                  [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Electric: "},{"bold":false,"color":"gray","italic":false,"text":"Each hit have 50% chance to strike a lightning. NO Protection."}],
+                  [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Electric: "},{"bold":false,"color":"gray","italic":false,"text":"Each hit have 50% chance to strike lightning (NO Protection)"}],
+                  {"color":"gray","italic":false,"text":"When right clicked, cast an lightning bolt to where you are looking."},
+                  {"color":"gray","italic":false,"text":"Each Lightning deals player's attack damage to all mobs in range of 4 blocks."},
+                  {"color":"dark_gray","italic":false,"text":"(Cooldown: 5s)"},
+                  {"color":"dark_gray","italic":false,"text":"Do not expect it to work on all items!"},
                   {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
                   {"text":" "},
                   [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee"}],
-                  {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 20"}
+                  {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 50"},
+                  {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 11"}
                 ],
                 "minecraft:unbreakable": {
                   "show_in_tooltip": false
                 },
                 "damage_resistant": {"types":"#minecraft:is_fire"},
                 "minecraft:rarity": "rare",
-                "minecraft:custom_data": {"reforgeid":23,"req_xp":20},
+                "minecraft:custom_data": {"reforgeid":23,"req_xp":50,"req_lvl":11},
                 "minecraft:profile": {
                   "id": [
                     1762252334,

@@ -1,0 +1,2 @@
+execute at @s run summon wind_charge ~ ~ ~ {Motion:[0.0,-1.0,0.0],acceleration_power:10d,Tags:["breezy_reforge_ball"]}
+execute at @s run summon wind_charge ~ ~ ~ {Motion:[0.0,-1.0,0.0],acceleration_power:10d,Tags:["breezy_reforge_ball"]}

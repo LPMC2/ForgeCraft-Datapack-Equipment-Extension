@@ -13,5 +13,4 @@ recipe give @s crafting:mysterious_ice_in_a_glass
 recipe give @s crafting:copperize_reforge
 recipe give @s crafting:enchanting_reforge
 recipe give @s crafting:deforger_converter
-recipe give @s crafting:electric_reforge
 recipe give @s crafting:scavenger_reforge

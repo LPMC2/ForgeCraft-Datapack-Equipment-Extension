@@ -17,10 +17,10 @@
         [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Defending: "},{"bold":false,"color":"gray","italic":false,"text":" "}],
         {"color":"gray","italic":false,"text":"Melee: Gain Resistance III for 1s when holding Right Click"},
         {"color":"gray","italic":false,"text":"Armor: +1.5 Armor Points"},
-        {"color":"gray","italic":false,"text":"Ranged/Tool/Utilities: +5 Armor Points when holding"},
+        {"color":"gray","italic":false,"text":"Ranged/Tool/Utility: +5 Armor Points when holding"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor/Melee/Ranged/Tool/Utilities"}],
+        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor/Melee/Ranged/Tool/Utility"}],
         {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 8"}
       ],
       "minecraft:unbreakable": {
