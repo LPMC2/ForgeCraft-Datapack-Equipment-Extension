@@ -3,4 +3,4 @@ attribute @s[type=!player] minecraft:follow_range modifier add stun_follow -1 ad
 attribute @s minecraft:movement_speed modifier add stun_speed -1 add_multiplied_total
 attribute @s minecraft:jump_strength modifier add stun_jump -1 add_multiplied_total
 tag @s[tag=!stunning] add stunning
-
+execute at @s run particle dust_plume ~ ~0.5 ~ 0.5 1 0.5 0.05 30

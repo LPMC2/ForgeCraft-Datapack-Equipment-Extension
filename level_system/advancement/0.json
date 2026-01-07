@@ -14,7 +14,17 @@
       "text": "Path to be a Absolute Menace",
       "color": "red",
       "font": "minecraft:default"
-    }],
+    },
+    {
+      "text": "\n\nHow to obtain xp?\n---------------\n",
+      "color": "white",
+      "font": "minecraft:default"
+    },
+    {
+      "text": "Start forging items from the reforge anvil!",
+      "color": "aqua"
+    }
+    ],
     "background": "minecraft:block/polished_deepslate",
     "frame": "task",
     "show_toast": true,

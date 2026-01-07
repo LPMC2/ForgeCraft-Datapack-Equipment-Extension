@@ -66,6 +66,7 @@ execute at @s run data modify entity @e[tag=target_type_reforge,sort=nearest,lim
 
 #id Setup
 execute as @e[tag=forge_tag,tag=finit] at @s run scoreboard players operation @s id = .global id
+execute at @s run scoreboard players operation @n[type=marker,tag=forge_tag,tag=finit] reforgeId = .global reforgeId
 
 
 #forgeid setup for detection
@@ -88,6 +89,8 @@ execute if block ~ ~-1 ~ air run setblock ~ ~-1 ~ stone destroy
 execute if block ~ ~-1 ~ water run setblock ~ ~-1 ~ stone destroy
 playsound minecraft:block.anvil.place master @a ~ ~ ~ 1 0.8 0
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 1 2 0
+execute as @e[type=#entity_hit_matching:utility,tag=finit] store result entity @s data.id int 1 run scoreboard players get @s id
+execute as @e[type=#entity_hit_matching:utility,tag=finit] store result entity @s data.reforge_id int 1 run scoreboard players get @s reforgeId
 tag @e[tag=finit] remove finit
 kill @s
 tag @s remove init

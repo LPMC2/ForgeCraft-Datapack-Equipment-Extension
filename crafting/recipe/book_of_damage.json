@@ -34,7 +34,7 @@
       "minecraft:item_name": {"color":"aqua","italic":false,"text":"Book of Damage"},
       "minecraft:rarity": "rare",
       "minecraft:lore": [
-        {"color":"gray","italic":false,"text":"⚒ Melee: +1 Attack Damage to the item"},
+        {"color":"gray","italic":false,"text":"⚒ Melee: +0.5 Attack Damage to the item"},
         {"color":"gray","italic":false,"text":"⚒ Ranged: +0.3 Arrow Power to the item"},
         {"color":"gray","italic":false,"text":"⚒ Armor: +0.25 Attack Damage to the item"},
         {"color":"gray","italic":false,"text":"Other Types: +0.5 Attack Damage to the item"},

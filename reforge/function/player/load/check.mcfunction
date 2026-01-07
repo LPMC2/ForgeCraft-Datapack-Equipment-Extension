@@ -1,0 +1,2 @@
+$execute if data storage forgecraft:data player[{uuid:[$(uuid_1),$(uuid_2),$(uuid_3),$(uuid_4)]}] run return run function reforge:player/load/set with storage forgecraft:data player[{uuid:[$(uuid_1),$(uuid_2),$(uuid_3),$(uuid_4)]}]
+function reforge:player/store/add with storage forgecraft:temp new.player

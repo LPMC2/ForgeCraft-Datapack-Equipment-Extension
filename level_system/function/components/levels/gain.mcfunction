@@ -10,3 +10,4 @@ execute if score .temp_level_amt const matches 1.. run title @s actionbar [{"col
 #execute unless score .temp_level_amt const matches 1.. run title @s actionbar [{"color":"#00f300","italic":false,"text":"⚒ Forging Experience: "},{"color":"green","text":"⦿ "},{"color":"white","italic":false,"score":{"name":"@s","objective":"forgecraft_lvl_progress"}},{"color":"white","text":" / "},{"color":"white","italic":false,"score":{"name":"@s","objective":"forgecraft_lvl_objective"}},{"color":"green","text":" [+1]"}]
 scoreboard players reset .temp_level_amt const
 scoreboard players set .disable_xp_actionbar const 30
+execute as @s run function reforge:player/store

@@ -1,3 +1,6 @@
+# General
+function custom_items:general/tick
+# Weapons
 scoreboard players remove @s[scores={use=1..}] use 1
 execute as @s[tag=raging_melee] run function custom_items:weapon/raging/melee/tick
 execute as @s[tag=raging_tool] run function custom_items:weapon/raging/tool/tick

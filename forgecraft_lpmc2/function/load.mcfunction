@@ -146,6 +146,7 @@ scoreboard objectives add use dummy
 scoreboard objectives add type dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
 scoreboard players set @a leave_game 0
+scoreboard players set .entity_tick const 0
 function forgecraft_lpmc2:version
 execute unless score .forgecraft_version const = .pre_forgecraft_version const as @a at @s run function reforge:unlock/recipe/init
 execute unless score .forgecraft_version const = .pre_forgecraft_version const run function forgecraft_lpmc2:load/reforge_data
@@ -159,3 +160,5 @@ execute unless score .forgecraft_loaded const matches 0.. run scoreboard players
 execute unless score .enhancementmaxcount const matches 0.. run scoreboard players set .enhancementmaxcount const 10
 execute unless score .forgingxpmultiplier const matches 0.. run scoreboard players set .forgingxpmultiplier const 5
 function level_system:init
+execute as @a run function reforge:player/load
+execute as @e[type=#entity_hit_matching:utility] run function reforge:reforge_anvil/load

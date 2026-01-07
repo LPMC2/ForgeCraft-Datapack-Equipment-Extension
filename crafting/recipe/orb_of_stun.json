@@ -21,7 +21,7 @@
       "minecraft:max_stack_size": 16,
       "minecraft:custom_name": {"color":"white","italic":false,"text":"Orb of Stun"},
       "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Stunning: "},{"bold":false,"color":"gray","italic":false,"text":"Hit mob will stun for 1s. Mobs can still detect while stunned"}],
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Stunning: "},{"bold":false,"color":"gray","italic":false,"text":"Hit mob will stun for 2s. Mobs can still detect while stunned"}],
         {"color":"dark_gray","italic":false,"text":"Mainhand Specific Item"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
         {"text":" "},
