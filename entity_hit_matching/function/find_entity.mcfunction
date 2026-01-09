@@ -34,4 +34,4 @@ execute if entity @s[advancements={entity_hit_matching:on_hit={bit30=true}}] run
 execute if entity @s[advancements={entity_hit_matching:on_hit={bit31=true}}] run scoreboard players operation $hit entityid *= -1 const
 tag @s add onHit
 #execute at @s[advancements={entity_hit_matching:on_hit={bit0=true}}] run say test
-execute as @e if score @s entityid = $hit entityid run function entity_hit_matching:on_hit
+execute as @e[type=!#entity_hit_matching:non_mob] if score @s entityid = $hit entityid run function entity_hit_matching:on_hit

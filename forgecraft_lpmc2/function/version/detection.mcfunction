@@ -1,0 +1,7 @@
+# base
+tellraw @a [{"color":"dark_gray","italic":false,"text":"--------------------"},{"bold":true,"color":"gold","italic":false,"text":"ForgeCraft"},{"bold":false,"color":"dark_gray","italic":false,"text":"--------------------\n\n"},{"bold":false,"color":"white","italic":false,"text":"Made by "},{"bold":true,"color":"aqua","italic":false,"text":"LPMC2\n"},{"color":"red","text":"\nWarning: This datapack requires resource pack to work.\n(Or else armor texture will be MISSING!)\n"},{"bold":false,"color":"light_purple","italic":false,"text":"To get the resource pack, "},{"bold":false,"click_event":{"action":"open_url","url":"https://www.curseforge.com/minecraft/texture-packs/forgecraft-support-resource-pack"},"color":"white","italic":false,"text":"download it here: https://www.curseforge.com/minecraft/texture-packs/forgecraft-support-resource-pack"},{"text":"\n\n"},{"bold":true,"color":"gold","italic":false,"text":"⚙ Settings [⚠ Require Cheats On]","click_event":{"action":"run_command","command":"function forgecraft_lpmc2:settings"}},{"bold":false,"color":"dark_gray","italic":false,"text":"\n\n---------------------------------------------------"}]
+# version
+execute if score .forgecraft_version const matches 1791 run function forgecraft_lpmc2:version/1.7.9.1/score_removal
+execute if score .forgecraft_version const matches 180 run function forgecraft_lpmc2:version/1.8.0/score_removal
+# end
+tellraw @a {"bold":false,"color":"dark_gray","italic":false,"text":"\n---------------------------------------------------"}
