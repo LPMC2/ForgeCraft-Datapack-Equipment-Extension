@@ -4,3 +4,4 @@ execute as @n[type=wind_charge,tag=breezy_init] rotated as @p[tag=breezy_reforge
 execute as @n[type=wind_charge,tag=breezy_init] run function custom_items:weapon/breezy/cast/launch
 tag @e[type=wind_charge] remove breezy_init
 tag @s remove breezy_reforge_temp
+playsound minecraft:entity.breeze.shoot master @a ~ ~ ~ 1 1 0

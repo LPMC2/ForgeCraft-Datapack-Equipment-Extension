@@ -1,1 +1,2 @@
 $attribute @s minecraft:attack_damage modifier add glasscannon $(value) add_value
+$function custom_items:display/add {tag:"glass_cannon",type:"status",max:0,selector:"@s",score:"",format:"string",color:"aqua",label:"🧊 Bonus Dmg: $(value)",unit:""}

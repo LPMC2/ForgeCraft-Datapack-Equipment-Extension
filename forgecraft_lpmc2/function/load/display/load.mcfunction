@@ -1,0 +1,1 @@
+execute as @a run function forgecraft_lpmc2:load/display/update

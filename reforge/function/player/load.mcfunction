@@ -4,3 +4,5 @@ data modify storage forgecraft:temp new.player.uuid_2 set from entity @s UUID[1]
 data modify storage forgecraft:temp new.player.uuid_3 set from entity @s UUID[2]
 data modify storage forgecraft:temp new.player.uuid_4 set from entity @s UUID[3]
 function reforge:player/load/check with storage forgecraft:temp new.player
+execute store result storage forgecraft:player temp.id int 1 run scoreboard players get @s id
+function custom_items:player_base_features with storage forgecraft:player temp

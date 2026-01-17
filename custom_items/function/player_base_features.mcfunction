@@ -1,0 +1,1 @@
+$bossbar add actionbar_$(id) ""

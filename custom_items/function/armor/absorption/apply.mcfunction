@@ -10,3 +10,4 @@ execute store result storage minecraft:effect store.duration int 1 run scoreboar
 data modify storage minecraft:effect store.no_particle set value "false"
 execute as @s unless score @s absorption_armor_cd matches 1.. run function custom_items:general/effect/apply_pre with storage minecraft:effect store
 execute as @s unless score @s absorption_armor_cd matches 1.. run function custom_items:armor/absorption/store_cd
+function custom_items:display/add {tag:"absorption_reforge",type:"countdown",max:20,selector:"@s",score:"absorption_armor_cd",format:"number",color:"gold",label:"Absorption CD: ",unit:" ticks"}

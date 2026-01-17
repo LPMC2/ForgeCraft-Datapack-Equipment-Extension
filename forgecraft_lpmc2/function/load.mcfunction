@@ -1,36 +1,4 @@
 scoreboard objectives add entityid dummy
-scoreboard objectives add entityid.0 dummy
-scoreboard objectives add entityid.1 dummy
-scoreboard objectives add entityid.2 dummy
-scoreboard objectives add entityid.3 dummy
-scoreboard objectives add entityid.4 dummy
-scoreboard objectives add entityid.5 dummy
-scoreboard objectives add entityid.6 dummy
-scoreboard objectives add entityid.7 dummy
-scoreboard objectives add entityid.8 dummy
-scoreboard objectives add entityid.9 dummy
-scoreboard objectives add entityid.10 dummy
-scoreboard objectives add entityid.11 dummy
-scoreboard objectives add entityid.12 dummy
-scoreboard objectives add entityid.13 dummy
-scoreboard objectives add entityid.14 dummy
-scoreboard objectives add entityid.15 dummy
-scoreboard objectives add entityid.16 dummy
-scoreboard objectives add entityid.17 dummy
-scoreboard objectives add entityid.18 dummy
-scoreboard objectives add entityid.19 dummy
-scoreboard objectives add entityid.20 dummy
-scoreboard objectives add entityid.21 dummy
-scoreboard objectives add entityid.22 dummy
-scoreboard objectives add entityid.23 dummy
-scoreboard objectives add entityid.24 dummy
-scoreboard objectives add entityid.25 dummy
-scoreboard objectives add entityid.26 dummy
-scoreboard objectives add entityid.27 dummy
-scoreboard objectives add entityid.28 dummy
-scoreboard objectives add entityid.29 dummy
-scoreboard objectives add entityid.30 dummy
-scoreboard objectives add entityid.31 dummy
 scoreboard players set #loaded entityid 1
 scoreboard objectives add const dummy
 scoreboard players set 2 const 2
@@ -158,6 +126,7 @@ execute unless score .istextureequipment const matches 0.. run scoreboard player
 execute unless score .forgecraft_loaded const matches 0.. run scoreboard players set .forgecraft_loaded const 1
 execute unless score .enhancementmaxcount const matches 0.. run scoreboard players set .enhancementmaxcount const 10
 execute unless score .forgingxpmultiplier const matches 0.. run scoreboard players set .forgingxpmultiplier const 5
+execute unless data storage forgecraft:display settings.format run data modify storage forgecraft:display settings.format set value "actionbar"
 function level_system:init
 execute as @a run function reforge:player/load
 execute as @e[type=#entity_hit_matching:utility] run function reforge:reforge_anvil/load

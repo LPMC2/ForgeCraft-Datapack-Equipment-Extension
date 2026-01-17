@@ -138,6 +138,32 @@ $dialog show @s { \
       "end": 20,\
       "step": 1,\
       "initial": $(forgingxpmultiplier)\
+    },\
+    {\
+      "type": "minecraft:single_option",\
+      "key": "ability_display_type",\
+      "label": {\
+        "text": "Ability Display Type",\
+        "type": "text"\
+      },\
+      "label_visible": true,\
+      "options": [\
+        {\
+          "id": "actionbar",\
+          "display": "Actionbar",\
+          "initial": $(option_actionbar)\
+        },\
+        {\
+          "id": "bossbar",\
+          "display": "Bossbar",\
+          "initial": $(option_bossbar)\
+        },\
+        {\
+          "id": "none",\
+          "display": "None!",\
+          "initial": $(option_none)\
+        }\
+      ]\
     }\
   ],\
   "can_close_with_escape": true,\
@@ -156,7 +182,7 @@ $dialog show @s { \
     "width": 80,\
     "action": {\
       "type": "minecraft:dynamic/run_command",\
-      "template": "function reforge:ui/components/settings/set {enhancementmaxcount:\"\u0024(enhancementmaxcount)\",ismobmodification:\"\u0024(ismobmodification)\",isrequireconvert:\"\u0024(isrequireconvert)\",istexturearmor:\"\u0024(istexturearmor)\",istextureequipment:\"\u0024(istextureequipment)\",forgingxpmultiplier:\"\u0024(forgingxpmultiplier)\"}"\
+      "template": "function reforge:ui/components/settings/set {enhancementmaxcount:\"\u0024(enhancementmaxcount)\",ismobmodification:\"\u0024(ismobmodification)\",isrequireconvert:\"\u0024(isrequireconvert)\",istexturearmor:\"\u0024(istexturearmor)\",istextureequipment:\"\u0024(istextureequipment)\",forgingxpmultiplier:\"\u0024(forgingxpmultiplier)\",abilitydisplaytype:\"\u0024(ability_display_type)\"}"\
     }\
   },\
   "columns": 2\

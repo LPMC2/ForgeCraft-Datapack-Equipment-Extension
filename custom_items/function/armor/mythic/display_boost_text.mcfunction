@@ -1,1 +1,2 @@
-$tellraw @s [{"bold":true,"color":"light_purple","italic":false,"text":"Mythic Bonus - $(type): "},{"bold":false,"color":"gold","italic":false,"text":"\n$(text)"}]
+$function custom_items:display/add {tag:"mythic_reforge_$(type)",type:"status",max:0,selector:"@s",score:"mythic_count",format:"string",color:"light_purple",label:"[Mythic] $(text)",unit:""}
+#$tellraw @s [{"bold":true,"color":"light_purple","italic":false,"text":"Mythic Bonus - $(type): "},{"bold":false,"color":"gold","italic":false,"text":"\n$(text)"}]

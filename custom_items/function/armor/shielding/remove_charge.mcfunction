@@ -7,4 +7,3 @@ execute at @s if score @s shielding_charges matches ..0 run execute as @e[type=!
 execute at @s run particle item{item:"iron_block"} ~ ~0.65 ~ 0.5 0.5 0.5 0.4 20 normal
 execute if score @s shielding_charges matches ..0 run scoreboard players set @s shielding_charges 0
 execute as @s run function custom_items:armor/shielding/update
-

@@ -1,1 +1,2 @@
 $attribute @s minecraft:max_health modifier add leeched -$(value) add_value
+execute if entity @s[type=player] run function custom_items:display/add {tag:"leeching_neg_reforge",type:"status",max:0,selector:"@s",score:"",format:"string",color:"dark_red",label:"💔 Leeched! ",unit:"s"}

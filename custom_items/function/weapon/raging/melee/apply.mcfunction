@@ -1,6 +1,8 @@
 scoreboard players set @s raging_melee 0
 scoreboard players add @s rage_meter_melee 1
+execute if score @s rage_meter_melee matches 21.. run scoreboard players set @s rage_meter_melee 20
 tag @s add raging_melee
+function custom_items:display/add {tag:"raging_melee",type:"status",max:20,selector:"@s",score:"rage_meter_melee",format:"number",color:"light_purple",label:"Raging Meter (Melee): ",unit:" 🔥"}
 scoreboard players set .10 const 10
 scoreboard players set .100 const 100
 scoreboard players set .rage rage_meter_melee 0

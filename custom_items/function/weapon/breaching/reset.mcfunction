@@ -3,3 +3,4 @@ attribute @s minecraft:armor modifier remove breaching_armor
 attribute @s minecraft:armor_toughness modifier remove breaching_armor_toughness
 scoreboard players set @s breaching 0
 tag @s remove breaching
+function custom_items:display/remove {tag:"breaching_reforge"}

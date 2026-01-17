@@ -1,0 +1,1 @@
+$bossbar set minecraft:actionbar_$(id) visible false

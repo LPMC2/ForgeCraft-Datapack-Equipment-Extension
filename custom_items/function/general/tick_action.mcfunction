@@ -5,7 +5,10 @@ execute if items entity @s armor.* *[minecraft:custom_data~{self_repairing:1}] r
 execute as @s if score .is_self_repairing const matches 1.. run function custom_items:general/self_repairing/repair
 function mobs:tick_action
 execute as @s run function custom_items:armor/action
-function custom_items:weapon/action
-execute as @a at @s run function custom_items:general/health/tick
-execute as @a at @s run function custom_items:general/fire/tick
+execute as @s run function custom_items:weapon/action
+function custom_items:display/tick
+execute at @s run function custom_items:general/health/tick
+execute at @s run function custom_items:general/fire/tick
 scoreboard players set @s timer_second 0
+scoreboard players add .player_auto_check const 1
+execute if score .player_auto_check const matches 60.. run function custom_items:general/check

@@ -9,5 +9,10 @@ execute unless score .istexturearmor const matches 1.. run data modify storage m
 execute if score .istextureequipment const matches 1.. run data modify storage minecraft:reforge temp.ui.istextureequipment set value "true"
 execute unless score .istextureequipment const matches 1.. run data modify storage minecraft:reforge temp.ui.istextureequipment set value "false"
 execute store result storage minecraft:reforge temp.ui.forgingxpmultiplier int 1 run scoreboard players get .forgingxpmultiplier const
-
+data modify storage minecraft:reforge temp.ui.option_actionbar set value false
+data modify storage minecraft:reforge temp.ui.option_bossbar set value false
+data modify storage minecraft:reforge temp.ui.option_none set value false
+execute if data storage forgecraft:display settings{format:"actionbar"} run data modify storage minecraft:reforge temp.ui.option_actionbar set value true
+execute if data storage forgecraft:display settings{format:"bossbar"} run data modify storage minecraft:reforge temp.ui.option_bossbar set value true
+execute if data storage forgecraft:display settings{format:"none"} run data modify storage minecraft:reforge temp.ui.option_none set value true
 function reforge:ui/menus/getter/settings/base with storage minecraft:reforge temp.ui

@@ -1,0 +1,1 @@
+$bossbar set actionbar_$(id) visible false

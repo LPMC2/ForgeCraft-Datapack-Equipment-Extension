@@ -18,3 +18,4 @@ execute if score @s mythic_count matches 1.. run effect clear @s minecraft:trial
 execute if score @s mythic_count matches 1.. run effect clear @s minecraft:water_breathing
 execute if score @s mythic_count matches 1.. run effect clear @s minecraft:fire_resistance
 $attribute @s minecraft:safe_fall_distance modifier remove mythic_$(type)
+$execute unless score @s mythic_count matches 1.. run function custom_items:display/remove {tag:"mythic_reforge_$(type)"}
