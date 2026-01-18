@@ -1,5 +1,6 @@
 execute if data entity @s Item.components.minecraft:custom_data.upgradeable run return fail
 data modify entity @s Item.components.minecraft:custom_data.upgradeable set value 1
+
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Gilded $(name)"
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"aqua","italic":false,"text":"⚒ Gilded $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Gilded: +50% for all Item Stats. This item can be reforged!"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
@@ -15,6 +16,7 @@ execute as @s at @s run function reforge:forging/forge_type/attribute/value/get_
 execute as @s if items entity @s container.* minecraft:golden_pickaxe run data modify entity @s Item.components.minecraft:tool set value {default_mining_speed:1,damage_per_block:1,rules:[{speed:10,correct_for_drops:true,blocks:"#mineable/pickaxe"}]}
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.gilded set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "gilded"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 0
 execute as @s at @s run function reforge:forging/forge_type/gilded_reforge_doubledurability
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Gilded $(name)"

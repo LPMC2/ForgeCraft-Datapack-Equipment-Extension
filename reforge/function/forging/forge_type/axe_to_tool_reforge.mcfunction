@@ -1,5 +1,6 @@
 execute if data entity @s Item.components.minecraft:custom_data.upgradeable run return fail
 data modify entity @s Item.components.minecraft:custom_data.upgradeable set value 1
+
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ Toolful $(name)"}
 data modify entity @s Item.components.minecraft:custom_data.itemtype set value "Tool"
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Toolful $(name)"
@@ -22,6 +23,7 @@ execute as @s run function reforge:forging/forge_type/attribute/operation/get_ty
 
 execute as @s unless items entity @s container.0 #minecraft:pickaxes unless items entity @s container.0 #minecraft:axes unless items entity @s container.0 #minecraft:shovels unless items entity @s container.0 #minecraft:hoes run data modify entity @s Item.components.minecraft:tool set value {default_mining_speed:1,damage_per_block:1,rules:[{speed:10,correct_for_drops:true,blocks:"#mineable/pickaxe"},{speed:12.5,correct_for_drops:true,blocks:"#mineable/axe"},{speed:15,correct_for_drops:false,blocks:"#mineable/hoe"},{speed:15,correct_for_drops:false,blocks:"#mineable/shovel"}]}
 data modify entity @s Item.components.minecraft:custom_data.axe_tool set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "axe"
 data modify entity @s Item.components.minecraft:custom_data.typeid set value 7
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set value 0
 scoreboard players set .isreforged const 1

@@ -1,0 +1,1 @@
+scoreboard players reset @s sneaky_count

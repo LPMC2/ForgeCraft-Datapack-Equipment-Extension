@@ -1,0 +1,1 @@
+scoreboard players set @s absorption_armor_count 0

@@ -1,0 +1,1 @@
+$function custom_items:armor/$(name)/reset_data

@@ -1,1 +1,1 @@
-execute as @p[tag=target_armor] at @s run function custom_items:armor/glasscannon/calculate_damage_boost
+execute as @a[tag=target_armor] at @s run function custom_items:armor/glasscannon/get_data

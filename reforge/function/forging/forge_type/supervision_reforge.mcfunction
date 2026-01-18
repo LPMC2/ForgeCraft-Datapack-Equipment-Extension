@@ -7,6 +7,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Super-Vision $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.supervision set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "supervision"
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 execute as @s at @s run function reforge:forging/forge_type/half_durability

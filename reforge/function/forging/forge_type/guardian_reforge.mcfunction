@@ -10,6 +10,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Guardian $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.guardian set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "guardian"
 data modify entity @s Item.components.minecraft:rarity set value "epic"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "guardian"

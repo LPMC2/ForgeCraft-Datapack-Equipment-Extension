@@ -1,0 +1,1 @@
+scoreboard players set @s reflective_armor_count 0

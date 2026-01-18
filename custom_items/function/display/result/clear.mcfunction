@@ -1,2 +1,2 @@
 execute if data storage forgecraft:display settings{format:"bossbar"} run return run function custom_items:display/result/bossbar/reset with storage forgecraft:display temp.display
-title @s actionbar {"text":""}
+#title @s actionbar {"text":""}

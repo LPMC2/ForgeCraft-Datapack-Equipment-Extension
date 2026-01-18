@@ -6,7 +6,7 @@ data modify storage minecraft:reforge temp.display.lore set from entity @s Item.
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Defending $(name)"
 
-# Movement Speed
+# Armor
 data remove storage minecraft:attribute new.attribute
 $data modify storage minecraft:attribute new.attribute set value {type:"minecraft:armor",operation:"add_value",slot:"$(slot)"}
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid1)

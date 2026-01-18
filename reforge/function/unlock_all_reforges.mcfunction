@@ -104,3 +104,4 @@ recipe give @s crafting:evolving_reforge
 recipe give @s crafting:warped_reforge
 recipe give @s crafting:breezy_reforge
 recipe give @s crafting:sorcerer_reforge
+recipe give @s crafting:vanguarding_reforge

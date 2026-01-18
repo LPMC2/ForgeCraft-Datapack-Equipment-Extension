@@ -93,3 +93,4 @@ data modify storage minecraft:reforge data.reforge_data append value {id:86,name
 data modify storage minecraft:reforge data.reforge_data append value {id:87,name:"Eye of Warped [Warped]",info:"Allow user to teleport at the cost of 20% Movement Speed",req_xp:75,req_lvl:12}
 data modify storage minecraft:reforge data.reforge_data append value {id:88,name:"Orb of Wind [Breezing]",info:"Allow firing wind charge with right clicking",req_xp:40,req_lvl:9}
 data modify storage minecraft:reforge data.reforge_data append value {id:89,name:"Essence of Magic [Sorcerer]",info:"Allow firing magic bullet with right clicking, dealing magic damage.",req_xp:66,req_lvl:16}
+data modify storage minecraft:reforge data.reforge_data append value {id:90,name:"Symbol of Guarding [Vanguarding]",info:"+1 Resistance but -30% Armor & Armor Toughness",req_xp:100,req_lvl:18}

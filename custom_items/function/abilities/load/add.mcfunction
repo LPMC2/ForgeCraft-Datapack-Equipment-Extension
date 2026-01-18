@@ -1,0 +1,4 @@
+$execute unless data storage forgecraft:data player[{id:$(id)}].abilities[{name:"$(ability_name)"}] run return run data modify storage forgecraft:data player[{id:$(id)}].abilities append value {name:"$(ability_name)",count:1}
+scoreboard players set .temp_ability_count const 0
+$execute store result score .temp_ability_count const run data get storage forgecraft:data player[{id:$(id)}].abilities[{name:"$(ability_name)"}].count
+$execute store result storage forgecraft:data player[{id:$(id)}].abilities[{name:"$(ability_name)"}].count int 1 run return run scoreboard players add .temp_ability_count const 1

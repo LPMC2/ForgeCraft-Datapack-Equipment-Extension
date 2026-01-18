@@ -7,9 +7,11 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Sorcerer $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.sorcerer_reforge set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "sorcerer_reforge"
 data modify entity @s Item.components.minecraft:rarity set value "epic"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
+data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1
+
 data modify entity @s Item.components.minecraft:use_effects set value {speed_multiplier:0.75,can_sprint:true}
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",has_consume_particles:false}
 #data modify entity @s Item.components.minecraft:use_cooldown set value {seconds:5,cooldown_group:"forgecraft:use_ability"}

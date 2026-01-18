@@ -9,6 +9,7 @@ data modify storage minecraft:attribute store.amount set value 500d
 execute as @s at @s run function reforge:forging/forge_type/attribute/value/get_attribute_init
 
 data modify entity @s Item.components.minecraft:custom_data.midas_reforge_melee set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "midas_reforge"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 data modify storage forgecraft:midas temp.multiplier set value 10d
 function reforge:forging/forge_type/reforge_custom_durability_multiplier with storage forgecraft:midas temp

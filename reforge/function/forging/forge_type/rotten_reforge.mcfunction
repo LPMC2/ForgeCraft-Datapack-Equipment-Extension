@@ -23,6 +23,7 @@ data modify storage minecraft:attribute new.attribute_amount set value -0.25
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "rotten"
 data modify entity @s Item.components.minecraft:custom_data.rotten_reforge set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "rotten_reforge"
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .forge_count const 0

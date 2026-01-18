@@ -10,6 +10,7 @@ scoreboard players add .temp_bonus_amount const 100
 scoreboard players set .100 const 100
 scoreboard players set .-1 const -1
 execute store result score .temp_attribute_amount const run data get storage minecraft:attribute new.attribute_amount 100
+execute unless score .temp_attribute_amount const matches 1.. run return fail
 scoreboard players operation .temp_cal_attribute_amount const = .temp_attribute_amount const
 scoreboard players operation .temp_cal_attribute_amount const *= .temp_bonus_amount const
 scoreboard players operation .temp_attribute_amount const *= .100 const

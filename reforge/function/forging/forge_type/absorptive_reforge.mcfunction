@@ -16,6 +16,7 @@ execute store result score .forge_count const run data get entity @s Item.compon
 scoreboard players add .forge_count const 1
 execute store result entity @s Item.components.minecraft:custom_data.forge_count int 1 run scoreboard players get .forge_count const
 data modify entity @s Item.components.minecraft:custom_data.absorption set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "absorption"
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "absorptive"

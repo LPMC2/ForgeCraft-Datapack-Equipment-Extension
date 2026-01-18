@@ -6,4 +6,4 @@ execute if score .disable_xp_actionbar const matches 1.. run scoreboard players 
 execute as @e[type=marker,tag=reforge_crafter] at @s if entity @s[tag=init] align xyz positioned ~0.5 ~ ~0.5 run function reforge:procedure_generated/crafter/setup
 
 # Forge Anvil Item Display
-execute at @p as @e[type=item_display,tag=target_forge_display_item,distance=..10] at @s run tp @s ~ ~ ~ ~2 ~
+execute at @p as @e[type=item_display,tag=target_forge_display_item,distance=..10] at @s run function reforge:anvil_tick

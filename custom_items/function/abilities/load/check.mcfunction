@@ -1,0 +1,1 @@
+$execute if data storage forgecraft:data player[{id:$(id)}].abilities run return run scoreboard players set .temp_has_abilities_data const 1

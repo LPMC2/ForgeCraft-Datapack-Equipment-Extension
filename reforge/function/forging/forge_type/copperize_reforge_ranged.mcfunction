@@ -7,6 +7,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Copperized $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.copperized set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "copperized"
 
 # Attack Damage (Arrow Power)
 data remove storage minecraft:attribute new.attribute

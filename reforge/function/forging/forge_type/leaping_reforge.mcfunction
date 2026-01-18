@@ -7,6 +7,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Leaping $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.leaping_reforge set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "leaping_reforge"
 # Jump Strength
 data remove storage minecraft:attribute new.attribute
 $data modify storage minecraft:attribute new.attribute set value {type:"minecraft:jump_strength",operation:"add_multiplied_base",slot:"$(slot)"}

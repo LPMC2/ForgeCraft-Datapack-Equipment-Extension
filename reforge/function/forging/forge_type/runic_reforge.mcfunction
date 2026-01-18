@@ -8,6 +8,7 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 
 scoreboard players set .attribute_amount const 1
 data modify entity @s Item.components.minecraft:custom_data.runic set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "runic"
 data modify entity @s Item.components.minecraft:equippable set value {slot:"offhand",equip_sound:"entity.elder_guardian.curse",swappable:true,damage_on_hurt:true}
 execute as @s at @s run function reforge:forging/forge_type/attribute/offhand/get_attribute_init
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid

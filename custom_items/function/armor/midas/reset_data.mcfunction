@@ -1,0 +1,1 @@
+scoreboard players set @s midas_forge_armor_count 0

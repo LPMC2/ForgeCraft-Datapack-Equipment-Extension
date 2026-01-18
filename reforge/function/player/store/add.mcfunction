@@ -1,3 +1,4 @@
+$execute if data storage forgecraft:data player[{id:$(id)}] run return fail
 $data modify storage forgecraft:data player append value {id:$(id),uuid:[$(uuid_1),$(uuid_2),$(uuid_3),$(uuid_4)]}
 $execute store result storage forgecraft:data player[{id:$(id)}].lvl int 1 run scoreboard players get @s forgecraft_lvl
 $execute store result storage forgecraft:data player[{id:$(id)}].objective int 1 run scoreboard players get @s forgecraft_lvl_objective

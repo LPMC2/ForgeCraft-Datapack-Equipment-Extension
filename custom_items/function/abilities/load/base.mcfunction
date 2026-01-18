@@ -1,0 +1,2 @@
+data modify storage forgecraft:temp player.abilities set value []
+$data modify storage forgecraft:temp player.abilities set from entity @s equipment.$(ability_slot).components.minecraft:custom_data.forge_data.abilities

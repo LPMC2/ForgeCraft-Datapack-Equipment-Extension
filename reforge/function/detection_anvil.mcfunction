@@ -2,5 +2,3 @@ execute store result score @s interaction run data get entity @s interaction.tim
 execute store result score @s attackinteraction run data get entity @s attack.timestamp
 execute if score @s interaction matches 1.. run return run function reforge:forging/forge_item/run
 execute if score @s attackinteraction matches 1.. run return run function reforge:forging/forge_item/run
-execute if score .disable_xp_actionbar const matches 1.. run return fail
-execute at @s as @a[distance=..3] run title @s actionbar [{"color":"#00f300","italic":false,"text":"⚒ Forging Experience: "},{"color":"green","text":"⦿ "},{"color":"white","italic":false,"score":{"name":"@s","objective":"forgecraft_lvl_progress"}},{"color":"white","text":" / "},{"color":"white","italic":false,"score":{"name":"@s","objective":"forgecraft_lvl_objective"}}]

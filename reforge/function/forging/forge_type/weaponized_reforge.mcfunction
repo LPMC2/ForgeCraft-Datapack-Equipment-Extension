@@ -10,8 +10,11 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Weaponized $(name)"
 data modify entity @s Item.components.minecraft:custom_data.typeid set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "typeid"
 data modify entity @s Item.components.minecraft:custom_data.weaponized set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "weaponized"
 data modify entity @s Item.components.minecraft:custom_data.upgradeable set value 1
+
 execute unless data entity @s Item.components.minecraft:max_damage run data modify entity @s Item.components.minecraft:max_damage set value 100
 execute unless data entity @s Item.components.minecraft:weapon run data modify entity @s Item.components.minecraft:weapon set value {item_damage_per_attack:1}
 #$data modify entity @s Item.components.minecraft:attribute_modifiers.modifiers append value {type:"attack_damage",amount:5,operation:"add_value",id:"$(uuid1)",slot:"mainhand"}

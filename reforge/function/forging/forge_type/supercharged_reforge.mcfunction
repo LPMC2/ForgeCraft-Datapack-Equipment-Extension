@@ -17,6 +17,7 @@ data modify storage minecraft:attribute new.attribute_amount set value 4
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 data modify entity @s Item.components.minecraft:custom_data.supercharged set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "supercharged"
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "supercharged"

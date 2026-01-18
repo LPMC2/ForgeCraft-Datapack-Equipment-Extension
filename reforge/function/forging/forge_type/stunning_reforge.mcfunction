@@ -7,6 +7,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Stunning $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.stunning set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "stunning"
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "stunning"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .forge_count const 0

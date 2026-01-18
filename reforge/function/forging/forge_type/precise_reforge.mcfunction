@@ -7,6 +7,7 @@ execute as @s run function reforge:forging/display/item/set_lore with storage mi
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Precise $(name)"
 
 data modify entity @s Item.components.minecraft:custom_data.precise set value 1
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "precise"
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 scoreboard players set .forge_count const 0

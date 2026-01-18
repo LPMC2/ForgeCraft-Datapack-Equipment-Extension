@@ -14,7 +14,9 @@ $data modify entity @s Item.components.minecraft:custom_data.itemname set value 
 #data modify storage minecraft:attribute new.attribute_amount set value 6
 #execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 data modify entity @s Item.components.minecraft:custom_data.defending set value 1
-data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
+data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "defending"
+data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1
+
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",sound:"item.shield.block",has_consume_particles:false}
 #data modify entity @s Item.components.minecraft:use_cooldown set value {seconds:1,cooldown_group:"forgecraft:use_ability"}
 execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "defending"

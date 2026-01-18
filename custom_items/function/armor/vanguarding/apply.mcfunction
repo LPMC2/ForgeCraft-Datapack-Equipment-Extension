@@ -1,0 +1,1 @@
+$effect give @s minecraft:resistance infinite $(amt) false

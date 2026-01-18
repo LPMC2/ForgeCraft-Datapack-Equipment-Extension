@@ -1,0 +1,1 @@
+scoreboard players set @s poisoned_armor_count 0
