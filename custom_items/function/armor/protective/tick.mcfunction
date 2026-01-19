@@ -1,0 +1,2 @@
+scoreboard players remove @s protective_reforge_cd 1
+execute if score @s protective_reforge_cd matches ..0 run function custom_items:armor/protective/reset

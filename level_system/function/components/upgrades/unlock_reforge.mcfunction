@@ -9,7 +9,7 @@ execute if score @s forgecraft_lvl matches 7 run tellraw @s [{"color":"red","ita
 execute if score @s forgecraft_lvl matches 8 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Gilded, Rapid, Assassin"}]
 execute if score @s forgecraft_lvl matches 9 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Stunning, Swarming, Reflective, Breezy"}]
 execute if score @s forgecraft_lvl matches 10 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Prospector's, Experienced, Enhanced, Unbreakable, Breaching"}]
-execute if score @s forgecraft_lvl matches 11 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Raging, Electric"}]
+execute if score @s forgecraft_lvl matches 11 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Raging, Electric, Protective"}]
 execute if score @s forgecraft_lvl matches 12 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Ender, Dashing, Warped"}]
 execute if score @s forgecraft_lvl matches 13 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Feature - Enhancement Books"}]
 execute if score @s forgecraft_lvl matches 14 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Chaining, Sniping, Healthful"}]

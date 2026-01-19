@@ -102,6 +102,9 @@ scoreboard objectives add effect_slowness_cd dummy
 scoreboard objectives add effect_slowness_tick dummy
 scoreboard objectives add effect_armor_reduction dummy
 scoreboard objectives add effect_armor_reduction_cd dummy
+scoreboard objectives add protective_reforge_count dummy
+scoreboard objectives add protective_reforge_cd dummy
+scoreboard objectives add protective_reforge_hit dummy
 scoreboard objectives add fire dummy
 scoreboard objectives add arrow_potion_id dummy
 scoreboard objectives add g_x dummy
