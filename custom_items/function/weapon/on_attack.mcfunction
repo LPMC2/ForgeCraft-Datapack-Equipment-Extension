@@ -39,6 +39,9 @@ execute as @s[tag=!block_mob] if data entity @p[tag=onHit] SelectedItem.componen
 #execute if score @s[type=!#entity_hit_matching:non_mob] max_shielding_charges matches 1.. if score @s shielding_charges matches 1.. run function custom_items:armor/shielding/remove_charge
 execute as @s run function mobs:on_hit
 
+# Knocking
+execute as @s if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.knocking run function custom_items:weapon/knocking/apply
+
 # Poisoned
 execute as @s if data entity @p[tag=onHit] SelectedItem.components.minecraft:custom_data.poisoned_melee run function custom_items:weapon/poisoned/apply
 

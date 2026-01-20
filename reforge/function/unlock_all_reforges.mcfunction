@@ -106,3 +106,4 @@ recipe give @s crafting:breezy_reforge
 recipe give @s crafting:sorcerer_reforge
 recipe give @s crafting:vanguarding_reforge
 recipe give @s crafting:protective_reforge
+recipe give @s crafting:knocking_reforge

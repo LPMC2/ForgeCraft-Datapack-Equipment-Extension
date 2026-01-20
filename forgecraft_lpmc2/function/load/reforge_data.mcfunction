@@ -95,3 +95,4 @@ data modify storage minecraft:reforge data.reforge_data append value {id:88,name
 data modify storage minecraft:reforge data.reforge_data append value {id:89,name:"Essence of Magic [Sorcerer]",info:"Allow firing magic bullet with right clicking, dealing magic damage.",req_xp:66,req_lvl:16}
 data modify storage minecraft:reforge data.reforge_data append value {id:90,name:"Symbol of Guarding [Vanguarding]",info:"+1 Resistance but -30% Armor & Armor Toughness",req_xp:100,req_lvl:18}
 data modify storage minecraft:reforge data.reforge_data append value {id:91,name:"Fragment of Protection [Protective]",info:"+1 Armor & Armor Toughness for each time you got hurt",req_xp:50,req_lvl:11}
+data modify storage minecraft:reforge data.reforge_data append value {id:92,name:"Ravager Plushie [Knocking]",info:"Launch entity upwards",req_xp:20,req_lvl:3}

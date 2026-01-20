@@ -1,7 +1,7 @@
 # Display Purpose only.
 execute if score @s forgecraft_lvl matches 1 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Agile, Cleaving, Poisoned, Super-Vision, Submersible, Defending"}]
 execute if score @s forgecraft_lvl matches 2 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Spiky, Drilling, Farm-Replenisher, Fortified, Piercing, Heavy"}]
-execute if score @s forgecraft_lvl matches 3 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Self-Repairing, Striking, Leaping"}]
+execute if score @s forgecraft_lvl matches 3 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Self-Repairing, Striking, Leaping, Knocking"}]
 execute if score @s forgecraft_lvl matches 4 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Turbo, Light, Long"}]
 execute if score @s forgecraft_lvl matches 5 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Efficient, Speedy, Mysterious, Provoker, Sharp, Rotten"}]
 execute if score @s forgecraft_lvl matches 6 run tellraw @s [{"color":"red","italic":false,"obfuscated":false,"text":"⚒ New Reforges: "},{"color":"gold","bold":false,"text":"Magical, Weaponized, Dispenser"}]
