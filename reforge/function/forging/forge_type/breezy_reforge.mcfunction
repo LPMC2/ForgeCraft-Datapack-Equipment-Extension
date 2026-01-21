@@ -18,7 +18,7 @@ data modify entity @s Item.components.minecraft:custom_data.breezy_reforge set v
 data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "breezy_reforge"
 data modify entity @s Item.components.minecraft:rarity set value "rare"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1
+data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
 
 data modify entity @s Item.components.minecraft:use_effects set value {speed_multiplier:1,can_sprint:true}
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",sound:"entity.breeze.shoot",has_consume_particles:false}

@@ -10,7 +10,7 @@ data modify entity @s Item.components.minecraft:custom_data.sorcerer_reforge set
 data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "sorcerer_reforge"
 data modify entity @s Item.components.minecraft:rarity set value "epic"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1
+data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
 
 data modify entity @s Item.components.minecraft:use_effects set value {speed_multiplier:0.75,can_sprint:true}
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",has_consume_particles:false}

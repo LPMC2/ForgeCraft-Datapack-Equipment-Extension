@@ -17,7 +17,7 @@ data modify entity @s Item.components.minecraft:custom_data.warped_reforge set v
 data modify entity @s Item.components.minecraft:custom_data.forge_data.abilities append value "warped_reforge"
 data modify entity @s Item.components.minecraft:rarity set value "epic"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
-data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1
+data modify entity @s Item.components.minecraft:custom_data.right_click_detection set value 1b
 
 data modify entity @s Item.components.minecraft:use_effects set value {speed_multiplier:1,can_sprint:true}
 data modify entity @s Item.components.consumable set value {consume_seconds:2147483647,animation:"block",sound:"entity.player.teleport",has_consume_particles:false}

@@ -6,3 +6,4 @@ execute if score @s mysterious_count matches 1.. run function custom_items:armor
 execute if score @s super_chainmail_count matches 1.. run function custom_items:armor/fortified/action
 execute if score @s healthful_count matches 1.. run function custom_items:armor/healthful/tick
 execute if score @s protective_reforge_hit matches 1.. run function custom_items:armor/protective/tick
+execute if score @s armorfluxing_reforge_cd matches 1.. run function custom_items:armor/armorfluxing/tick
