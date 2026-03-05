@@ -1,0 +1,1 @@
+$data modify storage minecraft:reforge vanilla.modifier[$(index)].id set value "minecraft:$(uuid)"

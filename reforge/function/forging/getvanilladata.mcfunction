@@ -369,13 +369,16 @@ execute if entity @s[type=item_display,nbt={item:{id:"minecraft:warped_fungus_on
 $execute if entity @s[type=item_display,nbt={item:{id:"minecraft:warped_fungus_on_a_stick",count:1}}] run data modify storage minecraft:reforge vanilla.modifier set value [{type:"entity_interaction_range",amount:0.25,operation:"add_multiplied_total",id:"$(1)",slot:"mainhand"}]
 
 # Custom Items (Command-Made)
-execute if data entity @s[type=item_display] item.components.minecraft:attribute_modifiers run data remove storage minecraft:reforge vanilla.modifier
-execute if data entity @s[type=item_display] item.components.minecraft:max_damage run data remove storage minecraft:reforge vanilla.durability
+execute if data entity @s[type=item_display] item.components.minecraft:attribute_modifiers run data modify storage minecraft:reforge vanilla.modifier set from entity @s item.components.minecraft:attribute_modifiers
+execute if data entity @s[type=item_display] item.components.minecraft:attribute_modifiers run function reforge:forging/attribute/reassign/init
+execute if data entity @s[type=item_display] item.components.minecraft:max_damage run data modify storage minecraft:reforge vanilla.durability set from entity @s item.components.minecraft:max_damage
 execute if data entity @s[type=item_display] item.components.minecraft:custom_name run scoreboard players set .fc_custom_name const 1
 execute if data entity @s[type=item_display] item.components.minecraft:item_name run scoreboard players set .fc_custom_name const 1
 execute if data entity @s[type=item_display] item.components.minecraft:item_name run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:item_name
 execute if data entity @s[type=item_display] item.components.minecraft:item_name{} run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:item_name.text
 execute if data entity @s[type=item_display] item.components.minecraft:item_name.extra run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:item_name.text
+execute if data entity @s[type=item_display] item.components.minecraft:item_name.fallback run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:item_name.fallback
 execute if data entity @s[type=item_display] item.components.minecraft:custom_name run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:custom_name
 execute if data entity @s[type=item_display] item.components.minecraft:custom_name{} run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:custom_name.text
 execute if data entity @s[type=item_display] item.components.minecraft:custom_name.extra run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:custom_name.text
+execute if data entity @s[type=item_display] item.components.minecraft:custom_name.fallback run data modify storage minecraft:reforge vanilla.name set from entity @s item.components.minecraft:custom_name.fallback

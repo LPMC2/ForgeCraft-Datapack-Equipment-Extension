@@ -2,7 +2,8 @@ data remove storage minecraft:reforge temp.display.name
 data remove storage minecraft:reforge temp.display.description
 data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:item_name
 data modify storage minecraft:reforge temp.display.name set from entity @s Item.components.minecraft:custom_name
-data modify storage minecraft:reforge temp.display.description set from entity @s Item.components.minecraft:custom_data.custom_lore.forge
+data modify storage minecraft:reforge temp.display.description append from entity @s Item.components.minecraft:custom_data.custom_lore.base
+data modify storage minecraft:reforge temp.display.description append from entity @s Item.components.minecraft:custom_data.custom_lore.forge
 execute if data storage minecraft:reforge temp.display.description[0] run data modify storage minecraft:reforge temp.display.description[0].color set value "gray"
 execute if data storage minecraft:reforge temp.display.description[1] run data modify storage minecraft:reforge temp.display.description[1].color set value "gray"
 execute if data storage minecraft:reforge temp.display.description[2] run data modify storage minecraft:reforge temp.display.description[2].color set value "gray"
