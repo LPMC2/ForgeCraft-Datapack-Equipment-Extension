@@ -135,3 +135,5 @@ execute unless data storage forgecraft:display settings.format run data modify s
 function level_system:init
 execute as @a run function reforge:player/load
 execute as @e[type=#entity_hit_matching:utility] run function reforge:reforge_anvil/load
+# Store Data Version from player for specific checks, like display bar
+execute store result score .data_version const run data get entity @p DataVersion

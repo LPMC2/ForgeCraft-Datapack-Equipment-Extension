@@ -1,16 +1,16 @@
 $data modify entity @s Item.components.minecraft:item_name set value {"color":"#DEDEDE","italic":false,"text":"⚒ Powerful $(name)"}
 #$data modify entity @s Item.components.minecraft:lore set value [{"color":"dark_gray","italic":false,"text":"⚒ Powerful: +0.75 Attack Damage"},[{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]]
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Powerful: +0.75 Attack Damage"}
+data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ Powerful: +10% Attack Damage"}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "Powerful $(name)"
 
 # Attack Damage
 data remove storage minecraft:attribute new.attribute
-$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:attack_damage",operation:"add_value",slot:"$(slot)"}
+$data modify storage minecraft:attribute new.attribute set value {type:"minecraft:attack_damage",operation:"add_multiplied_base",slot:"$(slot)"}
 $data modify storage minecraft:attribute new.attribute_id set value $(uuid1)
-data modify storage minecraft:attribute new.attribute_amount set value 0.75
+data modify storage minecraft:attribute new.attribute_amount set value 0.10
 execute as @s run function reforge:forging/forge_type/attribute/operation/get_type
 
 data modify entity @s Item.components.minecraft:rarity set value "uncommon"

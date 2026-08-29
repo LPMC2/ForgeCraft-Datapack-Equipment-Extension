@@ -1,5 +1,6 @@
 # Init Function #
 scoreboard players set .distance const 0
+execute unless score .globalarrow id matches 0.. run scoreboard players set .globalarrow id 0
 execute if score .globalarrow id matches 10000.. run scoreboard players set .globalarrow id 0
 scoreboard players add .globalarrow id 1
 scoreboard players operation @s id = .globalarrow id

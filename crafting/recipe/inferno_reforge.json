@@ -19,7 +19,7 @@
       "minecraft:max_stack_size": 16,
       "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Blazing Core"},
       "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Inferno: "},{"bold":false,"color":"gray","italic":false,"text":"+1.25 Attack Damage & +0.1 Burning Time."}],
+        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Inferno: "},{"bold":false,"color":"gray","italic":false,"text":"+20% Attack Damage & +0.1 Burning Time."}],
         {"color":"gray","italic":false,"text":"+25% Attack Damage, Attack Speed & +1 Arrow Damage while on fire"},
         {"color":"dark_gray","italic":false,"text":"Also Immune to item fire"},
         {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},

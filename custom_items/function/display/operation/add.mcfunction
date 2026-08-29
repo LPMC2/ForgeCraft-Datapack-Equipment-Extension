@@ -9,6 +9,8 @@ $data modify storage forgecraft:display data.$(id).actionbar append value {\
     format:"$(format)",\
     color:"$(color)",\
     label:"$(label)",\
-    unit:"$(unit)"\
+    unit:"$(unit)",\
+    left_bar:"",\
+    right_bar:""\
 }
 function custom_items:display/player/update with storage forgecraft:display temp
