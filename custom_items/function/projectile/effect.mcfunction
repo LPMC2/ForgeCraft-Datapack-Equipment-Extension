@@ -4,3 +4,4 @@ execute if entity @s[tag=cursed_fireball] run playsound minecraft:entity.generic
 execute if entity @s[tag=cursed_fireball] at @s run summon creeper ~ ~ ~ {ExplosionRadius:1b,Fuse:0,ignited:1b,attributes:[{id:"minecraft:scale",base:0}]}
 execute if entity @s[tag=ranger_projectile] run particle minecraft:portal ~ ~ ~ 0 0 0 0.5 50
 execute if entity @s[tag=enderball] run particle minecraft:explosion ~ ~ ~ 0 0 0 1 0
+execute if entity @s[tag=enderball] run playsound minecraft:entity.ender_eye.death master @a ~ ~ ~ 1 2 0.01

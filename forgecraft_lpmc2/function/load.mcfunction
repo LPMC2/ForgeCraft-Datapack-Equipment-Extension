@@ -107,6 +107,7 @@ scoreboard objectives add protective_reforge_cd dummy
 scoreboard objectives add protective_reforge_hit dummy
 scoreboard objectives add armorfluxing_reforge_cd dummy
 scoreboard objectives add armorfluxing_reforge_count dummy
+scoreboard objectives add reforge_ender_eye_count dummy
 scoreboard objectives add fire dummy
 scoreboard objectives add arrow_potion_id dummy
 scoreboard objectives add g_x dummy

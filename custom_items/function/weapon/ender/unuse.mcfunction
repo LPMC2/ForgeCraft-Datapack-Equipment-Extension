@@ -1,0 +1,1 @@
+function custom_items:display/remove {tag:"ender_reforge"}

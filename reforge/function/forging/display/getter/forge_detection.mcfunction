@@ -101,18 +101,18 @@ execute if score .is_repeated const matches 1.. run return run function reforge:
 execute if score .player_lvl const < .require_level const run return run function reforge:forging/display/getter/lvl_req_failed
 function reforge:forging/randomizeduuid
 # Auto-Convert
-execute if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. unless score .isrequireconvert const matches 1.. unless score .item_reforge reforgeId matches 85 run function reforge:forging/display/getter/auto_convert
+execute if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 1.. unless score .isrequireconvert const matches 1.. unless score .item_reforge reforgeId matches 85 run return run function reforge:forging/display/getter/auto_convert
 # Normal Reforge
-execute as @s if score .item reforgeId matches 0 if score .itemtype id matches 1.. unless score .item_reforge reforgeId matches 39 unless score .item_reforge reforgeId matches 75 unless score .item_reforge reforgeId matches 85 if score .item_reforge reforgeId matches 1.. run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 0 if score .itemtype id matches 1.. unless score .item_reforge reforgeId matches 39 unless score .item_reforge reforgeId matches 75 unless score .item_reforge reforgeId matches 85 if score .item_reforge reforgeId matches 1.. run return run function reforge:forging/display/getter/forge_item
 # Special Reforges
-execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 85 run function reforge:forging/display/getter/forge_item
-execute as @s if score .item reforgeId matches 6 if score .item_reforge reforgeId matches 6 if score .is_item_reforge_item const matches 1.. run function reforge:forging/display/getter/forge_item
-execute as @s if score .item reforgeId matches 1.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 1.. if score .is_supreme const matches 1.. unless score .item reforgeId = .item_reforge reforgeId unless score .item_forge_count const matches 2.. run function reforge:forging/display/getter/forge_item
-execute as @s if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 39 unless data entity @n[tag=targetforgeitem] item{id:"minecraft:structure_void"} run function reforge:forging/display/getter/forge_item
-execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 75 unless score .is_item_reforge_item const matches 0.. run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 85 run return run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 6 if score .item_reforge reforgeId matches 6 if score .is_item_reforge_item const matches 1.. run return run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 1.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 1.. if score .is_supreme const matches 1.. unless score .item reforgeId = .item_reforge reforgeId unless score .item_forge_count const matches 2.. run return run function reforge:forging/display/getter/forge_item
+execute as @s if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 39 unless data entity @n[tag=targetforgeitem] item{id:"minecraft:structure_void"} run return run function reforge:forging/display/getter/forge_item
+execute as @s if score .item reforgeId matches 0.. if score .itemtype id matches 1.. if score .item_reforge reforgeId matches 75 unless score .is_item_reforge_item const matches 0.. run return run function reforge:forging/display/getter/forge_item
 
 execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 0 run execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run function reforge:forging/getvanilladata with storage minecraft:reforge uuid
-execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 0 run function reforge:forging/display/getter/vanilla_forge with storage minecraft:reforge vanilla 
+execute as @s if score .item reforgeId matches -1 if score .item_reforge reforgeId matches 0 run return run function reforge:forging/display/getter/vanilla_forge with storage minecraft:reforge vanilla 
 
 data remove storage minecraft:reforge temp.custom_name
 execute if score .itemtype id matches 1.. as @n[type=minecraft:item_display,tag=targetforgemodifier,nbt={item:{id:"minecraft:name_tag"}}] if data entity @s item.components.minecraft:custom_name run data modify storage minecraft:reforge temp.custom_name set from entity @s item.components.minecraft:custom_name

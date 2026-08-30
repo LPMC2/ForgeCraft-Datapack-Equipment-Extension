@@ -14,7 +14,10 @@ execute as @s run function custom_items:weapon/aotd/reset
 #execute if data entity @s SelectedItem.components.minecraft:custom_data.aspect_of_the_defense run function custom_items:weapon/aotd/calculate
 #execute if data entity @s SelectedItem.components.minecraft:custom_data.heartstoner run function custom_items:weapon/heartstoner/init
 #execute unless data entity @s SelectedItem.components.minecraft:custom_data.heartstoner run function custom_items:weapon/heartstoner/unuse
+execute if data entity @s SelectedItem.components.minecraft:custom_data.ender_reforge_melee run function custom_items:weapon/ender/init
+execute unless data entity @s SelectedItem.components.minecraft:custom_data.ender_reforge_melee run function custom_items:weapon/ender/unuse
 execute if data entity @s SelectedItem.components.minecraft:custom_data.swarming run function custom_items:weapon/swarming/init
 execute unless data entity @s SelectedItem.components.minecraft:custom_data.swarming run function custom_items:weapon/swarming/unuse
 #execute if data entity @s SelectedItem.components.minecraft:custom_data.poseidon run function custom_items:weapon/poseidon/apply
 #execute unless data entity @s SelectedItem.components.minecraft:custom_data.poseidon run function custom_items:weapon/poseidon/reset 
+function custom_items:display/tick
