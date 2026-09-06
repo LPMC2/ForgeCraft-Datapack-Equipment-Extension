@@ -13,7 +13,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit0\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit0"
+              ]
+            }
                     }
                 }
             }
@@ -23,7 +27,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit1\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit1"
+              ]
+            }
                     }
                 }
             }
@@ -33,7 +41,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit2\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit2"
+              ]
+            }
                     }
                 }
             }
@@ -43,7 +55,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit3\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit3"
+              ]
+            }
                     }
                 }
             }
@@ -53,7 +69,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit4\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit4"
+              ]
+            }
                     }
                 }
             }
@@ -63,7 +83,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit5\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit5"
+              ]
+            }
                     }
                 }
             }
@@ -73,7 +97,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit6\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit6"
+              ]
+            }
                     }
                 }
             }
@@ -83,7 +111,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit7\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit7"
+              ]
+            }
                     }
                 }
             }
@@ -93,7 +125,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit8\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit8"
+              ]
+            }
                     }
                 }
             }
@@ -103,7 +139,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit9\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit9"
+              ]
+            }
                     }
                 }
             }
@@ -113,7 +153,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit10\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit10"
+              ]
+            }
                     }
                 }
             }
@@ -123,7 +167,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit11\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit11"
+              ]
+            }
                     }
                 }
             }
@@ -133,7 +181,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit12\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit12"
+              ]
+            }
                     }
                 }
             }
@@ -143,7 +195,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit13\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit13"
+              ]
+            }
                     }
                 }
             }
@@ -153,7 +209,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit14\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit14"
+              ]
+            }
                     }
                 }
             }
@@ -163,7 +223,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit15\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit15"
+              ]
+            }
                     }
                 }
             }
@@ -173,7 +237,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit16\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit16"
+              ]
+            }
                     }
                 }
             }
@@ -183,7 +251,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit17\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit17"
+              ]
+            }
                     }
                 }
             }
@@ -193,7 +265,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit18\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit18"
+              ]
+            }
                     }
                 }
             }
@@ -203,7 +279,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit19\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit19"
+              ]
+            }
                     }
                 }
             }
@@ -213,7 +293,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit20\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit20"
+              ]
+            }
                     }
                 }
             }
@@ -223,7 +307,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit21\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit21"
+              ]
+            }
                     }
                 }
             }
@@ -233,7 +321,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit22\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit22"
+              ]
+            }
                     }
                 }
             }
@@ -243,7 +335,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit23\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit23"
+              ]
+            }
                     }
                 }
             }
@@ -253,7 +349,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit24\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit24"
+              ]
+            }
                     }
                 }
             }
@@ -263,7 +363,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit25\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit25"
+              ]
+            }
                     }
                 }
             }
@@ -273,7 +377,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit26\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit26"
+              ]
+            }
                     }
                 }
             }
@@ -283,7 +391,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit27\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit27"
+              ]
+            }
                     }
                 }
             }
@@ -293,7 +405,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit28\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit28"
+              ]
+            }
                     }
                 }
             }
@@ -303,7 +419,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit29\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit29"
+              ]
+            }
                     }
                 }
             }
@@ -313,7 +433,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit30\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit30"
+              ]
+            }
                     }
                 }
             }
@@ -323,7 +447,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.bit31\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.bit31"
+              ]
+            }
                     }
                 }
             }
@@ -333,7 +461,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit0\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit0"
+              ]
+            }
                     }
                 }
             }
@@ -343,7 +475,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit1\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit1"
+              ]
+            }
                     }
                 }
             }
@@ -353,7 +489,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit2\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit2"
+              ]
+            }
                     }
                 }
             }
@@ -363,7 +503,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit3\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit3"
+              ]
+            }
                     }
                 }
             }
@@ -373,7 +517,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit4\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit4"
+              ]
+            }
                     }
                 }
             }
@@ -383,7 +531,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit5\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit5"
+              ]
+            }
                     }
                 }
             }
@@ -393,7 +545,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit6\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit6"
+              ]
+            }
                     }
                 }
             }
@@ -403,7 +559,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit7\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit7"
+              ]
+            }
                     }
                 }
             }
@@ -413,7 +573,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit8\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit8"
+              ]
+            }
                     }
                 }
             }
@@ -423,7 +587,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit9\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit9"
+              ]
+            }
                     }
                 }
             }
@@ -433,7 +601,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit10\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit10"
+              ]
+            }
                     }
                 }
             }
@@ -443,7 +615,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit11\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit11"
+              ]
+            }
                     }
                 }
             }
@@ -453,7 +629,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit12\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit12"
+              ]
+            }
                     }
                 }
             }
@@ -463,7 +643,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit13\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit13"
+              ]
+            }
                     }
                 }
             }
@@ -473,7 +657,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit14\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit14"
+              ]
+            }
                     }
                 }
             }
@@ -483,7 +671,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit15\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit15"
+              ]
+            }
                     }
                 }
             }
@@ -493,7 +685,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit16\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit16"
+              ]
+            }
                     }
                 }
             }
@@ -503,7 +699,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit17\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit17"
+              ]
+            }
                     }
                 }
             }
@@ -513,7 +713,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit18\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit18"
+              ]
+            }
                     }
                 }
             }
@@ -523,7 +727,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit19\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit19"
+              ]
+            }
                     }
                 }
             }
@@ -533,7 +741,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit20\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit20"
+              ]
+            }
                     }
                 }
             }
@@ -543,7 +755,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit21\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit21"
+              ]
+            }
                     }
                 }
             }
@@ -553,7 +769,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit22\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit22"
+              ]
+            }
                     }
                 }
             }
@@ -563,7 +783,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit23\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit23"
+              ]
+            }
                     }
                 }
             }
@@ -573,7 +797,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit24\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit24"
+              ]
+            }
                     }
                 }
             }
@@ -583,7 +811,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit25\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit25"
+              ]
+            }
                     }
                 }
             }
@@ -593,7 +825,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit26\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit26"
+              ]
+            }
                     }
                 }
             }
@@ -603,7 +839,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit27\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit27"
+              ]
+            }
                     }
                 }
             }
@@ -613,7 +853,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit28\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit28"
+              ]
+            }
                     }
                 }
             }
@@ -623,7 +867,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit29\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit29"
+              ]
+            }
                     }
                 }
             }
@@ -633,7 +881,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit30\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit30"
+              ]
+            }
                     }
                 }
             }
@@ -643,7 +895,11 @@
                 "conditions": {
                     "damage": {
                         "source_entity": {
-                            "nbt": "{Tags:[\"entityhit.nbit31\"]}"
+                            "minecraft:entity_tags": {
+              "any_of": [
+                "entityhit.nbit31"
+              ]
+            }
                     }
                 }
             }

@@ -29,7 +29,7 @@
     "requirement": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "crafting:inferno_reforge"
+        "recipes": "crafting:inferno_reforge"
       }
     }
   },

@@ -1,19 +1,18 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "slots": {
-        "container.*": {
-          "items": [
-            "minecraft:brush",
-            "minecraft:flint_and_steel",
-            "minecraft:fishing_rod",
-            "minecraft:carrot_on_a_stick",
-            "minecraft:warped_fungus_on_a_stick",
-            "minecraft:shield"
-          ]
-        }
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.*": {
+        "items": [
+          "minecraft:brush",
+          "minecraft:flint_and_steel",
+          "minecraft:fishing_rod",
+          "minecraft:carrot_on_a_stick",
+          "minecraft:warped_fungus_on_a_stick",
+          "minecraft:shield"
+        ]
       }
     }
   }
-  
+}

@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_damage",
+    "type": "minecraft:set_damage",
     "damage": {
       "min": 0.01,
       "max": 1
@@ -8,7 +8,7 @@
     "add": false
   },
   {
-    "function": "minecraft:enchant_randomly",
+    "type": "minecraft:enchant_randomly",
     "options": "#minecraft:on_mob_spawn_equipment",
     "only_compatible": true,
     "conditions": [
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "function": "minecraft:enchant_randomly",
+    "type": "minecraft:enchant_randomly",
     "options": "#minecraft:on_mob_spawn_equipment",
     "only_compatible": true,
     "conditions": [
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "function": "minecraft:enchant_randomly",
+    "type": "minecraft:enchant_randomly",
     "options": "#minecraft:on_mob_spawn_equipment",
     "only_compatible": true,
     "conditions": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:unbreakable": {
         "show_in_tooltip": true

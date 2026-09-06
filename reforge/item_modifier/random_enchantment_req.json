@@ -1,13 +1,12 @@
 {
-  "function": "minecraft:enchant_with_levels",
+  "type": "minecraft:enchant_with_levels",
   "levels": {
     "type": "minecraft:score",
     "target": {
       "type": "minecraft:fixed",
-      "target": "target_entity",
       "name": ".req_xp"
     },
     "score": "const",
-    "scale": 1
+    "fallback": 0
   }
 }

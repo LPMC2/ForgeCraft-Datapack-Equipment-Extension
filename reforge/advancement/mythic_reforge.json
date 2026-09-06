@@ -15,7 +15,7 @@
     "requirement": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "crafting:magic_core"
+        "recipes": "crafting:magic_core"
       }
     }
   },
