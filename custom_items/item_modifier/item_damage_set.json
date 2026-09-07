@@ -1,13 +1,9 @@
 {
   "type": "minecraft:set_damage",
   "damage": {
-    "type": "minecraft:score",
-    "target": {
-      "type": "minecraft:fixed",
-      "name": ".currentdamage"
-    },
-    "score": "const",
-    "scale": 0.00004923682914820286
+    "type": "minecraft:storage",
+    "storage": "forgecraft:temp",
+    "path": "data.damage"
   },
   "add": false
 }

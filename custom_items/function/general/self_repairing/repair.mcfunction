@@ -17,4 +17,3 @@ execute as @s if score .head self_repairing matches 1.. run function custom_item
 execute as @s if score .chest self_repairing matches 1.. run function custom_items:general/self_repairing/chest/repair
 execute as @s if score .legs self_repairing matches 1.. run function custom_items:general/self_repairing/legs/repair
 execute as @s if score .feet self_repairing matches 1.. run function custom_items:general/self_repairing/feet/repair
-

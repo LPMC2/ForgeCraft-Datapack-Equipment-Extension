@@ -8,4 +8,6 @@ scoreboard players operation .num const *= .100000 const
 scoreboard players operation .num const /= .maxdamage const
 
 scoreboard players operation .currentdamage const = .num const
+execute store result storage forgecraft:temp data.damage float 0.00001 run scoreboard players get .currentdamage const
 item modify entity @s weapon.offhand custom_items:item_damage_add
+execute at @s run playsound minecraft:item.wolf_armor.repair master @a ~ ~ ~ 0.02 1.8 0
