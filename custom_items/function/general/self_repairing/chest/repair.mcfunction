@@ -9,3 +9,4 @@ scoreboard players operation .num const /= .maxdamage const
 
 scoreboard players operation .currentdamage const = .num const
 item modify entity @s armor.chest custom_items:item_damage_add
+execute at @s run playsound minecraft:item.wolf_armor.repair master @a ~ ~ ~ 0.005 1.8 0
