@@ -12,17 +12,17 @@ data modify storage minecraft:reforge vanilla.durability set value 100
 scoreboard players set .fc_custom_name const 0
 
 # Type
-execute if score .itemtype id matches 1.. store result storage minecraft:reforge vanilla.typeid int 1 run scoreboard players get .itemtype id
-execute if score .itemtype id matches 1 run data modify storage minecraft:reforge vanilla.type set value "Melee"
-execute if score .itemtype id matches 2 run data modify storage minecraft:reforge vanilla.type set value "Ranged"
-execute if score .itemtype id matches 3 run data modify storage minecraft:reforge vanilla.type set value "Armor - Helmet"
-execute if score .itemtype id matches 4 run data modify storage minecraft:reforge vanilla.type set value "Armor - Chestplate"
-execute if score .itemtype id matches 5 run data modify storage minecraft:reforge vanilla.type set value "Armor - Leggings"
-execute if score .itemtype id matches 6 run data modify storage minecraft:reforge vanilla.type set value "Armor - Boots"
-execute if score .itemtype id matches 7 run data modify storage minecraft:reforge vanilla.type set value "Tool"
-execute if score .itemtype id matches 8 run data modify storage minecraft:reforge vanilla.type set value "Utility"
+execute if score .itemtype forgecraft.id matches 1.. store result storage minecraft:reforge vanilla.typeid int 1 run scoreboard players get .itemtype forgecraft.id 
+execute if score .itemtype forgecraft.id matches 1 run data modify storage minecraft:reforge vanilla.type set value "Melee"
+execute if score .itemtype forgecraft.id matches 2 run data modify storage minecraft:reforge vanilla.type set value "Ranged"
+execute if score .itemtype forgecraft.id matches 3 run data modify storage minecraft:reforge vanilla.type set value "Armor - Helmet"
+execute if score .itemtype forgecraft.id matches 4 run data modify storage minecraft:reforge vanilla.type set value "Armor - Chestplate"
+execute if score .itemtype forgecraft.id matches 5 run data modify storage minecraft:reforge vanilla.type set value "Armor - Leggings"
+execute if score .itemtype forgecraft.id matches 6 run data modify storage minecraft:reforge vanilla.type set value "Armor - Boots"
+execute if score .itemtype forgecraft.id matches 7 run data modify storage minecraft:reforge vanilla.type set value "Tool"
+execute if score .itemtype forgecraft.id matches 8 run data modify storage minecraft:reforge vanilla.type set value "Utility"
 # Custom Items (Modded)
-execute unless score .itemtype id matches 1.. as @s[type=minecraft:item_display] run function reforge:forging/item_data/init
+execute unless score .itemtype forgecraft.id matches 1.. as @s[type=minecraft:item_display] run function reforge:forging/item_data/init
 
 # -------- Melee --------
 # Wooden Sword

@@ -1,5 +1,5 @@
-# > target: Item Display (@s) - id
-# > Goal of this function: initialize the loop for each letter in id
+# > target: Item Display (@s) - forgecraft.id 
+# > Goal of this function: initialize the loop for each letter in forgecraft.id 
 scoreboard players set .string_length const 0
 scoreboard players set .list_index const 0
 execute store result storage minecraft:string storage.list_index int 1 run scoreboard players set .list_index const 0

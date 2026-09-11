@@ -3,12 +3,14 @@ execute store result score @s itemid run data get entity @s SelectedItem.compone
 execute if items entity @s weapon.mainhand #custom_items:netherite_weapons unless data entity @s SelectedItem.components.minecraft:custom_data.netherite_convert run function custom_items:weapon/itemslot/update_netherite
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_spear"}}] unless data entity @s SelectedItem.components.minecraft:custom_data.netherite_convert run function custom_items:weapon/itemslot/update_netherite
 data modify storage minecraft:item store.itemid set from entity @s SelectedItem.components.minecraft:custom_data.typename
-execute store result storage minecraft:item store.playerid int 1 run scoreboard players get @s id
+execute store result storage minecraft:item store.playerid int 1 run scoreboard players get @s forgecraft.id 
 function custom_items:weapon/itemslot/store_scoreboard_obj with storage minecraft:item store
 #function custom_items:weapon/itemslot/store_mainhand_data with storage minecraft:item store
 #function custom_items:weapon/itemslot/store_offhand_data with storage minecraft:item store
 scoreboard players operation @s last.slot = @s sel.slot
 # ------------------ #
+#execute if data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier add forgecraft-ranged-removal -0.99 add_multiplied_base
+#execute unless data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier remove forgecraft-ranged-removal
 # -----< Custom >----#
 execute as @s run function custom_items:weapon/aotd/reset
 #execute if data entity @s SelectedItem.components.minecraft:custom_data.aspect_of_the_defense run function custom_items:weapon/aotd/calculate

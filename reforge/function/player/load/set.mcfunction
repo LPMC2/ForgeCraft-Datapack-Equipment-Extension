@@ -1,4 +1,4 @@
-$scoreboard players set @s id $(id)
+$scoreboard players set @s forgecraft.id $(id)
 $scoreboard players set @s forgecraft_lvl $(lvl)
 $scoreboard players set @s forgecraft_lvl_objective $(objective)
 $scoreboard players set @s forgecraft_lvl_progress $(progress)

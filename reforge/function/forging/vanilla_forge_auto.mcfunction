@@ -21,14 +21,14 @@ execute as @n[type=item,tag=iteminit] run function reforge:forging/display/attri
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:damage set value 0
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.reforgeid set value 0
-scoreboard players add .global_itemid id 1
-execute store result score .itemtype id run data get storage minecraft:reforge vanilla.typeid
-execute if score .itemtype id matches 1..2 run data modify storage minecraft:reforge forge.slot set value "mainhand"
-execute if score .itemtype id matches 7..9 run data modify storage minecraft:reforge forge.slot set value "mainhand"
-execute if score .itemtype id matches 3 run data modify storage minecraft:reforge forge.slot set value "head"
-execute if score .itemtype id matches 4 run data modify storage minecraft:reforge forge.slot set value "chest"
-execute if score .itemtype id matches 5 run data modify storage minecraft:reforge forge.slot set value "legs"
-execute if score .itemtype id matches 6 run data modify storage minecraft:reforge forge.slot set value "feet"
-execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.global_id int 1 run scoreboard players get .global_itemid id
+scoreboard players add .global_itemid forgecraft.id 1
+execute store result score .itemtype forgecraft.id run data get storage minecraft:reforge vanilla.typeid
+execute if score .itemtype forgecraft.id matches 1..2 run data modify storage minecraft:reforge forge.slot set value "mainhand"
+execute if score .itemtype forgecraft.id matches 7..9 run data modify storage minecraft:reforge forge.slot set value "mainhand"
+execute if score .itemtype forgecraft.id matches 3 run data modify storage minecraft:reforge forge.slot set value "head"
+execute if score .itemtype forgecraft.id matches 4 run data modify storage minecraft:reforge forge.slot set value "chest"
+execute if score .itemtype forgecraft.id matches 5 run data modify storage minecraft:reforge forge.slot set value "legs"
+execute if score .itemtype forgecraft.id matches 6 run data modify storage minecraft:reforge forge.slot set value "feet"
+execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.global_id int 1 run scoreboard players get .global_itemid forgecraft.id 
 execute as @e[tag=iteminit] if items entity @s container.0 minecraft:structure_void run kill @s
 scoreboard players reset .isnotlisted const

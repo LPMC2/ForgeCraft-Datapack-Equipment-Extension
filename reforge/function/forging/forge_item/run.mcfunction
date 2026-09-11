@@ -1,12 +1,12 @@
 tag @s add find
 scoreboard players set .temp_anvil_id const 0
-scoreboard players operation .temp_anvil_id const = @s id
+scoreboard players operation .temp_anvil_id const = @s forgecraft.id 
 # Find Player
 execute as @a run function reforge:find_players
 
 # Add Tags for identification to target item displays
-execute as @e[tag=target_type_item] at @s if score @s id = .temp_anvil_id const run tag @s add targetforgeitem
-execute as @e[tag=target_type_reforge] at @s if score @s id = .temp_anvil_id const run tag @s add targetforgemodifier
+execute as @e[tag=target_type_item] at @s if score @s forgecraft.id = .temp_anvil_id const run tag @s add targetforgeitem
+execute as @e[tag=target_type_reforge] at @s if score @s forgecraft.id = .temp_anvil_id const run tag @s add targetforgemodifier
 
 # Detect if the player have enough xp
 scoreboard players set .xp_matched const 0
@@ -22,7 +22,7 @@ execute unless score .level_matched const matches 1.. run return run function re
 
 # Forge Item
 execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 run summon item ~ ~ ~ {PickupDelay:5,Age:-32768,Tags:["iteminit"],Motion:[0.0,0.25,0.0],Item:{id:"minecraft:stone",count:1}}
-execute as @e[type=minecraft:item_display,tag=target_forge_display_item] if score @s id = @n[type=interaction,tag=find] id run function reforge:forging/forge_item/get
+execute as @e[type=minecraft:item_display,tag=target_forge_display_item] if score @s forgecraft.id = @n[type=interaction,tag=find] forgecraft.id run function reforge:forging/forge_item/get
 
 # Reset Detections & Data
 scoreboard players set .isdisplay const 0

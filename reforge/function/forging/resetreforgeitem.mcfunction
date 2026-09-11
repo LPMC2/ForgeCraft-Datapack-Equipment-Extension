@@ -9,8 +9,8 @@ data modify entity @n[type=item_display,tag=targetforgemodifier,limit=1] item se
 execute as @p[tag=targetplayer] at @s run function reforge:forging/xp/get_xp_level 
 execute at @s run playsound minecraft:block.anvil.use master @a ~ ~ ~ 1 0.8 0
 execute at @s align xyz positioned ~0.5 ~0.1 ~0.5 run particle lava ~ ~ ~ 0 0 0 0.5 10 normal
-execute as @e[type=text_display,tag=target_forge_display_text] at @s if score @s id = @n[tag=targetforgemodifier] id run function reforge:forging/xp/reset_display
-execute as @e[type=item_display,tag=target_forge_display_item] at @s if score @s id = @n[tag=targetforgemodifier] id run function reforge:forging/display/reset
+execute as @e[type=text_display,tag=target_forge_display_text] at @s if score @s forgecraft.id = @n[tag=targetforgemodifier] forgecraft.id run function reforge:forging/xp/reset_display
+execute as @e[type=item_display,tag=target_forge_display_item] at @s if score @s forgecraft.id = @n[tag=targetforgemodifier] forgecraft.id run function reforge:forging/display/reset
 data remove storage minecraft:reforge forge_itemid
 data remove storage minecraft:reforge forge_itemcomponents
 tag @n[type=minecraft:item,tag=iteminit] remove iteminit

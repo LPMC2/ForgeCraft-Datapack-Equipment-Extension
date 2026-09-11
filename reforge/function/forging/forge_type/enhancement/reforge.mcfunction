@@ -1,4 +1,4 @@
-execute unless score .item_mod id matches 1.. run return fail
+execute unless score .item_mod forgecraft.id matches 1.. run return fail
 execute if score .enhancement_count const >= .enhancementmaxcount const run return fail
 
 data remove storage minecraft:attribute new.attribute

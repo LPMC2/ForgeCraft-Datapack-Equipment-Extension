@@ -1,5 +1,5 @@
 tag @s add find
-execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s id
+execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s forgecraft.id 
 execute as @a at @s run function custom_items:arrow/find_players
 execute store result storage minecraft:arrow store.damage float 0.5 run attribute @p[tag=arrow_owner] minecraft:attack_damage get
 execute store result score .arrow_damage const store result storage minecraft:arrow store.particle int 1 run data get storage minecraft:arrow store.damage 10

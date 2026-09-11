@@ -5,5 +5,5 @@ execute if score @s last.slot matches 0.. unless score @s sel.slot = @s last.slo
 #execute unless data entity @s SelectedItem.components.minecraft:custom_data.global_id run scoreboard players set @s itemid -1
 #execute unless score @s itemid_stored = @s itemid run function custom_items:weapon/itemslot/on_changed
 
-execute store result storage minecraft:item store.pid int 1 run scoreboard players get @s id
+execute store result storage minecraft:item store.pid int 1 run scoreboard players get @s forgecraft.id 
 execute as @s run function custom_items:weapon/itemslot/item_use_detection with storage minecraft:item store

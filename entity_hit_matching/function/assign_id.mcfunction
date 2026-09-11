@@ -1,5 +1,5 @@
 tag @s add entityidset
-# Assign a new id to the entity
+# Assign a new forgecraft.id to the entity
 execute if score $highest entityid matches 999999999.. run scoreboard players set $highest entityid 1
 execute store result score @s entityid run scoreboard players add $highest entityid 1
 
