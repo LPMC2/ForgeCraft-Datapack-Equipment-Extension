@@ -11,7 +11,7 @@ execute at @s run playsound minecraft:item.firecharge.use master @a ~ ~ ~ 1 2 0
 execute at @s run particle minecraft:portal ~ ~2.6 ~ 0 0 0 0.2 30
 # Projectile Setup
 execute unless score .ranger_count const matches ..1 as @n[tag=ranger_projectile,tag=!proj_init] at @n[tag=projectile_source] run tp @s ^ ^3 ^0.01 ~ ~5
-execute if score .ranger_count const matches ..1 as @e[type=#entity_hit_matching:targets_including_player,tag=!find] at @s if score @s id = @n[tag=find] angry_at_id run tag @s add target_angryat
+execute if score .ranger_count const matches ..1 as @e[type=#entity_hit_matching:targets_including_player,tag=!find] at @s if score @s forgecraft.id = @n[tag=find] angry_at_id run tag @s add target_angryat
 execute as @n[tag=ranger_projectile,tag=!proj_init] at @n[tag=projectile_source] run tp @s ^ ^3 ^0.01 facing entity @n[tag=target_angryat] eyes
 execute as @n[tag=ranger_projectile,tag=!proj_init] run function mobs:ranger_enderman/projectile_setup
 execute as @n[tag=ranger_projectile,tag=!proj_init] at @s run function custom_items:projectile/init

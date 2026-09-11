@@ -35,7 +35,7 @@ execute if data entity @s item.components.minecraft:potion_contents.potion run d
 execute as @s run function custom_items:arrow/ender/fire
 
 execute at @s run playsound minecraft:entity.player.teleport master @a ~ ~ ~ 1 2 0
-execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s id
+execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s forgecraft.id 
 function custom_items:arrow/remove_storage with storage minecraft:arrow store
 kill @s
 tag @a remove arrow_owner

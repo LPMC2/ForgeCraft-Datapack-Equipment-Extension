@@ -5,8 +5,8 @@ execute as @s run function reforge:forging/forge_data/store
 execute as @s run function reforge:forging/forge_data/get_init
 execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 88.. run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 0.95 0
 execute if entity @s[advancements={reforge:forge_all_unique=false}] if score .reforge_length const matches 88.. run advancement grant @s only reforge:forge_all_unique
-execute if entity @s[advancements={reforge:item_enhance=false}] if score .item_reforge reforgeId matches 0 if score .itemtype id matches 1.. run advancement grant @s only reforge:item_enhance
-execute if entity @s[advancements={reforge:weapon_beginning=false}] if score .item_reforge reforgeId matches 1.. if score .itemtype id matches 1..2 run advancement grant @s only reforge:weapon_beginning
+execute if entity @s[advancements={reforge:item_enhance=false}] if score .item_reforge reforgeId matches 0 if score .itemtype forgecraft.id matches 1.. run advancement grant @s only reforge:item_enhance
+execute if entity @s[advancements={reforge:weapon_beginning=false}] if score .item_reforge reforgeId matches 1.. if score .itemtype forgecraft.id matches 1..2 run advancement grant @s only reforge:weapon_beginning
 execute if entity @s[advancements={reforge:midas_power=false}] if score .item_reforge reforgeId matches 6 if score .item reforgeId matches 6 run advancement grant @s only reforge:midas_power
 execute if entity @s[advancements={reforge:heavy_reforge=false}] if score .item_reforge reforgeId matches 2 run advancement grant @s only reforge:heavy_reforge
 execute if entity @s[advancements={reforge:maxed_out=false}] if score .enhancement_count const matches 10.. run advancement grant @s only reforge:maxed_out
@@ -19,7 +19,7 @@ execute if entity @s[advancements={reforge:experienced_reforge=false}] if score 
 execute if entity @s[advancements={reforge:copperized_reforge=false}] if score .item_reforge reforgeId matches 77 run advancement grant @s only reforge:copperized_reforge
 execute if entity @s[advancements={reforge:ender_reforge=false}] if score .item_reforge reforgeId matches 70 run advancement grant @s only reforge:ender_reforge
 execute if entity @s[advancements={reforge:dispenser_reforge=false}] if score .item_reforge reforgeId matches 57 run advancement grant @s only reforge:dispenser_reforge
-execute if entity @s[advancements={reforge:chaining_reforge=false}] if score .item_reforge reforgeId matches 76 if score .itemtype id matches 7 run advancement grant @s only reforge:chaining_reforge
+execute if entity @s[advancements={reforge:chaining_reforge=false}] if score .item_reforge reforgeId matches 76 if score .itemtype forgecraft.id matches 7 run advancement grant @s only reforge:chaining_reforge
 execute if entity @s[advancements={reforge:unbreakable_reforge=false}] if score .item_reforge reforgeId matches 7 run advancement grant @s only reforge:unbreakable_reforge
 execute if entity @s[advancements={reforge:leeching_reforge=false}] if score .item_reforge reforgeId matches 21 run advancement grant @s only reforge:leeching_reforge
 execute if entity @s[advancements={reforge:cursed_reforge=false}] if score .item_reforge reforgeId matches 38 run advancement grant @s only reforge:cursed_reforge

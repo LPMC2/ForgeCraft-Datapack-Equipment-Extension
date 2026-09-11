@@ -1,4 +1,4 @@
-execute store result storage forgecraft:display temp.id int 1 run scoreboard players get @s id
+execute store result storage forgecraft:display temp.id int 1 run scoreboard players get @s forgecraft.id 
 $data modify storage forgecraft:display temp.tag set value "$(tag)"
 $data modify storage forgecraft:display temp.type set value "$(type)"
 $data modify storage forgecraft:display temp.max set value $(max)

@@ -1,7 +1,7 @@
 tag @s add proj_init
-scoreboard players add .global_projectile id 1
-scoreboard players operation @s id = .global_projectile id
-#execute store result storage minecraft:projectile store.id int 1 run scoreboard players get @s id
+scoreboard players add .global_projectile forgecraft.id 1
+scoreboard players operation @s forgecraft.id = .global_projectile forgecraft.id 
+#execute store result storage minecraft:projectile store.id int 1 run scoreboard players get @s forgecraft.id 
 #execute as @s run function custom_items:projectile/store_data with storage minecraft:projectile store
 # ----- Fallback values ----- #
 execute unless score @s projectile_damage matches 0.. run scoreboard players set @s projectile_damage 0
@@ -14,7 +14,7 @@ execute unless score @s projectile_aoe matches 0.. run scoreboard players set @s
 # --------------------------- #
 
 
-scoreboard players operation @s projectile_source_id = @n[tag=projectile_source] id
+scoreboard players operation @s projectile_source_id = @n[tag=projectile_source] forgecraft.id 
 
 
 tag @n[tag=projectile_source] remove projectile_source

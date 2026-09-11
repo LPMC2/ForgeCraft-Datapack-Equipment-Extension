@@ -1,5 +1,5 @@
 # > target: Storage forgecraft:string target.text
-# > Goal of this function: initialize the loop for each letter in id
+# > Goal of this function: initialize the loop for each letter in forgecraft.id 
 # > Result: Storage -> forgecraft:string storage.seperated
 # > Example of result: Example --> [{"id":0, "char":"E"}, {"id":1, "char":"x"}, {"id":2, "char":"a"}, {"id":3, "char":"m"}, {"id":4, "char":"p"}, {"id":5, "char":"l"}, {"id":6, "char":"e"}]
 scoreboard players set .string_length const 0

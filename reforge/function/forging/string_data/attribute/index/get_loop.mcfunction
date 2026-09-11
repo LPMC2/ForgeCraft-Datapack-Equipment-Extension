@@ -1,4 +1,4 @@
-# > Goal of this function: In each loop, get the letter from the index (Item id)
+# > Goal of this function: In each loop, get the letter from the index (Item forgecraft.id )
 #   and store it to the list of storage, item_name
 $data modify storage minecraft:string storage.item_name append value {"id":$(list_index)}
 $data modify storage minecraft:string storage.item_name[$(list_index)].text set string storage minecraft:reforge temp.attribute.target_attribute $(index) $(index_offset)

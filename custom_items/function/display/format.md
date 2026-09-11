@@ -23,7 +23,7 @@ function custom_items:display/bar/update {tag:"raging_melee"}
 }
 - Storage: forgecraft:display data.(id)
 .result: [combined text string]
-.id: target id. Use scoreboard id.
+.id: target forgecraft.id . Use scoreboard forgecraft.id .
 .actionbar
 [
     {

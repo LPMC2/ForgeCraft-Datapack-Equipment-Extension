@@ -3,7 +3,8 @@ scoreboard players set #loaded entityid 1
 scoreboard objectives add const dummy
 scoreboard players set 2 const 2
 scoreboard players set -1 const -1
-scoreboard objectives add id dummy
+scoreboard objectives add forgecraft.id dummy
+execute as @a run function reforge:player/load
 scoreboard objectives add itemid dummy
 scoreboard objectives add itemid_stored dummy
 scoreboard objectives add reforgeId dummy
@@ -134,7 +135,6 @@ execute unless score .enhancementmaxcount const matches 0.. run scoreboard playe
 execute unless score .forgingxpmultiplier const matches 0.. run scoreboard players set .forgingxpmultiplier const 5
 execute unless data storage forgecraft:display settings.format run data modify storage forgecraft:display settings.format set value "actionbar"
 function level_system:init
-execute as @a run function reforge:player/load
 execute as @e[type=#entity_hit_matching:utility] run function reforge:reforge_anvil/load
 # Store Data Version from player for specific checks, like display bar
 execute store result score .data_version const run data get entity @p DataVersion

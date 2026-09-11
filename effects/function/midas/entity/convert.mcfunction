@@ -12,8 +12,8 @@ execute at @s anchored feet positioned ^-0.5 ^ ^-0.5 run summon block_display ~ 
 execute at @s rotated as @s positioned ^-0.5 ^ ^-0.5 run summon block_display ~ ~0.6 ~ {teleport_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.1f,0f,0.15f],scale:[1.2f,1f,0.85f]},Tags:["entity_init","midas_converted_entity","body"],block_state:{id:"minecraft:gold_block"}}
 execute rotated as @s as @e[type=block_display,tag=entity_init,tag=!head] run rotate @s ~ 0
 execute rotated as @s as @e[type=block_display,tag=entity_init,tag=head] run rotate @s ~ ~
-execute store result score @e[type=block_display,tag=entity_init] id run scoreboard players get @s id
-execute store result score @e[type=marker,tag=entity_init] id run scoreboard players get @s id
+execute store result score @e[type=block_display,tag=entity_init] forgecraft.id run scoreboard players get @s forgecraft.id 
+execute store result score @e[type=marker,tag=entity_init] forgecraft.id run scoreboard players get @s forgecraft.id 
 function effects:midas/entity/calculate_body_size
 execute as @e[type=block_display,tag=entity_init] run tag @s remove entity_init
 execute as @e[type=marker,tag=entity_init] run tag @s remove entity_init

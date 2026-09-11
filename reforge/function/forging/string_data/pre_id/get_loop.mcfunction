@@ -1,4 +1,4 @@
-# > Goal of this function: In each loop, get the letter from the index (Item id)
+# > Goal of this function: In each loop, get the letter from the index (Item forgecraft.id )
 #   and store it to the list of storage, item_name
 $data modify storage minecraft:string temp.char set string entity @s item.id $(index) $(index_offset)
 execute store result storage minecraft:string temp.list_index int 1 run scoreboard players add .list_index const 1

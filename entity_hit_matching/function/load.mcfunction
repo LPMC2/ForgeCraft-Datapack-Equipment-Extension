@@ -35,7 +35,7 @@ scoreboard players set #loaded entityid 1
 scoreboard objectives add const dummy
 scoreboard players set 2 const 2
 scoreboard players set -1 const -1
-scoreboard objectives add id dummy
+scoreboard objectives add forgecraft.id dummy
 scoreboard objectives add itemid dummy
 scoreboard objectives add itemid_stored dummy
 scoreboard objectives add reforgeId dummy
@@ -132,7 +132,7 @@ scoreboard objectives add use dummy
 scoreboard objectives add type dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
 scoreboard players set @a leave_game 0
-execute as @a at @s if score @s id matches 0.. run function reforge:unlock/recipe/init
+execute as @a at @s if score @s forgecraft.id matches 0.. run function reforge:unlock/recipe/init
 execute unless score .ismobmodification const matches 0.. run scoreboard players set .ismobmodification const 0
 execute unless score .isrequireconvert const matches 0.. run scoreboard players set .isrequireconvert const 0
 execute unless score .istexturearmor const matches 0.. run scoreboard players set .istexturearmor const 1

@@ -7,5 +7,5 @@ execute store result storage minecraft:arrow temp.power double 0.01 store result
 execute store result score .typeid const run data get entity @s weapon.components.minecraft:custom_data.typeid
 execute if score .typeid const matches 2 run data modify entity @s damage set from storage minecraft:arrow temp.power
 execute if entity @p[tag=arrow_owner,advancements={reforge:tactical_reforge=false}] if score .arrow_damage const matches 800.. run advancement grant @p[tag=arrow_owner] only reforge:tactical_reforge
-execute store result storage minecraft:arrow temp.id int 1 run scoreboard players get @s id
+execute store result storage minecraft:arrow temp.id int 1 run scoreboard players get @s forgecraft.id 
 execute as @s run function custom_data:arrow/update_arrow_damage with storage minecraft:arrow temp

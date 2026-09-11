@@ -1,5 +1,5 @@
 $data modify storage minecraft:test storage append value {$(id):{id:$(id)}}
-#$execute store result storage minecraft:arrow storage.$(id).id int 1 run scoreboard players add @s id 0
+#$execute store result storage minecraft:arrow storage.$(id).id int 1 run scoreboard players add @s forgecraft.id 0
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].id set value $(id)
 $data modify storage minecraft:arrow storage[{$(id):{id:$(id)}}].$(id).potion set from entity @s item.components.minecraft:potion_contents.potion
 $data modify storage minecraft:arrow storage.[{$(id):{id:$(id)}}].$(id).owner1 set from entity @s Owner[0]

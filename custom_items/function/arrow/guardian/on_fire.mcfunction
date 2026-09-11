@@ -36,7 +36,7 @@ execute as @s run function effects:detect/set_potion_type_from_arrow_temp
 execute as @s run function custom_items:arrow/guardian/start_raycast
 execute at @s run playsound minecraft:entity.guardian.attack master @a ~ ~ ~ 1 2 0
 execute at @s if score .crit_damage const matches 1.. run playsound minecraft:block.conduit.attack.target master @a ~ ~ ~ 0.3 1 1
-execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s id
+execute store result storage minecraft:arrow store.id int 1 run scoreboard players get @s forgecraft.id 
 function custom_items:arrow/remove_storage with storage minecraft:arrow store
 kill @s
 tag @a remove arrow_owner

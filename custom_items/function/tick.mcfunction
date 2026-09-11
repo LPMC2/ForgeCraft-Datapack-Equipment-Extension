@@ -1,6 +1,6 @@
 # Arrow
 execute as @e[type=#entity_hit_matching:arrow] at @s run function custom_items:arrow/tick
-execute as @a at @s unless score @s id matches 1.. run function custom_items:playerinit
+execute as @a at @s unless score @s forgecraft.id matches 1.. run function custom_items:playerinit
 
 # Weapon
 execute as @a run function custom_items:weapon/player_tick

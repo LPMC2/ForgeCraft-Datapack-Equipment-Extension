@@ -21,8 +21,8 @@ execute as @n[type=item,tag=iteminit] run function reforge:forging/display/attri
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:max_damage set from storage minecraft:reforge vanilla.durability
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:damage set value 0
 data modify entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.reforgeid set value 0
-scoreboard players add .global_itemid id 1
-execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.global_id int 1 run scoreboard players get .global_itemid id
+scoreboard players add .global_itemid forgecraft.id 1
+execute store result entity @n[type=item,tag=iteminit] Item.components.minecraft:custom_data.global_id int 1 run scoreboard players get .global_itemid forgecraft.id 
 execute as @e[tag=iteminit] if items entity @s container.0 minecraft:structure_void run kill @s
 execute if entity @e[tag=iteminit] run function reforge:forging/resetreforgeitem
 tag @n[type=item,tag=iteminit] remove iteminit
