@@ -16,12 +16,10 @@
           "color": "green"
         },
         {
-          "text": "\n +5% Attribute Stats boost when forging",
-          "color": "gold"
-        },{
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Efficient, Speedy, Mysterious, Provoker, Sharp, Rotten",
           "color": "gray"
         }

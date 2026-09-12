@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +46 Experience Orb Value",
+          "text": "\nReward:\n +19 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Illager's Fortune, Piglin's Fortune, Trial's Fortune, Warden's Fortune",
           "color": "gray"
         }

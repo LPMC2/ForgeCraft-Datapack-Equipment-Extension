@@ -14,15 +14,15 @@ execute as @a at @s run function custom_items:arrow/find_players
 execute if data entity @s weapon.components.minecraft:custom_data.poison_bow run scoreboard players set .isPoison const 1
 execute if data entity @s weapon.components.minecraft:custom_data.magical run scoreboard players set .isMagical const 1
 scoreboard players set .damage const 0
-execute store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.minecraft:power 50
+execute store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.minecraft:power 100
 # Fallback
-execute if score .power_damage const matches ..0 store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:power 50
+execute if score .power_damage const matches ..0 store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:power 100
 
 execute store result score .crit_damage const run data get entity @s crit
 execute if data entity @s item.components.minecraft:potion_contents run scoreboard players set .istipped const 1
 # Power Enchantment Damage
 scoreboard players operation .damage const += .power_damage const
-execute store result score .player_damage const run attribute @p[tag=arrow_owner] minecraft:attack_damage get 100
+execute store result score .player_damage const run data get entity @s weapon.components.minecraft:attribute_modifiers[{type:"minecraft:attack_damage",operation:"add_value"}].amount 100
 # Player Damage
 scoreboard players operation .damage const += .player_damage const
 # Crit Damage

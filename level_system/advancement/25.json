@@ -7,24 +7,26 @@
       }
     },
     "title": {
-      "text":"Level 25 - Elite",
-      "color":"aqua"
+      "text": "Level 25 - Elite",
+      "color": "aqua"
     },
     "description": {
       "text": "Achieve 10000 Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +75 Experience Orb Value,",
+          "text": "\nReward:\n +25 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n +25% Attribute Stats boost when forging",
+          "text": "\n +1% Attribute Stats boost when forging",
           "color": "gold"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforge:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Supreme",
           "color": "gray"
         }

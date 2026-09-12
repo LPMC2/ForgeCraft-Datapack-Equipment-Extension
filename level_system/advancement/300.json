@@ -7,19 +7,19 @@
       }
     },
     "title": {
-      "text":"Level 300 - Elite",
-      "color":"dark_purple"
+      "text": "Level 300 - Elite",
+      "color": "dark_purple"
     },
     "description": {
       "text": "This is a prison...The PAIN\nAchieve 444,280,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +2950 Experience Orb Value,",
+          "text": "\nReward:\n +300 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n +80% Attribute Stats boost when forging",
+          "text": "\n +55% Attribute Stats boost when forging",
           "color": "gold"
         }
       ]

@@ -71,7 +71,7 @@
             "text": "Melee/Tool/Utility"
           }
         ],
-        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 75" },
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 25" },
         {
           "color": "red",
           "italic": false,
@@ -83,7 +83,7 @@
       },
       "damage_resistant": { "types": "#minecraft:is_fire" },
       "minecraft:rarity": "epic",
-      "minecraft:custom_data": { "reforgeid": 87, "req_xp": 75, "req_lvl": 12 },
+      "minecraft:custom_data": { "reforgeid": 87, "req_xp": 25, "req_lvl": 12 },
       "minecraft:profile": {
         "properties": [
           {

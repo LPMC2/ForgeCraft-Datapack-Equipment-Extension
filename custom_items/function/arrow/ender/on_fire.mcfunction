@@ -10,7 +10,7 @@ scoreboard players set .2 const 2
 execute as @a at @s run function custom_items:arrow/find_players
 
 # Base Setup
-execute store result score .damage const run attribute @p[tag=arrow_owner] minecraft:attack_damage get 100
+execute store result score .damage const run data get entity @s weapon.components.minecraft:attribute_modifiers[{type:"minecraft:attack_damage",operation:"add_value"}].amount 100
 execute store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.minecraft:power 50
 # Power enchantment Fallback
 execute if score .power_damage const matches ..0 store result score .power_damage const run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:power 50

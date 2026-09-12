@@ -1,18 +1,18 @@
-$data modify entity @s Item.components.minecraft:item_name set value {"color":"light_purple","italic":false,"text":"⚒ $(reforge) $(name)"}
+$data modify entity @s Item.components.minecraft:item_name set value {"color":"$(rarity_color)","italic":false,"text":"⚒ $(reforge) $(name)"}
 $data modify entity @s Item.components.minecraft:custom_data.custom_lore.type set value [{"color":"dark_gray","italic":false,"text":"Type: "},{"bold":true,"color":"white","italic":false,"text":"$(itemtype)"}]
-$data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ $(refroge): $(description)"}
+$data modify entity @s Item.components.minecraft:custom_data.custom_lore.forge append value {"color":"dark_gray","italic":false,"text":"⚒ $(reforge): $(description)"}
 data modify storage minecraft:reforge temp.display.lore set from entity @s Item.components.minecraft:custom_data.custom_lore
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "$(reforge) $(name)"
 
-$data modify entity @s Item.components.minecraft:custom_data.custom_abilities set value $(tags)
+$data modify entity @s Item.components.minecraft:custom_data.custom_abilities set from storage minecraft:reforge data.reforge_data[{id:$(id)}].tags
 $data modify entity @s Item.components.minecraft:rarity set value "$(rarity)"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 
 # Attributes
 function reforge:forging/forge_type/custom/attribute/init
 
-$execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append value "$(texture)"
+$execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append from storage minecraft:reforge data.reforge_data[{id:$(id)}].texture
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count
 scoreboard players add .forge_count const 1

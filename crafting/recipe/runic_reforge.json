@@ -1,40 +1,65 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    " i ",
-    "iai",
-    " i "
-],
+  "pattern": [" i ", "iai", " i "],
   "key": {
-    "i":  "minecraft:totem_of_undying"
-    ,
-    "a":  "minecraft:emerald_block"
-    
+    "i": "minecraft:totem_of_undying",
+    "a": "minecraft:emerald_block"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Totem of Artifact"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Runic: "},{"bold":false,"color":"gray","italic":false,"text":"Convert Item Stats into offhand stats!"}],
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Items"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 150"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 22"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "light_purple",
+        "italic": false,
+        "text": "Totem of Artifact"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":69,"req_xp":150,"req_lvl":22},
-      "minecraft:profile": {
-        "id": [
-          1967157508,1598375069,-1936698414,936379520
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Runic: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "Convert Item Stats into offhand stats!"
+          }
         ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Any Items"
+          }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 60" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 22"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": { "reforgeid": 69, "req_xp": 60, "req_lvl": 22 },
+      "minecraft:profile": {
+        "id": [1967157508, 1598375069, -1936698414, 936379520],
         "properties": [
           {
             "name": "textures",

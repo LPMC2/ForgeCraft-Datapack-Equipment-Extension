@@ -7,19 +7,19 @@
       }
     },
     "title": {
-      "text":"Level 400 - Elite",
-      "color":"red"
+      "text": "Level 400 - Elite",
+      "color": "red"
     },
     "description": {
       "text": "❔ Wow! I wasn't expecting that...\nI guess you have no life...\nAchieve 1,058,945,850 Total Xp Level used in Forging\n",
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +4950 Experience Orb Value,",
+          "text": "\nReward:\n +400 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n +100% Attribute Stats boost when forging",
+          "text": "\n +75% Attribute Stats boost when forging",
           "color": "gold"
         }
       ]

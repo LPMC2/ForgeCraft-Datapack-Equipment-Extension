@@ -1,48 +1,76 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "313",
-    "121",
-    "313"
-],
+  "pattern": ["313", "121", "313"],
   "key": {
-    "1": "minecraft:diamond"
-    ,
-    "2":  "minecraft:heart_of_the_sea"
-    ,
-    "3":"minecraft:jungle_sapling"
-    
+    "1": "minecraft:diamond",
+    "2": "minecraft:heart_of_the_sea",
+    "3": "minecraft:jungle_sapling"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Heart of the Jungle"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Healthful: "},{"bold":false,"color":"gray","italic":false,"text":"+2 Max Health."}],
-        {"color":"gray","italic":false,"text":"For every 5s, heal you and nearby players (5 Blocks)"},
-        {"color":"gray","italic":false,"text":"with +5% Wearer Max Health Per piece."},
-        {"color":"gray","italic":false,"text":"If at max health, regenerate wearer food level by 1/15s."},
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 65"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 14"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "light_purple",
+        "italic": false,
+        "text": "Heart of the Jungle"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":48,"req_xp":65,"req_lvl":14},
-      "minecraft:profile": {
-        "id": [
-          1198154698,
-          -1491515788,
-          -1163792289,
-          -65437140
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Healthful: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "+2 Max Health."
+          }
         ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "For every 5s, heal you and nearby players (5 Blocks)"
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "with +5% Wearer Max Health Per piece."
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "If at max health, regenerate wearer food level by 1/15s."
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          { "bold": true, "color": "white", "italic": false, "text": "Armor" }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 45" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 14"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": { "reforgeid": 48, "req_xp": 45, "req_lvl": 14 },
+      "minecraft:profile": {
+        "id": [1198154698, -1491515788, -1163792289, -65437140],
         "properties": [
           {
             "name": "textures",

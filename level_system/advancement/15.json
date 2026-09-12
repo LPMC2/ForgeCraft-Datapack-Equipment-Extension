@@ -12,16 +12,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +30 Experience Orb Value,",
+          "text": "\nReward:\n +15 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n +15% Attribute Stats boost when forging",
-          "color": "gold"
-        },{
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Absorptive, Warrior, Fortunate, Leeching, Tactical",
           "color": "gray"
         }
