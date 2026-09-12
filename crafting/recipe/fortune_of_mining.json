@@ -1,45 +1,61 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "111",
-    "131",
-    "121"
-],
+  "pattern": ["111", "131", "121"],
   "key": {
-    "1": "minecraft:diamond_block"
-    ,
-    "2":  "minecraft:diamond_pickaxe"
-    ,
+    "1": "minecraft:diamond_block",
+    "2": "minecraft:diamond_pickaxe",
     "3": "minecraft:heart_of_the_sea"
-    
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Fortune of Mining"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Fortunate: "},{"bold":false,"color":"gray","italic":false,"text":"most drop always have double drops on use"}],
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Tool"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 70"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 15"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "aqua",
+        "italic": false,
+        "text": "Fortune of Mining"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "rare",
-      "minecraft:custom_data": {"reforgeid":36,"req_xp":70,"req_lvl":15},
-      "minecraft:profile": {
-        "id": [
-          2009663337,
-          -1977332022,
-          -1886336066,
-          -2090921471
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Fortunate: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "most drop always have double drops on use"
+          }
         ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          { "bold": true, "color": "white", "italic": false, "text": "Tool" }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 50" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 15"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": { "reforgeid": 36, "req_xp": 50, "req_lvl": 15 },
+      "minecraft:profile": {
+        "id": [2009663337, -1977332022, -1886336066, -2090921471],
         "properties": [
           {
             "name": "textures",

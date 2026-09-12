@@ -3,8 +3,9 @@
     "target": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "blocked": false,
-        "damage": {}
+        "damage": {
+          "blocked": false
+        }
       }
     },
     "bit0": {

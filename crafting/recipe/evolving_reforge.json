@@ -1,40 +1,75 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "323",
-    "212",
-    "323"
-],
+  "pattern": ["323", "212", "323"],
   "key": {
-    "1": "minecraft:nether_star"
-    ,
-    "2":  "minecraft:experience_bottle",
-    "3": "minecraft:verdant_froglight" 
+    "1": "minecraft:nether_star",
+    "2": "minecraft:experience_bottle",
+    "3": "minecraft:verdant_froglight"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Star-Infused Experience Orb"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Evolving: "},{"bold":false,"color":"gray","italic":false,"text":""}],
-        {"color":"gray","italic":false,"text":"Enhance all attributes stat by +0.5% for each XP Level used on forging."},
-        {"color":"gray","italic":false,"text":"Able to reforge again!"},
-        {"color":"dark_gray","italic":false,"text":"Only works in version V1.65 or newer reforged items!"},
-        {"color":"dark_gray","italic":false,"text":"[Upgradeable Forge Item]"},
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Any Item, Except Other"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 100"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 23"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "light_purple",
+        "italic": false,
+        "text": "Star-Infused Experience Orb"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Evolving: "
+          },
+          { "bold": false, "color": "gray", "italic": false, "text": "" }
+        ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Enhance all attributes stat by +0.5% for each XP Level used on forging."
+        },
+        { "color": "gray", "italic": false, "text": "Able to reforge again!" },
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "Only works in version V1.65 or newer reforged items!"
+        },
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "[Upgradeable Forge Item]"
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Any Item, Except Other"
+          }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 75" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 23"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
       "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":86,"req_xp":100,"req_lvl":23},
+      "minecraft:custom_data": { "reforgeid": 86, "req_xp": 75, "req_lvl": 23 },
       "minecraft:profile": {
         "properties": [
           {

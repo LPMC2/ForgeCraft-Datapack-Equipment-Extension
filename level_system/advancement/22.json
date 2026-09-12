@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +60 Experience Orb Value",
+          "text": "\nReward:\n +22 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Runic",
           "color": "gray"
         }

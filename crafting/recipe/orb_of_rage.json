@@ -1,41 +1,67 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "i1i",
-    "i2i",
-    "iai"
-],
+  "pattern": ["i1i", "i2i", "iai"],
   "key": {
-    "i":  "minecraft:amethyst_shard"
-    ,
-    "a":  "minecraft:dragon_breath",
-    "1":  "minecraft:ominous_bottle",
-    "2":  "minecraft:crying_obsidian"
+    "i": "minecraft:amethyst_shard",
+    "a": "minecraft:dragon_breath",
+    "1": "minecraft:ominous_bottle",
+    "2": "minecraft:crying_obsidian"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Orb of Rage"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Raging: "},{"bold":false,"color":"gray","italic":false,"text":"Increase action & movement speed for every successful item use. Reset after 5-10s."}],
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Melee/Tool"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 50"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 11"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "light_purple",
+        "italic": false,
+        "text": "Orb of Rage"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":22,"req_xp":50,"req_lvl":11},
-      "minecraft:profile": {
-        "id": [
-          1054939182,-1952431715,-1199550706,-838206201
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Raging: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "Increase action & movement speed for every successful item use. Reset after 5-10s."
+          }
         ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Melee/Tool"
+          }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 35" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 11"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": { "reforgeid": 22, "req_xp": 35, "req_lvl": 11 },
+      "minecraft:profile": {
+        "id": [1054939182, -1952431715, -1199550706, -838206201],
         "properties": [
           {
             "name": "textures",

@@ -9,8 +9,8 @@ function custom_items:weapon/itemslot/store_scoreboard_obj with storage minecraf
 #function custom_items:weapon/itemslot/store_offhand_data with storage minecraft:item store
 scoreboard players operation @s last.slot = @s sel.slot
 # ------------------ #
-#execute if data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier add forgecraft-ranged-removal -0.99 add_multiplied_base
-#execute unless data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier remove forgecraft-ranged-removal
+execute if data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier add forgecraft-ranged-removal -0.90 add_multiplied_base
+execute unless data entity @s SelectedItem.components.minecraft:custom_data{typeid:2} run attribute @s minecraft:attack_damage modifier remove forgecraft-ranged-removal
 # -----< Custom >----#
 execute as @s run function custom_items:weapon/aotd/reset
 #execute if data entity @s SelectedItem.components.minecraft:custom_data.aspect_of_the_defense run function custom_items:weapon/aotd/calculate

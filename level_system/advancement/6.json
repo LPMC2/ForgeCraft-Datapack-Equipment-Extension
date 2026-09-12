@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +7 Experience Orb Value",
+          "text": "\nReward:\n +6 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Magical, Dispenser, Weaponized",
           "color": "gray"
         }

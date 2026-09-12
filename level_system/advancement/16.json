@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +34 Experience Orb Value",
+          "text": "\nReward:\n +16 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforge:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Sneaky, Sorcerer, Armor-Fluxing",
           "color": "gray"
         }

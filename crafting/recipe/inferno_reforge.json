@@ -1,42 +1,70 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "iii",
-    "iai",
-    "iii"
-],
+  "pattern": ["iii", "iai", "iii"],
   "key": {
-    "i":  "minecraft:blaze_rod"
-    ,
-    "a":  "minecraft:heavy_core"
-    
+    "i": "minecraft:blaze_rod",
+    "a": "minecraft:heavy_core"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"light_purple","italic":false,"text":"Blazing Core"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Inferno: "},{"bold":false,"color":"gray","italic":false,"text":"+20% Attack Damage & +0.1 Burning Time."}],
-        {"color":"gray","italic":false,"text":"+25% Attack Damage, Attack Speed & +1 Arrow Damage while on fire"},
-        {"color":"dark_gray","italic":false,"text":"Also Immune to item fire"},
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Armor"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 75"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 20"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "light_purple",
+        "italic": false,
+        "text": "Blazing Core"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "epic",
-      "minecraft:custom_data": {"reforgeid":64,"req_xp":75,"req_lvl":20},
-      "minecraft:profile": {
-        "id": [
-          -1148762075,1044074080,-1320510738,-593893956
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Inferno: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "+20% Attack Damage & +0.1 Burning Time."
+          }
         ],
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "+25% Attack Damage, Attack Speed & +1 Arrow Damage while on fire"
+        },
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "Also Immune to item fire"
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          { "bold": true, "color": "white", "italic": false, "text": "Armor" }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 60" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 20"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": { "reforgeid": 64, "req_xp": 60, "req_lvl": 20 },
+      "minecraft:profile": {
+        "id": [-1148762075, 1044074080, -1320510738, -593893956],
         "properties": [
           {
             "name": "textures",

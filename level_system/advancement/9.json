@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +13 Experience Orb Value",
+          "text": "\nReward:\n +9 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Stunning, Swarming, Reflective, Breezy",
           "color": "gray"
         }

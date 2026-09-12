@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +11 Experience Orb Value",
+          "text": "\nReward:\n +8 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Gilded, Rapid, Assassin",
           "color": "gray"
         }

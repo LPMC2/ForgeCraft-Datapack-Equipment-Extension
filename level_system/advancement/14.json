@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +27 Experience Orb Value",
+          "text": "\nReward:\n +14 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Chaining, Sniping, Healthful",
           "color": "gray"
         }

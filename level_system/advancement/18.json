@@ -9,12 +9,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +42 Experience Orb Value",
+          "text": "\nReward:\n +18 Experience Orb Value",
           "color": "green"
-        },{
+        },
+        {
           "text": "\n\n⚒ Unlock Reforge:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Guardian, Vanguarding",
           "color": "gray"
         }

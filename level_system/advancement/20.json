@@ -12,16 +12,14 @@
       "color": "white",
       "extra": [
         {
-          "text": "\nReward:\n +50 Experience Orb Value,",
+          "text": "\nReward:\n +20 Experience Orb Value,",
           "color": "green"
         },
         {
-          "text": "\n +20% Attribute Stats boost when forging",
-          "color": "gold"
-        },{
           "text": "\n\n⚒ Unlock Reforges:\n",
           "color": "red"
-        },{
+        },
+        {
           "text": "Cursed, Inferno, Rampaging, Shielding, Midas's",
           "color": "gray"
         }

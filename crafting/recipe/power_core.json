@@ -1,47 +1,67 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "2n2",
-    "n1n",
-    "2n2"
-],
+  "pattern": ["2n2", "n1n", "2n2"],
   "key": {
-    "1": "minecraft:heavy_core"
-    ,
-    "2":  "minecraft:amethyst_block"
-    ,
-    "n":  "minecraft:wind_charge"
-    
+    "1": "minecraft:heavy_core",
+    "2": "minecraft:amethyst_block",
+    "n": "minecraft:wind_charge"
   },
   "result": {
     "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Power Core"},
-      "minecraft:lore": [
-        [{"color":"gray","italic":false,"text":"⚒ "},{"bold":true,"color":"white","italic":false,"text":"Super-Charged: "},{"bold":false,"color":"gray","italic":false,"text":"Increase the speed and damage of crit arrow!"}],
-        {"color":"gray","italic":false,"text":"+4 Arrow Power."},
-        {"color":"dark_gray","italic":false,"text":"Doesn't work on fireworks"},
-        {"color":"gray","italic":false,"text":"Put it in the Reforge Anvil with the item to forge it!"},
-        {"text":" "},
-        [{"color":"dark_gray","italic":false,"text":"Can apply to: "},{"bold":true,"color":"white","italic":false,"text":"Ranged"}],
-        {"color":"green","italic":false,"text":"⦿ Xp Level Cost: 120"},
-        {"color":"red","italic":false,"text":"⚒ Forging Level Requirement: 21"}
-      ],
-      "minecraft:unbreakable": {
+      "minecraft:custom_name": {
+        "color": "aqua",
+        "italic": false,
+        "text": "Power Core"
       },
-      "damage_resistant": {"types":"#minecraft:is_fire"},
-      "minecraft:rarity": "rare",
-      "minecraft:custom_data": {"reforgeid":14,"req_xp":120,"req_lvl":21},
-      "minecraft:profile": {
-        "id": [
-          1112625761,
-          -98942638,
-          -1530349582,
-          -16193464
+      "minecraft:lore": [
+        [
+          { "color": "gray", "italic": false, "text": "⚒ " },
+          {
+            "bold": true,
+            "color": "white",
+            "italic": false,
+            "text": "Super-Charged: "
+          },
+          {
+            "bold": false,
+            "color": "gray",
+            "italic": false,
+            "text": "Increase the speed and damage of crit arrow!"
+          }
         ],
+        { "color": "gray", "italic": false, "text": "+4 Arrow Power." },
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "Doesn't work on fireworks"
+        },
+        {
+          "color": "gray",
+          "italic": false,
+          "text": "Put it in the Reforge Anvil with the item to forge it!"
+        },
+        { "text": " " },
+        [
+          { "color": "dark_gray", "italic": false, "text": "Can apply to: " },
+          { "bold": true, "color": "white", "italic": false, "text": "Ranged" }
+        ],
+        { "color": "green", "italic": false, "text": "⦿ Xp Level Cost: 70" },
+        {
+          "color": "red",
+          "italic": false,
+          "text": "⚒ Forging Level Requirement: 21"
+        }
+      ],
+      "minecraft:unbreakable": {},
+      "damage_resistant": { "types": "#minecraft:is_fire" },
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": { "reforgeid": 14, "req_xp": 70, "req_lvl": 21 },
+      "minecraft:profile": {
+        "id": [1112625761, -98942638, -1530349582, -16193464],
         "properties": [
           {
             "name": "textures",
