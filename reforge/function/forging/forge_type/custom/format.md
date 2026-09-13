@@ -18,6 +18,16 @@ forgecraft:plugin custom
         info: string (Debug Menu Info)
         req_xp: integer (Required, XP level needed to apply)
         req_lvl: integer (Required, Forging Level needed to apply, 0 means no requirement)
+        types: {id:integer}[] (id is ranged from 1 - 9, which are:
+        1 - Melee
+        2 - Ranged
+        3 - Armor - Helmet
+        4 - Armor - Chestplate
+        5 - Armor - Leggings
+        6 - Armor - Boots
+        7 - Tool
+        8 - Utility (Item that has durability)
+        9 - Other )
         attributes: {
             type: string (For example, 'minecraft:attack_damage')
             operation: 'add_value' | 'add_multiplied_total' | 'add_multiplied_base'
@@ -46,6 +56,7 @@ function forgecraft_lpmc2:plugins/register {\
             info: 'Electrify Entity into oblivion',\
             req_xp: 20,\
             req_lvl: 5,\
+            types: [{id:1},{id:2}],\
             attributes: [\
                 {\
                     type: 'minecraft:attack_damage',\
@@ -85,6 +96,7 @@ function forgecraft_lpmc2:plugins/register {\
             info: 'DEMO',\
             req_xp: 0,\
             req_lvl: 0,\
+            types: [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8}],\
             attributes: [\
                 {\
                     type: 'minecraft:attack_damage',\

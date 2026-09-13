@@ -3,11 +3,12 @@ function forgecraft_lpmc2:plugins/register {\
     reforges:[\
         {\
             id: 1000,\
-            name: 'Electrocuting',\
-            description: 'Attack Entity causing electrocution',\
-            info: 'Electrify Entity into oblivion',\
+            name: 'Example Reforge 1',\
+            description: 'The very example of reforge',\
+            info: 'DEMONSTRATION',\
             req_xp: 20,\
             req_lvl: 5,\
+            types: [{id:1},{id:2}],\
             attributes: [\
                 {\
                     type: 'minecraft:attack_damage',\
@@ -38,15 +39,16 @@ function forgecraft_lpmc2:plugins/register {\
             tags: {is_electric: 1b},\
             rarity: 'common',\
             texture: 'electric',\
-            custom_function: 'example:electric/apply'\
+            custom_function: 'custom_items:tool/chaining/test'\
         },\
         {\
             id: 1001,\
-            name: 'Example Reforge',\
+            name: 'Example Reforge 2',\
             description: 'The very example of reforge',\
-            info: 'DEMO',\
+            info: 'DEMONSTRATION',\
             req_xp: 0,\
             req_lvl: 0,\
+            types: [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8}],\
             attributes: [\
                 {\
                     type: 'minecraft:attack_damage',\
@@ -57,6 +59,29 @@ function forgecraft_lpmc2:plugins/register {\
                 }\
             ],\
             rarity: 'rare'\
+        }\
+    ]\
+}
+function forgecraft_lpmc2:plugins/register {\
+    slug: 'example-plugin-2',\
+    reforges:[\
+        {\
+            id: 1002,\
+            name: 'Example Reforge 3',\
+            description: 'The very example of reforge from exmaple 2',\
+            info: 'DEMONSTRATION 2',\
+            req_xp: 20,\
+            req_lvl: 10,\
+            types: [{id:1},{id:2},{id:3}],\
+            attributes: [\
+                {\
+                    type: 'minecraft:attack_speed',\
+                    operation: 'add_multiplied_total',\
+                    slot: 'auto',\
+                    amount: 0.5\
+                }\
+            ],\
+            rarity: 'epic'\
         }\
     ]\
 }

@@ -4,5 +4,6 @@ tellraw @a [{"color":"dark_gray","italic":false,"text":"--------------------"},{
 execute if score .forgecraft_version const matches 1791 run function forgecraft_lpmc2:version/1.7.9.1/score_removal
 execute if score .forgecraft_version const matches 1792 run function forgecraft_lpmc2:version/1.7.9.2/score_removal
 #execute if score .forgecraft_version const matches 180 run function forgecraft_lpmc2:version/1.8.0/score_removal
+execute if score .forgecraft_version const matches 1812 run function forgecraft_lpmc2:version/1.8.3/update_score
 # end
 tellraw @a {"bold":false,"color":"dark_gray","italic":false,"text":"\n---------------------------------------------------"}

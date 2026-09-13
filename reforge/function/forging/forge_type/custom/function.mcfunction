@@ -1,0 +1,1 @@
+$execute as @s run function $(custom_function)

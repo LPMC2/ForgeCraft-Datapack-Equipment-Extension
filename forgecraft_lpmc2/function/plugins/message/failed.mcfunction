@@ -1,0 +1,2 @@
+$tellraw @a [{"color":"#FF0000","italic":false,"text":"❌ "},{"color":"red","italic":false,"text":"Plugin - $(slug) failed to load. Reason:\n"},{"color":"white","italic":false,"text":"$(reason)"}]
+scoreboard players set .is_plugin_success const 0

@@ -1,0 +1,1 @@
+tellraw @a [{"color":"dark_gray","italic":false,"text":"-------------< "},{"bold":true,"color":"gold","italic":false,"text":"ForgeCraft - Plugins"},{"bold":false,"color":"dark_gray","italic":false,"text":" >-------------\n"}]
