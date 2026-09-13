@@ -1,0 +1,5 @@
+$execute if data storage minecraft:reforge data.reforge_data[{id:$(reforge_id),source:$(source)}] run data modify storage minecraft:reforge data.reforge_data[{id:$(reforge_id)}] set from storage forgecraft:plugin custom[$(index)].reforges[$(reforge_index)]
+$execute if data storage minecraft:reforge data.reforge_data[{id:$(reforge_id),source:$(source)}] run return run data modify storage minecraft:reforge data.reforge_data[{id:$(reforge_id)}].source set from storage forgecraft:plugin custom[$(index)].slug
+$execute unless data storage minecraft:reforge data.reforge_data[{id:$(reforge_id)}] run data modify storage minecraft:reforge data.reforge_data append from storage forgecraft:plugin custom[$(index)].reforges[$(reforge_index)]
+#$say reforge Loop ($(source)) - $(index) $(reforge_index) - $(reforge_id) $(temp_id)
+$data modify storage minecraft:reforge data.reforge_data[{id:$(reforge_id)}].source set from storage forgecraft:plugin custom[$(index)].slug

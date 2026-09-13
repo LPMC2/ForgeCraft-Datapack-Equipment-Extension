@@ -1,1 +1,2 @@
+$execute if data storage minecraft:reforge data.reforge_data[{id:$(forge_id)}].source run function reforge:forging/forge_type/getter/custom with storage minecraft:reforge temp.forging
 $function reforge:forging/forge_type/getter/$(forge_id)
