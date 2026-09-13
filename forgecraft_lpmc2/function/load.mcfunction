@@ -137,5 +137,5 @@ function level_system:init
 execute as @e[type=#entity_hit_matching:utility] run function reforge:reforge_anvil/load
 # Store Data Version from player for specific checks, like display bar
 execute store result score .data_version const run data get entity @p DataVersion
-function forgecraft_lpmc2:plugins/example
+#function forgecraft_lpmc2:plugins/example
 schedule function forgecraft_lpmc2:plugins/register_init 1t replace
