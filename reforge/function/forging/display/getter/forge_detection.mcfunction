@@ -63,14 +63,13 @@ execute if data entity @n[tag=targetforgeitem] item.components.minecraft:custom_
 execute as @n[tag=targetforgeitem] if data entity @s item.components.minecraft:custom_data.forge_count store result score .item_forge_count const run data get entity @s item.components.minecraft:custom_data.forge_count
 execute as @n[type=minecraft:item_display,tag=targetforgeitem] if data entity @s item.components.minecraft:profile.properties[0].signature store result score .is_item_reforge_item const run data get entity @s item.components.minecraft:profile.properties[0].signature
 # Store reforge forgecraft.id from the forge item
-execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s store result score .require_level const run data get entity @s item.components.minecraft:custom_data.req_lvl
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run execute store result score .item_reforge reforgeId run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run scoreboard players set .item_reforge reforgeId -1
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run data modify storage minecraft:item store.reforge_id set from entity @s item.components.minecraft:profile.properties[0].signature
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s unless data entity @s item.components.minecraft:custom_data.reforgeid run function reforge:forging/get_id_from_signature with storage minecraft:item store
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run data modify storage minecraft:reforge forge.forgeid set from entity @s item.components.minecraft:custom_data.reforgeid
-execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s if data entity @s item.components.minecraft:custom_data.req_xp store result score .xp_cost const run data get entity @s item.components.minecraft:custom_data.req_xp
 execute as @e[tag=targetforgemodifier,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.mod_type store result score .item_mod forgecraft.id run data get entity @s item.components.minecraft:custom_data.mod_type
+function reforge:forging/display/getter/fetch_data with storage minecraft:reforge forge
 # Store reforge forgecraft.id from the item
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute store result score .item reforgeId store result storage minecraft:reforge forge.forge_itemid int 1 run data get entity @s item.components.minecraft:custom_data.reforgeid
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s if data entity @s item.components.minecraft:custom_data.forgecraft_forge_item run scoreboard players set .item reforgeId 99999999
@@ -87,6 +86,7 @@ execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if pre
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if predicate reforge:istools run scoreboard players set .itemtype forgecraft.id 7
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if predicate reforge:isutilities run scoreboard players set .itemtype forgecraft.id 8
 execute as @e[tag=targetforgeitem,sort=nearest,limit=1] at @s run execute if data entity @s item.components.minecraft:custom_data.typeid run execute store result score .itemtype forgecraft.id run data get entity @s item.components.minecraft:custom_data.typeid
+execute store result storage minecraft:reforge forge.item_type_id int 1 run scoreboard players get .itemtype forgecraft.id
 execute if score .itemtype forgecraft.id matches 1..2 run data modify storage minecraft:reforge forge.slot set value "mainhand"
 execute if score .itemtype forgecraft.id matches 7..9 run data modify storage minecraft:reforge forge.slot set value "mainhand"
 execute if score .itemtype forgecraft.id matches 3 run data modify storage minecraft:reforge forge.slot set value "head"

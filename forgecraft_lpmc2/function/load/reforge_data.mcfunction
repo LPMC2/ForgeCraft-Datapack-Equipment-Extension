@@ -1,5 +1,6 @@
 # Reset Value
 # data remove storage minecraft:reforge data.forging_data
+data remove storage minecraft:reforge data.reforge_data
 data modify storage minecraft:reforge data.reforge_data set value []
 
 # Set Data

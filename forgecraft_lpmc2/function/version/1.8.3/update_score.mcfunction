@@ -1,0 +1,1 @@
+execute as @a run scoreboard players operation @s forgecraft.id = @s id

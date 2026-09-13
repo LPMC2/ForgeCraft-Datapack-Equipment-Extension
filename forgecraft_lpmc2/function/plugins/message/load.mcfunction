@@ -1,0 +1,1 @@
+$tellraw @a [{"color":"dark_green","italic":false,"text":"✔ "},{"color":"green","italic":false,"text":"Plugin - $(slug) has been successfully loaded!"}]

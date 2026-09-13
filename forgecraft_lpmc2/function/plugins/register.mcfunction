@@ -1,2 +1,2 @@
-$execute if data storage forgecraft:plugin custom[{slug:$(slug)}] run return run data modify storage forgecraft:plugin custom[{slug:$(slug)}].reforges set value $(reforges)
+$execute if data storage forgecraft:plugin custom[{slug:"$(slug)"}] run return run data modify storage forgecraft:plugin custom[{slug:"$(slug)"}].reforges set value $(reforges)
 $data modify storage forgecraft:plugin custom append value {slug:$(slug),reforges:$(reforges)}

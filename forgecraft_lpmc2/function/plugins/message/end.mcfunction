@@ -1,0 +1,1 @@
+tellraw @a [{"bold":false,"color":"dark_gray","italic":false,"text":"\n---------------------------------------------------"}]
