@@ -1,0 +1,1 @@
+$loot give @s loot reforge:reforge_type/$(id)

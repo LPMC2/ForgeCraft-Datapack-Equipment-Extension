@@ -12,6 +12,8 @@ data modify entity @s Item.components.minecraft:custom_data.reforgeid set from s
 # Attributes
 function reforge:forging/forge_type/custom/attribute/init with storage minecraft:reforge forge
 
+$execute if data storage minecraft:reforge data.reforge_data[{id:$(forgeid)}].custom_function run function reforge:forging/forge_type/custom/function with storage minecraft:reforge data.reforge_data[{id:$(forgeid)}]
+
 $execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append from storage minecraft:reforge data.reforge_data[{id:$(forgeid)}].texture
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count

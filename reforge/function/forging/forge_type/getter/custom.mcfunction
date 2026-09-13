@@ -1,3 +1,4 @@
+$execute unless data storage minecraft:reforge data.reforge_data[{id:$(forge_id)}].types[{id:$(item_type_id)}] run return fail
 # Rarity
 data modify storage minecraft:reforge forge.rarity_color set value "white"
 $execute if data storage minecraft:reforge data.reforge_data[{id:$(forge_id),rarity:'uncommon'}] run data modify storage minecraft:reforge forge.rarity_color set value "#DEDEDE"

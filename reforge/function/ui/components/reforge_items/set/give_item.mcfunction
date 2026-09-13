@@ -1,3 +1,4 @@
 execute unless entity @s[gamemode=creative] run return run tellraw @s {text:"❌ Did you really try to cheat?",color:"red"}
 $tellraw @s [{text:"⚒ Received $(name).",color:"green"},{text:"\nWarning: it is only used for debugging. Please don't abuse this in survival!!!",color:"red"}]
-$loot give @s loot reforge:reforge_type/$(id)
+$execute if data storage minecraft:reforge data.reforge_data[{id:$(id)}].source run return run function reforge:ui/components/reforge_items/set/give_custom with storage minecraft:reforge data.reforge_data[{id:$(id)}]
+$function reforge:ui/components/reforge_items/set/give_vanilla with storage minecraft:reforge data.reforge_data[{id:$(id)}]
