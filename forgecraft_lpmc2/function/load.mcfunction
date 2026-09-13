@@ -125,7 +125,7 @@ scoreboard players set .entity_tick const 0
 function forgecraft_lpmc2:version
 execute unless score .forgecraft_version const = .pre_forgecraft_version const as @a at @s run function reforge:unlock/recipe/init
 execute unless score .forgecraft_version const = .pre_forgecraft_version const run function forgecraft_lpmc2:load/reforge_data
-#execute unless score .forgecraft_loaded const matches 0.. run function forgecraft_lpmc2:load/reforge_data
+execute unless data storage minecraft:reforge data.reforge_data run function forgecraft_lpmc2:load/reforge_data
 execute unless score .ismobmodification const matches 0.. run scoreboard players set .ismobmodification const 0
 execute unless score .isrequireconvert const matches 0.. run scoreboard players set .isrequireconvert const 0
 execute unless score .istexturearmor const matches 0.. run scoreboard players set .istexturearmor const 1

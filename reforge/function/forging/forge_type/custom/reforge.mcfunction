@@ -5,14 +5,14 @@ data modify storage minecraft:reforge temp.display.lore set from entity @s Item.
 execute as @s run function reforge:forging/display/item/set_lore with storage minecraft:reforge temp.display.lore
 $data modify entity @s Item.components.minecraft:custom_data.itemname set value "$(reforge) $(name)"
 
-$data modify entity @s Item.components.minecraft:custom_data.custom_abilities set from storage minecraft:reforge data.reforge_data[{id:$(id)}].tags
+$data modify entity @s Item.components.minecraft:custom_data.custom_abilities set from storage minecraft:reforge data.reforge_data[{id:$(forgeid)}].tags
 $data modify entity @s Item.components.minecraft:rarity set value "$(rarity)"
 data modify entity @s Item.components.minecraft:custom_data.reforgeid set from storage minecraft:reforge forge.forgeid
 
 # Attributes
-function reforge:forging/forge_type/custom/attribute/init
+function reforge:forging/forge_type/custom/attribute/init with storage minecraft:reforge forge
 
-$execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append from storage minecraft:reforge data.reforge_data[{id:$(id)}].texture
+$execute unless score .istextureequipment const matches 0 run data modify entity @s Item.components.minecraft:custom_model_data.strings append from storage minecraft:reforge data.reforge_data[{id:$(forgeid)}].texture
 scoreboard players set .forge_count const 0
 execute store result score .forge_count const run data get entity @s Item.components.minecraft:custom_data.forge_count
 scoreboard players add .forge_count const 1
